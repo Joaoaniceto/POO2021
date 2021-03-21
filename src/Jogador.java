@@ -1,6 +1,7 @@
 import java.io.Serializable;
 
 public abstract class Jogador implements Comparable<Jogador>, Serializable {
+    private int numero;
     private String nome;
     private boolean titular;
     private int velocidade;
@@ -51,6 +52,7 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
         this.passe = j.getPasse();
     }
 
+    public int getNum(){return this.numero;}
     public String getNome(){return this.nome;}
     public boolean getTitular(){return this.titular;}
     public int getVel(){return this.velocidade;}
@@ -61,6 +63,7 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
     public int getRem(){return this.remate;}
     public int getPasse(){return this.passe;}
 
+    public void setNumero(int num){this.numero=num;}
     public void setNome(String nome){this.nome=nome;}
     public void setTitular(boolean titular){this.titular=titular;}
     public void setVel(int vel){this.velocidade=vel;}
@@ -80,6 +83,26 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
                 "\nValor de Jogo de Cabeça: " + this.jogodecabeca +
                 "\nValor de Remate: " + this.remate +
                 "\nValor de Capacidade de Passe: " + this.passe ;
+
+    }
+
+    public abstract Jogador clone();
+
+    public boolean equals(Object o) {
+        if(this==o){return true;}
+        if((o==null)||(this.getClass()!=o.getClass())){return false;}
+        Jogador j = (Jogador) o;
+        return (this.numero)==(j.getNum()) &&
+                (this.nome)==(j.getNome()) &&
+                (this.titular)==(j.getTitular()) &&
+                (this.velocidade)==(j.getVel()) &&
+                (this.resistencia)==(j.getRes()) &&
+                (this.destreza)==(j.getDes()) &&
+                (this.impulsao)==(j.getImp()) &&
+                (this.jogodecabeca)==(j.getCab()) &&
+                (this.remate)==(j.getRem()) &&
+                (this.passe)==(j.getPasse()) ;
+
 
     }
 

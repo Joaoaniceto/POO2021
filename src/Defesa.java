@@ -19,4 +19,10 @@ public class Defesa extends Jogador {
     public int compareTo(Jogador o) {
         return 0;
     }
+
+    public Defesa clone() {
+        return new Defesa(this);
+    }
+
+
 }

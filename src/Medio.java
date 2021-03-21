@@ -19,4 +19,9 @@ public class Medio extends Jogador {
     public int compareTo(Jogador o) {
         return 0;
     }
+
+    public Medio clone() {
+        return new Medio(this);
+    }
+
 }

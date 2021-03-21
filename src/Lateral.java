@@ -19,4 +19,8 @@ public class Lateral extends Jogador {
     public int compareTo(Jogador o) {
         return 0;
     }
+
+    public Lateral clone() {
+        return new Lateral(this);
+    }
 }

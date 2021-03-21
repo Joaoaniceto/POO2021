@@ -19,4 +19,8 @@ public class Avançado extends Jogador {
     public int compareTo(Jogador o) {
         return 0;
     }
+
+    public Avançado clone() {
+        return new Avançado(this);
+    }
 }

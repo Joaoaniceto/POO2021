@@ -39,4 +39,8 @@ public class GuardaRedes extends Jogador {
     public int compareTo(Jogador o) {
         return 0;
     }
+
+    public GuardaRedes clone() {
+        return new GuardaRedes(this);
+    }
 }
