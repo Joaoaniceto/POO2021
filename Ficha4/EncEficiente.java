@@ -1,159 +1,196 @@
-import java.sql.Struct;
 import java.time.LocalDate;
 import java.util.ArrayList;
-
+import java.util.Iterator;
 public class EncEficiente {
-    // instance variables
-    private String nomeCliente;
-    private String numFiscal;
-    private String moradaCliente;
-    private String numEncomenda;
-    private LocalDate dataEnc;
-    private ArrayList<LinhaEncomenda> linhasEnc;
+    // variáveis de instância 
+    private String nome;
+    private String nif;
+    private String morada;
+    private int nrEncomenda;
+    private LocalDate data;
+    private ArrayList<LinhaEncomenda> linhas;
 
-    // construtor por omissão
-    public EncEficiente() {
-        this.nomeCliente = "n/a";
-        this.numFiscal = "n/a";
-        this.moradaCliente = "n/a";
-        this.numEncomenda = "n/a";
-        this.dataEnc = LocalDate.now();
-        this.linhasEnc = new ArrayList<LinhaEncomenda>();
+    
+    
+    /**
+     * Construtores da classe EncEficiente:
+     * Omissão,Parametrizado e Cópia.
+     */
+    
+    public EncEficiente (){
+        this.nome="";
+        this.nif="";
+        this.morada="";
+        this.nrEncomenda=0;
+        this.data=null;
+        this.linhas=new ArrayList<LinhaEncomenda>();
     }
-
-    // construtor parametrizado
-    public EncEficiente(String nomeCliente, String numFiscal, String moradaCliente,
-                        String numEncomenda, LocalDate dataEnc, ArrayList<LinhaEncomenda> linhasEnc) {
-        this.nomeCliente = nomeCliente;
-        this.numFiscal = numFiscal;
-        this.moradaCliente = moradaCliente;
-        this.numEncomenda = numEncomenda;
-        this.dataEnc = dataEnc;
-        this.linhasEnc = linhasEnc;
+    
+    public EncEficiente(String nome,String nif,String morada,int nrEncomenda,LocalDate data,ArrayList<LinhaEncomenda> le){
+        this.nome=nome;
+        this.nif=nif;
+        this.morada=morada;
+        this.nrEncomenda=nrEncomenda;
+        this.data=data;
+        this.linhas=le;
     }
-
-    // construtor objeto
-    public EncEficiente(EncEficiente enc) {
-        this.nomeCliente = enc.getNome();
-        this.numFiscal = enc.getFiscal();
-        this.moradaCliente = enc.getMorada();
-        this.numEncomenda = enc.getEnc();
-        this.dataEnc = enc.getData();
-        this.linhasEnc = enc.getLinhas();
+    
+    public EncEficiente(EncEficiente e){
+        this.nome=e.getNome();
+        this.nif=e.getNif();
+        this.morada=e.getMorada();
+        this.nrEncomenda=e.getNrencomenda();
+        this.data=e.getData();
+        this.linhas=e.getLinhas();
     }
-
-    // gets
-    public String getNome() {
-        return this.nomeCliente;
+    
+    //Getters
+    public String getNome(){
+        return this.nome;
     }
-
-    public String getFiscal() {
-        return this.numFiscal;
+    
+    public String getNif(){
+        return this.nif;
     }
-
-    public String getMorada() {
-        return this.moradaCliente;
+    
+    public String getMorada(){
+        return this.morada;
     }
-
-    public String getEnc() {
-        return this.numEncomenda;
+    
+    public int getNrencomenda(){
+        return this.nrEncomenda;
     }
-
-    public LocalDate getData() {
-        return this.dataEnc;
+    
+    public LocalDate getData(){
+        return this.data;
     }
-
-    public ArrayList<LinhaEncomenda> getLinhas() {
-        return this.linhasEnc;
-    }
-
-    // sets
-    void getNome(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
-    }
-
-    void getFiscal(String numFiscal) {
-        this.numFiscal = numFiscal;
-    }
-
-    void getMorada(String moradaCliente) {
-        this.moradaCliente = moradaCliente;
-    }
-
-    void getEnc(String numEncomenda) {
-        this.numEncomenda = numEncomenda;
-    }
-
-    void getData(LocalDate dataEnc) {
-        this.dataEnc = dataEnc;
-    }
-
-    void getLinhas(ArrayList<LinhaEncomenda> linhasEnc) {
-        this.linhasEnc = linhasEnc;
-    }
-
-    // valor total da encomenda
-    public double calculaValorTotal() {
-        double valor = 0;
-        for (LinhaEncomenda linha : this.linhasEnc) {
-            valor += linha.getPreco();
+    
+    public ArrayList<LinhaEncomenda> getLinhas(){
+        ArrayList<LinhaEncomenda> clone=new ArrayList<LinhaEncomenda>();
+        for(LinhaEncomenda l:linhas)
+            clone.add(l);
+            return clone;
         }
-        return valor;
+        
+    //Setters
+    public void setNome(String nome){
+        this.nome=nome;
     }
-
-    // valor total dos descontos obtidos nos diversos produtos encomendados
-    public double calculaValorDesconto() {
-        double desconto = 0;
-        for (LinhaEncomenda linha : this.linhasEnc) {
-            desconto += (linha.getDesconto() * linha.getPreco());
+    
+    public void setNif(String nif){
+        this.nif=nif;
+    }
+    
+    public void setMorada(String morada){
+        this.morada=morada;
+    }
+    
+    public void setNrencomenda(int nrEncomenda){
+        this.nrEncomenda=nrEncomenda;
+    }
+    
+    public void setData(LocalDate data){
+        this.data=data;
+    }
+    
+    public void setLinhas(ArrayList<LinhaEncomenda> le){
+        this.linhas.clear();
+          for(LinhaEncomenda l: le)
+              this.linhas.add(l.clone());
         }
-        return desconto;
-    }
-
-    // o número total de produtos a receber
-    public int numeroTotalProdutos() {
-        int quant = 0;
-        for (LinhaEncomenda linha : this.linhasEnc) {
-            quant += linha.getQuantidade();
-        }
-        return quant;
-    }
-
-    // determina se um produto vai ser encomendado
-    public boolean existeProdutoEncomenda(String refProduto) {
-        boolean flag = false;
-        for (LinhaEncomenda linha : this.linhasEnc) {
-            if (linha.getReferencia()==refProduto){flag=true;break;}
-        }
-        return flag;
-    }
-
-    // adiciona uma nova linha de encomenda
-    public void adicionaLinha(LinhaEncomenda linha){
-        this.linhasEnc.add(linha);
-    }
-
-    // remove uma linha de encomenda dado a referência do produto
-    public void removeProduto(String codProd){
-        int c = 0;
-        for(LinhaEncomenda linha: this.linhasEnc){
-            if(linha.getReferencia()==codProd){
-                linhasEnc.remove(c);
-                break;
+    
+    /**
+     * Método Equals
+     */
+    
+    public boolean equals(Object o){
+        if(this==o)
+            return true;
+         else 
+          if(o==null||o.getClass()!=this.getClass())
+            return false;
+        EncEficiente e=(EncEficiente) o;
+        return(e.getNome()==this.nome &&
+               e.getNif()==this.nif &&
+               e.getMorada()==this.morada &&
+               e.getNrencomenda()==this.nrEncomenda &&
+               e.getData()==this.data &&
+               e.getLinhas()==this.linhas);
             }
-            else{c+=1;}
-        }
+            
+    /**
+     * Método Clone
+     */
+    public EncEficiente clone (){
+        return new EncEficiente(this);
     }
-
+    
+    /**
+     * Método StringBuilder
+     */
+    
     public String toString(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("\nNome Cliente: ").append(this.nomeCliente);
-        sb.append("\nNúmero Fiscal: ").append(this.numFiscal);
-        sb.append("\nMorada Cliente: ").append(this.moradaCliente);
-        sb.append("\nNúmero Encomenda: ").append(this.numEncomenda);
-        sb.append("\nData da Encomenda: ").append(this.dataEnc);
-        sb.append("\nLinhas da Encomenda: ").append(this.linhasEnc);
-        return sb.toString();
+      StringBuilder sb=new StringBuilder();
+      
+      sb.append("Nome: ");
+      sb.append(this.nome+"/n");
+      sb.append("Nif: ");
+      sb.append(this.nif+"/n");
+      sb.append("Morada: ");
+      sb.append(this.morada+"/n");
+      sb.append("Número da encomenda: ");
+      sb.append(this.nrEncomenda+"/n");
+      sb.append("Data da encomenda: ");
+      sb.append(this.data+"/n");
+      sb.append("Linhas da encomenda: ");
+      sb.append(this.linhas+"/n");
+      
+      return sb.toString();
     }
-
-}
+      
+    /**
+     * Método que determina o valor total da encomenda.
+     */
+    
+    public double calculaValorTotal(){
+        double total=0;
+        for(LinhaEncomenda l: linhas)
+            total+=l.calculaValorLinhaEnc();
+            
+            return total;
+        }
+    /**
+     * Método que determina o valor total dos descontos obtidos nos diversos
+     * produtos encomendados.
+     */
+    
+    public double calculaValorDesconto(){
+        double total=0;
+        for(LinhaEncomenda l:linhas)
+            total+=l.calculaValorDesconto();
+            
+            return total;
+        }
+        
+    /**
+     * Método que determina o número total de produtos a receber.
+     */
+    public int numeroTotalProdutos(){
+        int total=0;
+        for(LinhaEncomenda l:linhas)
+         total+=l.getQuantidade();
+         return total;
+        }
+    /**
+     * Método que determina se um produto vai ser encomendado.
+     */
+    public boolean existeProdutoEncomenda(String refProduto){
+        boolean flag=false;
+        Iterator<LinhaEncomenda> it=linhas.iterator();
+        LinhaEncomenda l;
+             
+            
+    return true;
+    }
+        
+ }
