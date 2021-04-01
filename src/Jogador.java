@@ -14,6 +14,7 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
 
     //construtor por omissão
     public Jogador(){
+        this.numero = 0;
         this.nome = "sem nome";
         this.titular = false;
         this.velocidade = 0;
@@ -26,8 +27,9 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
     }
 
     //construtor parametrizado
-    public Jogador(String nome,boolean titular,int vel,int res,
+    public Jogador(int numero, String nome,boolean titular,int vel,int res,
                    int des,int imp,int cab,int rem,int passe) {
+        this.numero = numero;
         this.nome = nome;
         this.titular = titular;
         this.velocidade = vel;
@@ -41,6 +43,7 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
 
     //construtor por objeto
     public Jogador(Jogador j){
+        this.numero = j.getNum();
         this.nome = j.getNome();
         this.titular = j.getTitular();
         this.velocidade = j.getVel();
@@ -75,7 +78,8 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
     public void setPasse(int passe){this.passe=passe;}
 
     public String toString(){
-        return "Nome do Jogador: " + this.nome +
+        return "\nNumero do Jogador: "+ this.numero +
+                "\nNome do Jogador: " + this.nome +
                 "\nÉ titular? " + this.titular +
                 "\nValor de Velocidade: " + this.velocidade +
                 "\nValor de Destreza: " + this.destreza +

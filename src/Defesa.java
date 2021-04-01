@@ -5,9 +5,9 @@ public class Defesa extends Jogador {
     }
 
     //construtor parametrizado
-    public Defesa(String nome,boolean titular,int vel,int res,
+    public Defesa(int numero,String nome,boolean titular,int vel,int res,
                    int des,int imp,int cab,int rem,int passe){
-        super(nome,titular,vel,res,des,imp,cab,rem,passe);
+        super(numero,nome,titular,vel,res,des,imp,cab,rem,passe);
     }
 
     //construtor por objeto
