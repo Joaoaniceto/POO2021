@@ -1,3 +1,8 @@
+ 
+
+
+ 
+
 public class Defesa extends Jogador {
     //construtor por omissão
     public Defesa(){
@@ -23,6 +28,8 @@ public class Defesa extends Jogador {
     public Defesa clone() {
         return new Defesa(this);
     }
-
+    public double gethabilidade(){
+     return super.getVel()*0.1 + super.getRes()*0.2+ super.getDes()*0.2 + super.getImp()*0.1 + super.getCab()*0.2 + super.getRem()*0.1 + super.getPasse()*0.1;
+      }
 
 }

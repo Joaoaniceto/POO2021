@@ -1,17 +1,21 @@
-public class AvanÃ§ado extends Jogador {
+ 
+
+ 
+
+public class Avançado extends Jogador {
     //construtor por omissÃ£o
-    public AvanÃ§ado(){
+    public Avançado(){
         super();
     }
 
     //construtor parametrizado
-    public AvanÃ§ado(String nome,boolean titular,int vel,int res,
+    public Avançado(String nome,boolean titular,int vel,int res,
                    int des,int imp,int cab,int rem,int passe){
         super(nome,titular,vel,res,des,imp,cab,rem,passe);
     }
 
     //construtor por objeto
-    public AvanÃ§ado(AvanÃ§ado l){
+    public Avançado(Avançado l){
         super(l);
     }
 
@@ -20,7 +24,10 @@ public class AvanÃ§ado extends Jogador {
         return 0;
     }
 
-    public AvanÃ§ado clone() {
-        return new AvanÃ§ado(this);
+    public Avançado clone() {
+        return new Avançado(this);
+    }
+    public double gethabilidade(){
+     return super.getVel()*0.2 + super.getRes()*0.05+ super.getDes()*0.05 + super.getImp()*0.1 + super.getCab()*0.2 + super.getRem()*0.3 + super.getPasse()*0.1;
     }
 }
