@@ -1,3 +1,9 @@
+ 
+
+
+
+ 
+
 public class GuardaRedes extends Jogador {
 
     //VARIAVEL DE INSTANCIA EXTRA
@@ -10,9 +16,9 @@ public class GuardaRedes extends Jogador {
     }
 
     //construtor parametrizado
-    public GuardaRedes(int numero,String nome,boolean titular,int vel,int res,
+    public GuardaRedes(String nome,boolean titular,int vel,int res,
                    int des,int imp,int cab,int rem,int passe,int elast){
-        super(numero,nome,titular,vel,res,des,imp,cab,rem,passe);
+        super(nome,titular,vel,res,des,imp,cab,rem,passe);
         this.elasticidade = elast;
     }
 
@@ -23,12 +29,12 @@ public class GuardaRedes extends Jogador {
     }
 
     public int getElast(){return this.elasticidade;}
+    
     public void setElast(int e){this.elasticidade = e; }
 
     public String toString(){
         StringBuilder s = new StringBuilder();
-        s.append(super.toString()); //acessar ao toSTring da superclasse(Veiculo) acrescentando informaçoes
-        //s.append(getPreco()); //fazer o resto
+        s.append(super.toString()); 
         s.append("\nValor de Elasticidade: ").append(getElast());
         s.append("\n");
         return s.toString();
@@ -42,5 +48,8 @@ public class GuardaRedes extends Jogador {
 
     public GuardaRedes clone() {
         return new GuardaRedes(this);
+    }
+    public double gethabilidade(){
+     return super.getVel()*0.1 + this.elasticidade*0.4 + super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getRem()*0.1 + super.getPasse()*0.1;
     }
 }
