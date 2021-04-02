@@ -35,7 +35,7 @@ public class GuardaRedes extends Jogador {
     public String toString(){
         StringBuilder s = new StringBuilder();
         s.append(super.toString()); 
-        s.append("\nValor de Elasticidade: ").append(getElast());
+        s.append("Valor de Elasticidade: ").append(getElast());
         s.append("\n");
         return s.toString();
     }

@@ -2,79 +2,81 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.io.Serializable;
 import java.util.List;
+import java.util.stream.IntStream;
 
-public class Equipa implements Comparable<Equipa>, Serializable{
+public class Equipa implements Comparable<Equipa>, Serializable {
     private String nome;
     private HashMap<Integer, Jogador> equipa;
 
-    public Equipa(){
+    public Equipa() {
         this.nome = "n/a";
         this.equipa = new HashMap();
     }
 
-    public Equipa (String nome, HashMap<Integer, Jogador> equipa){
-        this.nome=nome;
-        this.equipa=equipa;
+    public Equipa(String nome, HashMap<Integer, Jogador> equipa) {
+        this.nome = nome;
+        this.equipa = equipa;
     }
 
-    public Equipa (Equipa e){
+    public Equipa(Equipa e) {
         this.nome = e.getNome();
         this.equipa = e.getEquipa();
     }
 
-    public String getNome(){
+    public String getNome() {
         return this.nome;
     }
 
-    public HashMap getEquipa(){
+    public HashMap getEquipa() {
         return this.equipa;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setEquipa(HashMap<Integer, Jogador> nome){
-        this.equipa=nome;
+    public void setEquipa(HashMap<Integer, Jogador> nome) {
+        this.equipa = nome;
     }
 
-    public String toString(){
+    public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (Jogador j : this.equipa.values()){
+        for (Jogador j : this.equipa.values()) {
             sb.append(j.toString());
         }
         return sb.toString();
     }
 
-    public Equipa clone(){
+    public Equipa clone() {
         return new Equipa(this);
     }
 
 
-    public boolean equals(Object o){
-        if (this==o)
+    public boolean equals(Object o) {
+        if (this == o)
             return true;
-        if((o==null)||(this.getClass()!=o.getClass()))
+        if ((o == null) || (this.getClass() != o.getClass()))
             return false;
         Equipa e = (Equipa) o;
-        return (this.equipa) == (e.getEquipa()) && (this.nome)==(e.getNome());
+        return (this.equipa) == (e.getEquipa()) && (this.nome) == (e.getNome());
     }
 
-    public void addJogador(Jogador o){
-        this.equipa.put(o.getNum(),o.clone());
+    public void addJogador(Jogador o) {
+        this.equipa.put(o.getNum(), o.clone());
     }
 
-    public void removeJogador(Jogador o){
-        for(Jogador j : this.equipa.values()){
-            if(o.getNum()==j.getNum()){
+    public void removeJogador(Jogador o) {
+        for (Jogador j : this.equipa.values()) {
+            if (o.getNum() == j.getNum()) {
                 this.equipa.remove(o.getNum());
                 break;
             }
-        //falta uma exception bonita
+            //falta uma exception bonita
         }
     }
+
     //equipaAtual.transferenciaJogador(equipaAserTransferido,jogador da equipa atual)
-    public void transferenciaJogador(Equipa a,Jogador o) {
+    public void transferenciaJogador(Equipa a, Jogador o) {
         for (Jogador j : this.equipa.values()) {
             if (o.getNum() == j.getNum()) {
                 removeJogador(o);
@@ -85,12 +87,25 @@ public class Equipa implements Comparable<Equipa>, Serializable{
         }
     }
 
+    //jogador t é o jogador a jogar (que vai sair),
+    //jogador b é o jogador no banco (que vai entrar)
+    public void substituicao(Jogador t, Jogador b) {
+        int flag = 0;
+        for (Jogador j : this.equipa.values()) {
+            if ((t.getNum() == j.getNum()) || (b.getNum() == j.getNum()))
+                flag++;
+        }
+        if (flag == 2)
+            t.setTitular(false);
+            b.setTitular(true);
+        // missing exception
+
+    }
+
     @Override
-    public int compareTo(Equipa o) {
+    public int compareTo (Equipa o){
         return 0;
     }
+
+
 }
-
-
-
-

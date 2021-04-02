@@ -86,7 +86,8 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
                 "\nValor de Impulsão: " + this.impulsao +
                 "\nValor de Jogo de Cabeça: " + this.jogodecabeca +
                 "\nValor de Remate: " + this.remate +
-                "\nValor de Capacidade de Passe: " + this.passe ;
+                "\nValor de Capacidade de Passe: " + this.passe +
+                "\n";
 
     }
 
