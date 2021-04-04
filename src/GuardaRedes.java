@@ -1,8 +1,4 @@
- 
-
-
-
- 
+import java.util.ArrayList;
 
 public class GuardaRedes extends Jogador {
 
@@ -16,9 +12,9 @@ public class GuardaRedes extends Jogador {
     }
 
     //construtor parametrizado
-    public GuardaRedes(int numero,String nome,boolean titular,int vel,int res,
-                   int des,int imp,int cab,int rem,int passe,int elast){
-        super(numero,nome,titular,vel,res,des,imp,cab,rem,passe);
+    public GuardaRedes(int numero, String nome, boolean titular, ArrayList<Equipa> h, int vel, int res,
+                       int des, int imp, int cab, int rem, int passe, int elast){
+        super(numero,nome,titular,h,vel,res,des,imp,cab,rem,passe);
         this.elasticidade = elast;
     }
 

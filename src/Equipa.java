@@ -99,7 +99,19 @@ public class Equipa implements Comparable<Equipa>, Serializable {
             t.setTitular(false);
             b.setTitular(true);
         // missing exception
+    }
 
+    public double gethabilidades() {
+        double sum = 0;
+        int i=0;
+        for (Jogador j : this.equipa.values()) {
+            if (j.getTitular())
+                sum += j.gethabilidade();
+                i+=1;
+        }
+        double media=0;
+        media = sum/i;
+        return media;
     }
 
     @Override

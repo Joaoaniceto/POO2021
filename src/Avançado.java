@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Avançado extends Jogador {
     //construtor por omissão
     public Avançado(){
@@ -5,9 +7,9 @@ public class Avançado extends Jogador {
     }
 
     //construtor parametrizado
-    public Avançado(int numero,String nome,boolean titular,int vel,int res,
-                    int des,int imp,int cab,int rem,int passe){
-        super(numero,nome,titular,vel,res,des,imp,cab,rem,passe);
+    public Avançado(int numero, String nome, boolean titular, ArrayList<Equipa> h, int vel, int res,
+                    int des, int imp, int cab, int rem, int passe){
+        super(numero,nome,titular,h,vel,res,des,imp,cab,rem,passe);
     }
 
     //construtor por objeto
