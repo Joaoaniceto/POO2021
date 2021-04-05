@@ -87,18 +87,22 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         }
     }
 
-    //jogador t é o jogador a jogar (que vai sair),
-    //jogador b é o jogador no banco (que vai entrar)
+    //jogador t e b trocam os seus valores de Titular
     public void substituicao(Jogador t, Jogador b) {
         int flag = 0;
+        boolean b1 = t.getTitular();
+        boolean b2 = b.getTitular();
         for (Jogador j : this.equipa.values()) {
             if ((t.getNum() == j.getNum()) || (b.getNum() == j.getNum()))
                 flag++;
         }
-        if (flag == 2)
-            t.setTitular(false);
-            b.setTitular(true);
-        // missing exception
+        if ((flag == 2) && (t.getTitular()!=b.getTitular())){
+            t.setTitular(b2);
+            b.setTitular(b1);
+        }
+        else {
+            System.out.println("\nErro na substituição de jogadores (verifique se têm valor titular distinto ou se pertencem à mesma equipa)");
+        }
     }
 
     public double gethabilidades() {
