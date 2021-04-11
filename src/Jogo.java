@@ -53,7 +53,7 @@ public class Jogo {
     public void setEquipaVisitante(Equipa visitante) {this.equipaVisitante = visitante;}
     public void setSubsCasa(int sc) {this.subsCasa = sc;}
     public void setSubsVisitante(int sv) {this.subsVisitante = sv;}
-    public void setEstado(int e) {this.estado = e;} //falta dar bound no argumento, para que seja apenas possivel e=0, e=1 ou e=-1
+    public void setEstado(int e) {this.estado = e;} //falta dar bound no argumento, para que seja apenas possivel e=0, e=1 ou e=-1 // bounded argument
     public void setGolosCasa(int gc) {this.golosCasa = gc;}
     public void setGolosVisitante(int gv) {this.golosVisitante = gv;}
 
