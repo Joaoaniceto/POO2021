@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -57,7 +58,10 @@ public class main {
 
         System.out.println("\nhabilidade da seleção B: "+selecaoB.gethabilidades());
 
-        Jogo game = new Jogo(selecaoA,selecaoB,0,0,0,0);
+        ArrayList<Jogador> subV = new ArrayList<>();
+        ArrayList<Jogador> subC = new ArrayList<>();
+
+        Jogo game = new Jogo(selecaoA,selecaoB, subC,subV,0,0);
         System.out.println("\n"+game.toString());
 
 
