@@ -36,7 +36,7 @@ public class Medio extends Jogador {
         return new Medio(this);
     }
     public double gethabilidade(){
-     return super.getVel()*0.1 + super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getCab()*0.1 + super.getRem()*0.1 + super.getPasse()*0.2 + this.recupbolas*0.2;
+     return super.getVel()*0.1 + super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getCab()*0.1 + super.getRem()*0.1 + super.getPasse()*0.1 + this.recupbolas*0.3;
     }
 
 }
