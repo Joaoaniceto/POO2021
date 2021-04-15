@@ -11,6 +11,7 @@ public class Defesa extends Jogador {
     public Defesa(int numero, String nome, boolean titular, ArrayList<Equipa> h, int vel, int res,
                   int des, int imp, int cab, int rem, int passe, int corte){
         super(numero,nome,titular,h,vel,res,des,imp,cab,rem,passe);
+        this.corte=corte;
     }
 
     //construtor por objeto
