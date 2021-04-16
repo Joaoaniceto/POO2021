@@ -1,10 +1,13 @@
 import java.util.ArrayList;
 
 public class Defesa extends Jogador {
+    //variavel de instancia extra
+    private int corte;
+
     //construtor por omissão
     public Defesa(){
         super();
-        private int corte;
+        this.corte = 0;
     }
 
     //construtor parametrizado
@@ -17,9 +20,9 @@ public class Defesa extends Jogador {
     //construtor por objeto
     public Defesa(Defesa l){
         super(l);
-        this.corte=l.getCorte;
+        this.corte=l.getCorte();
     }
-    
+
     public int getCorte(){ return this.corte;}
     public void setCorte(int c){ this.corte=c;}
 

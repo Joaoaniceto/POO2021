@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Medio extends Jogador {
     //VARIAVEL DE INSTANCIA EXTRA
-    
     private int recupBolas;
     
     //construtor por omissão
@@ -25,7 +24,7 @@ public class Medio extends Jogador {
     }
     
     public int getRecup() { return this.recupBolas; }
-    public void setRecup(int r){ this.recupbolas = r; }
+    public void setRecup(int r){ this.recupBolas = r; }
 
     @Override
     public int compareTo(Jogador o) {
@@ -36,7 +35,7 @@ public class Medio extends Jogador {
         return new Medio(this);
     }
     public double gethabilidade(){
-     return super.getVel()*0.1 + super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getCab()*0.1 + super.getRem()*0.1 + super.getPasse()*0.1 + this.recupbolas*0.3;
+     return super.getVel()*0.1 + super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getCab()*0.1 + super.getRem()*0.1 + super.getPasse()*0.1 + this.recupBolas*0.3;
     }
 
 }

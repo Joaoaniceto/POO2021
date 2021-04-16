@@ -7,10 +7,10 @@ public class main {
 
         ArrayList<Equipa> h1 = new ArrayList<Equipa>();
 
-        Lateral l = new Lateral(3,"Pepe",true,h1,70,60,80,67,58,99,45);
-        Defesa d = new Defesa(13,"Ruben Dias",false,h1,60,60,60,60,60,60,60);
-        Medio m = new Medio(8,"João Moutinho",true,h1,80,80,80,80,80,80,80);
-        Avançado a = new Avançado(7,"Cristiano Ronaldo",true,h1,90,90,90,90,90,90,90);
+        Lateral l = new Lateral(3,"Pepe",true,h1,70,60,80,67,58,99,45,80);
+        Defesa d = new Defesa(13,"Ruben Dias",false,h1,60,60,60,60,60,60,60,70);
+        Medio m = new Medio(8,"João Moutinho",true,h1,80,80,80,80,80,80,80,90);
+        Avançado a = new Avançado(7,"Cristiano Ronaldo",true,h1,90,90,90,90,90,90,90,99);
         GuardaRedes g = new GuardaRedes(1,"Rui Patrício",false,h1,100,100,100,100,100,100,100,100);
 
         /* This is how to declare HashMap */
@@ -25,10 +25,10 @@ public class main {
 
         Equipa selecaoA= new Equipa("Seleção Portuguesa A",hmap);
 
-        Lateral l1 = new Lateral(4,"João",true,h1,70,60,80,67,58,99,45);
-        Defesa d1 = new Defesa(16,"Felipe",false,h1,60,60,60,60,60,60,60);
-        Medio m1 = new Medio(32,"Mário",true,h1,80,80,80,80,80,80,80);
-        Avançado a1 = new Avançado(12,"Rodrigo",true,h1,90,90,90,90,90,90,90);
+        Lateral l1 = new Lateral(4,"João",true,h1,70,60,80,67,58,99,45,86);
+        Defesa d1 = new Defesa(16,"Felipe",false,h1,60,60,60,60,60,60,60,77);
+        Medio m1 = new Medio(32,"Mário",true,h1,80,80,80,80,80,80,80,70);
+        Avançado a1 = new Avançado(12,"Rodrigo",true,h1,90,90,90,90,90,90,90,85);
         GuardaRedes g1 = new GuardaRedes(17,"Vítor",true,h1,100,100,100,100,100,100,100,100);
 
         HashMap<Integer, Jogador> hmap1 = new HashMap<Integer, Jogador>();
@@ -56,7 +56,8 @@ public class main {
 
         System.out.println("\n\nCR7: "+a.gethabilidade()+"\nJM: "+g.gethabilidade());
 
-        System.out.println("\nhabilidade da seleção B: "+selecaoB.gethabilidades());
+        System.out.println("\nhabilidade da seleção A: "+selecaoA.gethabilidades());
+        System.out.println("habilidade da seleção B: "+selecaoB.gethabilidades());
 
         ArrayList<Jogador> subV = new ArrayList<>();
         ArrayList<Jogador> subC = new ArrayList<>();

@@ -88,6 +88,8 @@ public class Equipa implements Comparable<Equipa>, Serializable {
     }
 
     //jogador t e b trocam os seus valores de Titular
+    //FALTA ATUALIZAÇÃO DINAMICA DA VARIAVEL SUBSCASA
+    //E SUBSVISITANTE NA CLASSE JOGO
     public void substituicao(Jogador t, Jogador b) {
         int flag = 0;
         boolean b1 = t.getTitular();

@@ -1,15 +1,18 @@
 import java.util.ArrayList;
 
 public class Avançado extends Jogador {
+    //variavel de intancia extra
+    private int drible;
+
     //construtor por omissão
     public Avançado(){
         super();
-        private int drible;
+        this.drible = 0;
     }
 
     //construtor parametrizado
     public Avançado(int numero, String nome, boolean titular, ArrayList<Equipa> h, int vel, int res,
-                    int des, int imp, int cab, int rem, int passe,  int drible){
+                    int des, int imp, int cab, int rem, int passe, int drible){
         super(numero,nome,titular,h,vel,res,des,imp,cab,rem,passe);
         this.drible=drible;
     }
@@ -17,11 +20,11 @@ public class Avançado extends Jogador {
     //construtor por objeto
     public Avançado(Avançado l){
         super(l);
-        this.corte= l.getDrible();
+        this.drible= l.getDrible();
     }
     
-    public int getDrible(){ return this.drible:}
-    public void setCorte(int d){ this.drible=d;}
+    public int getDrible(){ return this.drible; }
+    public void setDrible(int d){this.drible = d;}
 
     @Override
     public int compareTo(Jogador o) {
