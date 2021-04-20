@@ -1,16 +1,15 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+enum estado {por_iniciar,decorrer,terminado}
+
 public class Jogo {
     private Equipa equipaCasa;
     private Equipa equipaVisitante;
     private LocalDate data;
     private ArrayList<Jogador> subsCasa;
     private ArrayList<Jogador> subsVisitante;
-    private int estado;
-    private static final int por_iniciar = 0;
-    private static final int decorrer = 1;
-    private static final int terminado = -1;
+    private estado state;
     private int golosCasa , golosVisitante;
 
     public Jogo() {
@@ -18,7 +17,7 @@ public class Jogo {
         this.equipaVisitante = new Equipa();
         this.subsCasa = new ArrayList<>();
         this.subsVisitante = new ArrayList<>();
-        this.estado = por_iniciar;
+        this.state= estado.por_iniciar;
         this.golosCasa = 0;
         this.golosVisitante = 0;
     }
@@ -29,7 +28,7 @@ public class Jogo {
         this.data = LocalDate.now();
         this.subsCasa = subsCasa;
         this.subsVisitante = subsVisitante;
-        this.estado = por_iniciar;
+        this.state = estado.por_iniciar;
         this.golosCasa = golosCasa;
         this.golosVisitante = golosVisitante;
     }
@@ -40,7 +39,7 @@ public class Jogo {
         this.data = o.getData();
         this.subsCasa = o.getSubsCasa();
         this.subsVisitante = o.getSubsVisitante();
-        this.estado = por_iniciar;
+        this.state = estado.por_iniciar;
         this.golosCasa = o.getGolosCasa();
         this.golosVisitante = o.getGolosVisitante();
     }
@@ -50,7 +49,7 @@ public class Jogo {
     public LocalDate getData() {return this.data;}
     public ArrayList<Jogador> getSubsCasa() {return this.subsCasa;}
     public ArrayList<Jogador> getSubsVisitante() {return this.subsVisitante;}
-    public int getEstado() {return this.estado;}
+    public estado getEstado() {return this.state;}
     public int getGolosCasa() {return this.golosCasa;}
     public int getGolosVisitante() {return this.golosVisitante;}
 
@@ -59,7 +58,7 @@ public class Jogo {
     public void setData(LocalDate data) {this.data = data;};
     public void setSubsCasa(ArrayList<Jogador> sc) {this.subsCasa = sc;}
     public void setSubsVisitante(ArrayList<Jogador> sv) {this.subsVisitante = sv;}
-    public void setEstado(int e) {this.estado = e;} //falta dar bound no argumento, para que seja apenas possivel e=0, e=1 ou e=-1 // bounded argument
+    public void setEstado(estado e) {this.state = e;} //falta dar bound no argumento, para que seja apenas possivel e=0, e=1 ou e=-1 // bounded argument
     public void setGolosCasa(int gc) {this.golosCasa = gc;}
     public void setGolosVisitante(int gv) {this.golosVisitante = gv;}
 
@@ -70,7 +69,7 @@ public class Jogo {
         sb.append("\nData: "+this.data);
         sb.append("\nSubstituições da Equipa da Casa: ");        //falta percorrer a lista de jogadores
         sb.append("\nSubstituições da Equipa Visitante: ");     //substituidos e dar append do nome
-        sb.append("\nEstado do jogo: "+this.estado);
+        sb.append("\nEstado do jogo: "+this.state);
         sb.append("\nGolos da Equipa da Casa: "+this.golosCasa);
         sb.append("\nGolos da Equipa Visitante: "+this.golosVisitante);
         sb.append("\n");
@@ -93,7 +92,7 @@ public class Jogo {
                 (this.data) == (e.getData()) &&
                 (this.subsCasa) == (e.getSubsCasa()) &&
                 (this.subsVisitante) == (e.getSubsVisitante()) &&
-                (this.estado) == (e.getEstado()) &&
+                (this.state) == (e.getEstado()) &&
                 (this.golosCasa) == (e.getGolosCasa()) &&
                 (this.golosVisitante) == (e.getGolosVisitante());
 
