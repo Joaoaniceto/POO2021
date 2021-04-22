@@ -97,7 +97,6 @@ public class CasaInteligente {
             }
         }
         if (flag == 0) {
-            addRoom(quarto);
             ArrayList<SmartDevice> a = new ArrayList<SmartDevice>();
             a.add(sd);
             this.rooms.put(quarto, a);
