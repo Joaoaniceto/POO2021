@@ -1,7 +1,7 @@
 public class SmartSpeaker extends SmartDevice {
     private String canal;
     private int volume;
-    public static final int MAX = 10;
+    public static final int MAX = 20;
 
     public SmartSpeaker(){
         super();

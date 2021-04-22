@@ -5,7 +5,7 @@ public class SmartDevice implements Comparable<SmartDevice>, Serializable {
     private boolean estado; //ligado = true, desligado = false
 
     public SmartDevice() {
-        this.id = "n/a";
+        this.id = "";
         this.estado = false;
     }
 

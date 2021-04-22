@@ -51,11 +51,39 @@ public class CasaInteligente {
         this.rooms.put(quarto, a);
     }
 
-    public void addToRoom(String quarto,String ID){
-        ArrayList<SmartDevice> a = new ArrayList<SmartDevice>();
-        SmartDevice sd = new SmartDevice(ID);
-        a.add(sd);
-        this.rooms.put(quarto, a);
+    public void removeFromRoom(String quarto,String ID){
+        for(SmartDevice sd : this.rooms.get(quarto)){
+            if(ID==sd.getID()){
+                this.rooms.get(quarto).remove(sd);
+                break;
+            }
+        }
+    }
+
+    public void addToRoom(String quarto,String ID) {
+        int flag = 0;
+        for (HashMap.Entry<String, ArrayList<SmartDevice>> entry : this.rooms.entrySet()) {
+            for (SmartDevice sd : entry.getValue()) {
+                if (ID == sd.getID()) {
+                    if (quarto == entry.getKey()) {
+                        flag = 1;
+                        break;
+                    } else {
+                        flag = 1;
+
+                        addDevice(sd,quarto);
+
+                        removeFromRoom(entry.getKey(), ID);
+                    }
+                }
+            }
+        }
+        if (flag == 0) {
+            ArrayList<SmartDevice> a = new ArrayList<SmartDevice>();
+            SmartDevice sd = new SmartDevice(ID);
+            a.add(sd);
+            this.rooms.put(quarto, a);
+        }
     }
 
 
