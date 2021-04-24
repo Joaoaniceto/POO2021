@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 enum estado {por_iniciar,decorrer,terminado}
 
@@ -7,10 +8,12 @@ public class Jogo {
     private Equipa equipaCasa;
     private Equipa equipaVisitante;
     private LocalDate data;
-    private ArrayList<Jogador> subsCasa;
-    private ArrayList<Jogador> subsVisitante;
+    private ArrayList<Jogador> subsCasa;        //falta metodo atualiza subs casa
+    private ArrayList<Jogador> subsVisitante;  //falta metodo atualiza subs casa
     private estado state;
     private int golosCasa , golosVisitante;
+    private HashMap<String,ArrayList<Integer>> modeloCasa;
+    private HashMap<String,ArrayList<Integer>> modeloVisitante;
 
     public Jogo() {
         this.equipaCasa = new Equipa();
@@ -20,9 +23,11 @@ public class Jogo {
         this.state= estado.por_iniciar;
         this.golosCasa = 0;
         this.golosVisitante = 0;
+        this.modeloCasa = new HashMap<>();
+        this.modeloVisitante = new HashMap<>();
     }
 
-    public Jogo(Equipa casa,Equipa visitante,ArrayList<Jogador> subsCasa,ArrayList<Jogador> subsVisitante,int golosCasa,int golosVisitante){
+    public Jogo(Equipa casa,Equipa visitante,ArrayList<Jogador> subsCasa,ArrayList<Jogador> subsVisitante,int golosCasa,int golosVisitante,HashMap<String,ArrayList<Integer>> mc,HashMap<String,ArrayList<Integer>> mv){
         this.equipaCasa = casa;
         this.equipaVisitante = visitante;
         this.data = LocalDate.now();
@@ -31,6 +36,8 @@ public class Jogo {
         this.state = estado.por_iniciar;
         this.golosCasa = golosCasa;
         this.golosVisitante = golosVisitante;
+        this.modeloCasa = mc;
+        this.modeloVisitante = mv;
     }
 
     public Jogo(Jogo o){
@@ -42,6 +49,8 @@ public class Jogo {
         this.state = estado.por_iniciar;
         this.golosCasa = o.getGolosCasa();
         this.golosVisitante = o.getGolosVisitante();
+        this.modeloCasa = o.getModeloCasa();
+        this.modeloVisitante = o.getModeloVisitante();
     }
 
     public Equipa getCasa() {return this.equipaCasa;}
@@ -52,6 +61,8 @@ public class Jogo {
     public estado getEstado() {return this.state;}
     public int getGolosCasa() {return this.golosCasa;}
     public int getGolosVisitante() {return this.golosVisitante;}
+    public HashMap<String,ArrayList<Integer>> getModeloCasa() {return this.modeloCasa;}
+    public HashMap<String,ArrayList<Integer>> getModeloVisitante() {return this.modeloVisitante;}
 
     public void setEquipaCasa(Equipa casa) {this.equipaCasa = casa; }
     public void setEquipaVisitante(Equipa visitante) {this.equipaVisitante = visitante;}
@@ -61,6 +72,9 @@ public class Jogo {
     public void setEstado(estado e) {this.state = e;} //falta dar bound no argumento, para que seja apenas possivel e=0, e=1 ou e=-1 // bounded argument
     public void setGolosCasa(int gc) {this.golosCasa = gc;}
     public void setGolosVisitante(int gv) {this.golosVisitante = gv;}
+    public void setModeloCasa(HashMap<String,ArrayList<Integer>> mc) {this.modeloCasa = mc;}
+    public void setModeloVisitante(HashMap<String,ArrayList<Integer>> mv) {this.modeloVisitante = mv;}
+
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -72,6 +86,8 @@ public class Jogo {
         sb.append("\nEstado do jogo: "+this.state);
         sb.append("\nGolos da Equipa da Casa: "+this.golosCasa);
         sb.append("\nGolos da Equipa Visitante: "+this.golosVisitante);
+        sb.append("\nModelo Tático Equipa Casa: "+this.modeloCasa);
+        sb.append("\nModelo Tático Equipa Visitante: "+this.modeloVisitante);
         sb.append("\n");
         return sb.toString();
     }
@@ -95,8 +111,16 @@ public class Jogo {
                 (this.state) == (e.getEstado()) &&
                 (this.golosCasa) == (e.getGolosCasa()) &&
                 (this.golosVisitante) == (e.getGolosVisitante());
-
     }
+
+    public void estadoModeloCasa(String pos,Integer ID,Integer order){
+        this.modeloCasa.get(pos).set(order,ID);
+    }
+
+    public void estadoModeloVisitante(String pos,Integer ID,Integer order){
+        this.modeloVisitante.get(pos).set(order,ID);
+    }
+
 
 
 }

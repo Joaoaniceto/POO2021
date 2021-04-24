@@ -63,6 +63,7 @@ public class Equipa implements Comparable<Equipa>, Serializable {
 
     public void addJogador(Jogador o) {
         this.equipa.put(o.getNum(), o.clone());
+        o.atualizaHist(this);
     }
 
     public void removeJogador(Jogador o) {
@@ -119,6 +120,7 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         media = sum/i;
         return media;
     }
+
 
     @Override
     public int compareTo (Equipa o){

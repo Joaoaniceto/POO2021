@@ -45,6 +45,15 @@ public class main {
         selecaoB.removeJogador(g1);
         selecaoA.addJogador(g1);
         selecaoA.transferenciaJogador(selecaoB,a);
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("Historial do Cristiano Ronaldo: \n");
+        for(Equipa eq : a.getHistorial()) {
+            sb.append(eq.getNome());
+            sb.append("\n");
+        }
+        System.out.println(sb.toString());
+
         selecaoA.substituicao(l,d);
 
         ArrayList<Equipa> array = new ArrayList<Equipa>();
@@ -62,9 +71,26 @@ public class main {
         ArrayList<Jogador> subV = new ArrayList<>();
         ArrayList<Jogador> subC = new ArrayList<>();
 
-        Jogo game = new Jogo(selecaoA,selecaoB, subC,subV,0,0);
-        System.out.println("\n"+game.toString());
+        HashMap<String,ArrayList<Integer>> modeloC = new HashMap<>();
+        HashMap<String,ArrayList<Integer>> modeloV = new HashMap<>();
 
+        ArrayList<Integer> i = new ArrayList<>();
+        i.add(0);
+
+        ArrayList<Integer> j = new ArrayList<>();
+        j.add(0);
+        j.add(0);
+
+        modeloC.put("guarda-redes",i);
+        modeloC.put("defesas",j);
+
+        Jogo game = new Jogo(selecaoA,selecaoB, subC,subV,0,0,modeloC,modeloV);
+
+        game.estadoModeloCasa("guarda-redes",1,0);
+        game.estadoModeloCasa("defesas",13,0);
+        game.estadoModeloCasa("defesas",32,1);
+
+        System.out.println("\n"+game.toString());
 
     }
 }
