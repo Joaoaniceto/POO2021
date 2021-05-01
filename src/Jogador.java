@@ -126,7 +126,7 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
 
     }
 
-    public abstract double gethabilidade();
+    public abstract double gethabilidade(String posicao);
 
     public void atualizaHist(Equipa eq) {
         this.historial.add(eq.clone());

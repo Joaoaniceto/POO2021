@@ -26,7 +26,7 @@ public class main {
         Equipa selecaoA= new Equipa("Seleção Portuguesa A",hmap);
 
         Lateral l1 = new Lateral(4,"João",true,h1,70,60,80,67,58,99,45,86);
-        Defesa d1 = new Defesa(16,"Felipe",false,h1,60,60,60,60,60,60,60,77);
+        Defesa d1 = new Defesa(16   ,"Felipe",false,h1,60,60,60,60,60,60,60,77);
         Medio m1 = new Medio(32,"Mário",true,h1,80,80,80,80,80,80,80,70);
         Avançado a1 = new Avançado(12,"Rodrigo",true,h1,90,90,90,90,90,90,90,85);
         GuardaRedes g1 = new GuardaRedes(17,"Vítor",true,h1,100,100,100,100,100,100,100,100);
@@ -63,7 +63,7 @@ public class main {
 
         System.out.println(equipas.toString());
 
-        System.out.println("\n\nCR7: "+a.gethabilidade()+"\nJM: "+g.gethabilidade());
+        System.out.println("\n\nCR7: "+a.gethabilidade("")+"\n");
 
         System.out.println("\nhabilidade da seleção A: "+selecaoA.gethabilidades());
         System.out.println("habilidade da seleção B: "+selecaoB.gethabilidades());
