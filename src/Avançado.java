@@ -5,7 +5,7 @@ public class Avançado extends Jogador {
     private int drible;
 
     //construtor por omissão
-    public Avançado(){
+    public Avançado(int i, String name, boolean b, ArrayList<Equipa> hist, int parseInt, int anInt, int i1, int parseInt1, int anInt1, int i2, int parseInt2, int anInt2, int i3){
         super();
         this.drible = 0;
     }
@@ -57,4 +57,20 @@ public class Avançado extends Jogador {
         }
 
     }
+
+    public static Avançado parse(String input){
+        ArrayList<Equipa> hist = new ArrayList<Equipa>();
+        String[] campos = input.split(",");
+        String name = campos[0];
+        return new Avançado(Integer.parseInt(campos[1]),name,false,hist,
+                Integer.parseInt(campos[2]),
+                Integer.parseInt(campos[3]),
+                Integer.parseInt(campos[4]),
+                Integer.parseInt(campos[5]),
+                Integer.parseInt(campos[6]),
+                Integer.parseInt(campos[7]),
+                Integer.parseInt(campos[8]),
+                70);
+    }
+
 }

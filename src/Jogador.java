@@ -2,6 +2,13 @@ import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+/*
+acrescentei um metodo em todas as subsclasses para o parser funcionar bem.
+cada variavel de instancia especial é repetida com o mesmo valor,
+porque essas variaveis extra não estao no ficheiro origem dos stores,
+logo temos q arranjar uma forma de randomizar isso.
+ */
+
 public abstract class Jogador implements Comparable<Jogador>, Serializable {
     private int numero;
     private String nome;
@@ -131,5 +138,16 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
     public void atualizaHist(Equipa eq) {
         this.historial.add(eq.clone());
     }
+
+    /*public static Jogador parse(String input){
+    String[] campos = input.split(",");
+    return new Jogador(campos[0], Integer.parseInt(campos[1]), campos[2],
+                                  Integer.parseInt(campos[3]),
+                                  Integer.parseInt(campos[4]),
+                                  Integer.parseInt(campos[5]),
+                                  Integer.parseInt(campos[6]),
+                                  Integer.parseInt(campos[7]),
+                                  Integer.parseInt(campos[8]));
+    }*/
 
 }

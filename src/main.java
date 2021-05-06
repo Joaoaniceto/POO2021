@@ -84,13 +84,13 @@ public class main {
         modeloC.put("guarda-redes",i);
         modeloC.put("defesas",j);
 
-        Jogo game = new Jogo(selecaoA,selecaoB, subC,subV,0,0,modeloC,modeloV);
+        //Jogo game = new Jogo(selecaoA,selecaoB, subC,subV,0,0,modeloC,modeloV);
 
-        game.estadoModeloCasa("guarda-redes",1,0);
-        game.estadoModeloCasa("defesas",13,0);
-        game.estadoModeloCasa("defesas",32,1);
+        //game.estadoModeloCasa("guarda-redes",1,0);
+        //game.estadoModeloCasa("defesas",13,0);
+        //game.estadoModeloCasa("defesas",32,1);
 
-        System.out.println("\n"+game.toString());
+        //System.out.println("\n"+game.toString());
 
     }
 }

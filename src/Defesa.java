@@ -5,7 +5,7 @@ public class Defesa extends Jogador {
     private int corte;
 
     //construtor por omissão
-    public Defesa(){
+    public Defesa(int i, String name, boolean b, ArrayList<Equipa> hist, int parseInt, int anInt, int i1, int parseInt1, int anInt1, int i2, int parseInt2, int anInt2, int i3){
         super();
         this.corte = 0;
     }
@@ -57,6 +57,19 @@ public class Defesa extends Jogador {
 
     }
 
-
+    public static Defesa parse(String input){
+        ArrayList<Equipa> hist = new ArrayList<Equipa>();
+        String[] campos = input.split(",");
+        String name = campos[0];
+        return new Defesa(Integer.parseInt(campos[1]),name,false,hist,
+                Integer.parseInt(campos[2]),
+                Integer.parseInt(campos[3]),
+                Integer.parseInt(campos[4]),
+                Integer.parseInt(campos[5]),
+                Integer.parseInt(campos[6]),
+                Integer.parseInt(campos[7]),
+                Integer.parseInt(campos[8]),
+                70);
+    }
 
 }

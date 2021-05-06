@@ -13,6 +13,11 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         this.equipa = new HashMap();
     }
 
+    public Equipa(String nome){
+        this.nome = nome;
+        this.equipa = new HashMap();
+    }
+
     public Equipa(String nome, HashMap<Integer, Jogador> equipa) {
         this.nome = nome;
         this.equipa = equipa;
@@ -122,6 +127,12 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         media = sum/i;
         return media;
     }
+
+    public static Equipa parse(String input){
+        String[] campos = input.split(",");
+        return new Equipa(campos[0]);
+    }
+
 
 
     @Override
