@@ -1,0 +1,56 @@
+Stand Automoveis
+
+Marca: Mitsubishi
+Modelo: Eclipse
+Matrícula: RF-45-TE
+Ano: 1990
+Velocidade Média: 175.0
+Preço por Km: 30.0
+Classificação: [8, 10, 7]
+Km: 0
+Km Último: 0
+
+
+Marca: Mitsubishi
+Modelo: Evolution
+Matrícula: TR-45-DG
+Ano: 2007
+Velocidade Média: 230.0
+Preço por Km: 50.0
+Classificação: [8, 10, 7]
+Km: 0
+Km Último: 0
+
+
+Marca: Honda
+Modelo: RX7
+Matrícula: AB-56-79
+Ano: 1978
+Velocidade Média: 200.0
+Preço por Km: 50.0
+Classificação: [8, 10, 7]
+Km: 0
+Km Último: 0
+
+
+Marca: Honda
+Modelo: RX8
+Matrícula: ZM-56-80
+Ano: 1978
+Velocidade Média: 200.0
+Preço por Km: 50.0
+Classificação: [8, 10, 7]
+Km: 0
+Km Último: 0
+
+
+Marca: BMW
+Modelo: M5 E30
+Matrícula: 22-QE-RT
+Ano: 1988
+Velocidade Média: 150.0
+Preço por Km: 60.0
+Classificação: [8, 10, 7]
+Km: 0
+Km Último: 0
+
