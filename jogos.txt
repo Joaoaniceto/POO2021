@@ -1,0 +1,737 @@
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Mendelssohn F. C.
+Data: 2021-03-30
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Sporting Club Dvorak
+Data: 2021-04-02
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Debussy Athletic
+Equipa visitante: Stravinsky Athletic
+Data: 2021-03-14
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 5
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Beethoven F. C.
+Data: 2021-02-05
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mendelssohn F. C.
+Equipa visitante: Bartok F. C.
+Data: 2021-02-17
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bach F. C.
+Equipa visitante: Sporting Club Shostakovich
+Data: 2021-02-02
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Beethoven F. C.
+Equipa visitante: Handel Athletic
+Data: 2021-01-01
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Wagner Athletic
+Equipa visitante: Stravinsky Athletic
+Data: 2021-01-29
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Wagner Athletic
+Data: 2021-01-04
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Stravinsky Athletic
+Data: 2021-01-01
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Sporting Club Schubert
+Data: 2021-03-28
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 4
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Brahms F. C.
+Equipa visitante: Sporting Club Chopin
+Data: 2021-01-27
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-03-14
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Sporting Club Chopin
+Data: 2021-02-15
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 5
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Debussy Athletic
+Data: 2021-03-12
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Beethoven F. C.
+Equipa visitante: Bach F. C.
+Data: 2021-03-31
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Wagner Athletic
+Data: 2021-02-27
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Brahms F. C.
+Equipa visitante: Vivaldi F. C.
+Data: 2021-01-25
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Mendelssohn F. C.
+Data: 2021-02-03
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Handel Athletic
+Equipa visitante: Mahler Athletic
+Data: 2021-02-05
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Sporting Club Dvorak
+Data: 2021-02-02
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Handel Athletic
+Data: 2021-01-05
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Debussy Athletic
+Data: 2021-03-23
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Debussy Athletic
+Equipa visitante: Bartok F. C.
+Data: 2021-02-15
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Mendelssohn F. C.
+Data: 2021-01-20
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Dvorak
+Equipa visitante: Vivaldi F. C.
+Data: 2021-02-17
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Vivaldi F. C.
+Data: 2021-02-23
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Schumann Athletic
+Data: 2021-03-09
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Handel Athletic
+Equipa visitante: Vivaldi F. C.
+Data: 2021-04-01
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Beethoven F. C.
+Equipa visitante: Sporting Club Dvorak
+Data: 2021-04-06
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Brahms F. C.
+Data: 2021-01-01
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Debussy Athletic
+Equipa visitante: Sporting Club Dvorak
+Data: 2021-01-18
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Sporting Club Shostakovich
+Data: 2021-01-07
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Wagner Athletic
+Data: 2021-04-03
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-04-04
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mendelssohn F. C.
+Equipa visitante: Schumann Athletic
+Data: 2021-03-05
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Vivaldi F. C.
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-01-27
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Brahms F. C.
+Equipa visitante: Sporting Club Shostakovich
+Data: 2021-01-07
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Bach F. C.
+Data: 2021-01-14
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Mahler Athletic
+Data: 2021-03-18
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mahler Athletic
+Equipa visitante: Sporting Club Schubert
+Data: 2021-04-02
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bach F. C.
+Equipa visitante: Stravinsky Athletic
+Data: 2021-03-09
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Stravinsky Athletic
+Data: 2021-01-25
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Beethoven F. C.
+Data: 2021-01-11
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mendelssohn F. C.
+Equipa visitante: Bach F. C.
+Data: 2021-02-25
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Vivaldi F. C.
+Equipa visitante: Handel Athletic
+Data: 2021-04-05
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 5
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Vivaldi F. C.
+Equipa visitante: Beethoven F. C.
+Data: 2021-04-05
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Dvorak
+Equipa visitante: Stravinsky Athletic
+Data: 2021-03-17
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Sporting Club Shostakovich
+Data: 2021-01-21
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Handel Athletic
+Data: 2021-04-02
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Mozart F. C.
+Data: 2021-03-12
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Wagner Athletic
+Data: 2021-04-09
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 4
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-04-02
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 4
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bach F. C.
+Equipa visitante: Vivaldi F. C.
+Data: 2021-02-12
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Handel Athletic
+Data: 2021-04-07
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Vivaldi F. C.
+Equipa visitante: Brahms F. C.
+Data: 2021-01-13
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Handel Athletic
+Data: 2021-02-08
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Vivaldi F. C.
+Data: 2021-03-28
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bach F. C.
+Equipa visitante: Brahms F. C.
+Data: 2021-01-23
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Bartok F. C.
+Data: 2021-01-16
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Sporting Club Chopin
+Data: 2021-01-22
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 4
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Mendelssohn F. C.
+Data: 2021-02-22
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mendelssohn F. C.
+Equipa visitante: Sporting Club Schubert
+Data: 2021-01-14
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Mahler Athletic
+Data: 2021-02-06
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 5
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Mahler Athletic
+Data: 2021-03-27
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Beethoven F. C.
+Equipa visitante: Brahms F. C.
+Data: 2021-01-06
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
+Equipa da casa: Stravinsky Athletic
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-01-16
+Substituições da Equipa da Casa: 
+Substituições da Equipa Visitante: 
+Estado do jogo: null
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+
