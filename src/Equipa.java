@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 public class Equipa implements Comparable<Equipa>, Serializable {
-    private String nome;
-    private HashMap<Integer, Jogador> equipa;
+    private String nome;                        //nome da equipa
+    private HashMap<Integer, Jogador> equipa;   //(numero,jogador)
 
     public Equipa() {
         this.nome = "n/a";

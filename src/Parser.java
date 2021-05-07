@@ -1,4 +1,7 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -9,9 +12,9 @@ import java.util.Map;
 
 public class Parser {
 
-    public static void parse() throws LinhaIncorretaException {
-        List<String> linhas = lerFicheiro("output.txt");
-        Map<String, Equipa> equipas = new HashMap<>(); //nome, equipa
+    public static void parse() throws LinhaIncorretaException, FileNotFoundException, IOException {
+        List<String> linhas = lerFicheiro("input.txt");
+        Equipas equipas = new Equipas(); //nome, equipa
         Map<Integer, Jogador> jogadores = new HashMap<>(); //numero, jogador
         List<Jogo> jogos = new ArrayList<>();
         Equipa ultima = null; Jogador j = null;
@@ -21,7 +24,7 @@ public class Parser {
             switch(linhaPartida[0]){
                 case "Equipa":
                     Equipa e = Equipa.parse(linhaPartida[1]);
-                    equipas.put(e.getNome(), e);
+                    equipas.addEquipa(e);
                     ultima = e;
                     break;
                 case "Guarda-Redes":
@@ -64,13 +67,30 @@ public class Parser {
             }
         }
 
+
+        PrintWriter pw1 = new PrintWriter(new FileOutputStream("equipas.txt"));
+        for(Equipa e : equipas.equipas.values()) {
+            pw1.println(e.getNome());
+        }
+        pw1.close();
+
+
         //debug
-        for (Equipa e: equipas.values()){
+        for (Equipa e: equipas.equipas.values()){
+            System.out.println(e.getNome());
             System.out.println(e.toString());
         }
-        for (Jogo jog: jogos){
-            System.out.println(jog.toString());
+
+
+        PrintWriter pw2 = new PrintWriter(new FileOutputStream("jogos.txt"));
+        for(Jogo jog : jogos) {
+            pw2.println(jog.toString());
         }
+        pw2.close();
+
+        //for (Jogo jog: jogos){
+        //    System.out.println(jog.toString());
+        //}
 
 
     }
@@ -81,6 +101,9 @@ public class Parser {
         catch(IOException exc) { lines = new ArrayList<>(); }
         return lines;
     }
+
+
+
 
 
 }

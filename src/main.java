@@ -2,9 +2,10 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class main {
-    public static void main(String[] args) {
 
+public class main {
+    public static void main(String[] args) throws Exception {
+        /*
         ArrayList<Equipa> h1 = new ArrayList<Equipa>();
 
         Lateral l = new Lateral(3,"Pepe",true,h1,70,60,80,67,58,99,45,80);
@@ -12,11 +13,12 @@ public class main {
         Medio m = new Medio(8,"João Moutinho",true,h1,80,80,80,80,80,80,80,90);
         Avançado a = new Avançado(7,"Cristiano Ronaldo",true,h1,90,90,90,90,90,90,90,99);
         GuardaRedes g = new GuardaRedes(1,"Rui Patrício",false,h1,100,100,100,100,100,100,100,100);
-
+        */
         /* This is how to declare HashMap */
-        HashMap<Integer, Jogador> hmap = new HashMap<Integer, Jogador>();
+        //HashMap<Integer, Jogador> hmap = new HashMap<Integer, Jogador>();
 
         /*Adding elements to HashMap*/
+        /*
         hmap.put(l.getNum(), l);
         hmap.put(d.getNum(), d);
         hmap.put(m.getNum(), m);
@@ -32,8 +34,9 @@ public class main {
         GuardaRedes g1 = new GuardaRedes(17,"Vítor",true,h1,100,100,100,100,100,100,100,100);
 
         HashMap<Integer, Jogador> hmap1 = new HashMap<Integer, Jogador>();
-
+        */
         /*Adding elements to HashMap*/
+        /*
         hmap1.put(l1.getNum(), l1);
         hmap1.put(d1.getNum(), d1);
         hmap1.put(m1.getNum(), m1);
@@ -91,6 +94,7 @@ public class main {
         //game.estadoModeloCasa("defesas",32,1);
 
         //System.out.println("\n"+game.toString());
-
+        */
+        Parser.parse();
     }
 }
