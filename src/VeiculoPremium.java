@@ -16,6 +16,12 @@ public class VeiculoPremium extends Veiculo implements BonificaKms {
         this.pontosAcumulados = 0;
         
     }
+
+    public VeiculoPremium(String marca,String modelo,String matricula,int ano,int kms){
+        super(marca,modelo,matricula,ano,kms);
+    }
+
+
     public VeiculoPremium(String marca,String modelo,String matricula,int ano,double velociademedia,
                           double precokm,ArrayList<Integer> classificacao,int kms,int kmsUltimo,int taxa,int p_atrib,int p_acum){
         super(marca,modelo,matricula,ano,velociademedia,precokm,classificacao,kms,kmsUltimo);

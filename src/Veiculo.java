@@ -48,6 +48,18 @@ public class Veiculo implements Comparable<Veiculo> , Serializable {
         this.kmsUltimo = 0;
     }
 
+    public Veiculo(String marca,String modelo,String matricula,int ano,int kms){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.matricula = matricula;
+        this.ano = ano;
+        this.velociademedia = 0;
+        this.precokm = 0;
+        this.classificacao = new ArrayList<>();
+        this.kms = kms;
+        this.kmsUltimo = 0;
+    }
+
     public Veiculo(String marca, String modelo, String matricula,
                    int ano, double velociademedia, double precokm,
                    ArrayList<Integer> classificacao,

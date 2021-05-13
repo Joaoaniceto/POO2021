@@ -17,8 +17,14 @@ public class VeiculoNormal extends Veiculo
         super();
         
     }
+
+    public VeiculoNormal(String marca,String modelo,String matricula,int ano,int kms) {
+        super(marca,modelo,matricula,ano,kms);
+    }
+
     public VeiculoNormal(String marca,String modelo,String matricula,int ano,double velociademedia,double precokm,ArrayList<Integer> classificacao,int kms,int kmsUltimo){
-    super(marca,modelo,matricula,ano,velociademedia,precokm,classificacao,kms,kmsUltimo);
+
+        super(marca,modelo,matricula,ano,velociademedia,precokm,classificacao,kms,kmsUltimo);
     
     }
     public VeiculoNormal(VeiculoNormal a){

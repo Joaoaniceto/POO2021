@@ -16,6 +16,10 @@ public class AutocarroInteligente extends Veiculo implements BonificaKms
         this.pontosAcumulados = 0;
     }
 
+    public AutocarroInteligente(String marca,String modelo,String matricula,int ano,int kms) {
+        super(marca,modelo,matricula,ano,kms);
+    }
+
     public AutocarroInteligente(String marca,String modelo,String matricula,int ano,double velociademedia,
                                 double precokm,ArrayList<Integer> classificacao,int kms,int kmsUltimo,int ocup,int p_atrib,int p_acum)
     {
