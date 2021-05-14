@@ -10,7 +10,8 @@ public class DriveItDelegate {
     public DriveItDelegate(DriveIt model){
         this.model = model;
         this.menuPrincipal = new Menu(new String[] {"Gestão de Veiculos",
-                                                    "Alterar nome da Empresa"});
+                                                    "Registar um Veículo",
+                                                    "Alterar nome da Empresa",});
         this.menuVeiculos = new Menu(new String[] {"Listar Veiculos"});
         this.scannerIn = new Scanner(System.in);
     }
@@ -23,10 +24,13 @@ public class DriveItDelegate {
             switch (this.menuPrincipal.getOpcao()) {
                 case 1:
                     System.out.println("Entrei no Gestão de Veiculos");
-                    break;
+                    listarVeiculos();
                 case 2:
+                    System.out.println("Aqui pode registar um veículo");
+                    registaAluger();
+                case 3:
                     System.out.println("Entrei na mudança de nome");
-                    break;
+                    mudaNome();
             }
         } while (this.menuPrincipal.getOpcao() != 0) ;
             System.out.println("Até breve!");
@@ -75,12 +79,7 @@ public class DriveItDelegate {
                 int kms;
                 System.out.println("Kms: ");
                 kms = Integer.parseInt(scannerIn.nextLine());
-                //try {
-                //    this.model.registarAluguer(mat,kms);
-                //}
-                //catch (VeiculoException e) {
-                //    System.out.println("Algo muito errado aconteceu.");
-                //}
+                this.model.registarAluguer(mat,kms);
             } while (menuMatriculas.getOpcao() != 0);
 
 

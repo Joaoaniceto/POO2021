@@ -1,10 +1,14 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class DriveItApp {
     public static void main(String args[]){
         DriveIt m;
-
+        ArrayList<Integer> classif = new ArrayList<Integer>();
+        classif.add(8);
+        classif.add(10);
+        classif.add(7);
         //carregar o estado (model)
         try {
             m = DriveIt.carregaEstado("DriveIt.obj");
@@ -12,21 +16,37 @@ public class DriveItApp {
         catch (FileNotFoundException e){
             m = new DriveIt();
 
-            String marca = "marca";
-            String modelo = "modelo";
+            String marca = "Honda";
+            String modelo = "RX7";
             Veiculo v;
 
             for(int i=0; i<2; i++){
-                v = new VeiculoNormal(marca+i,modelo+1,"matricula o"+1,2020,70);
+                v = new Veiculo("Honda","RX7","AB-56-79",1978,200.0,50.0,classif,0,0);
                 m.adiciona(v);
             }
 
-            marca = "marcaP";
-            modelo = "modelo$$$";
+            marca = "Mitsubishi";
+            modelo = "Eclipse";
             for(int i=0; i<2; i++){
-                v = new VeiculoPremium(marca+i,modelo+1,"matricula p"+1,2020,70);
+                v = new Veiculo("Mitsubishi","Eclipse","RF-45-TE",1990,175.0,30.0,classif,0,0);
                 m.adiciona(v);
             }
+
+            marca = "BMW";
+            modelo = "M5 E30";
+            for(int i=0; i<2; i++){
+                v = new Veiculo("BMW","M5 E30","22-QE-RT",1988,150.0,60.0,classif,0,0);
+                m.adiciona(v);
+            }
+
+            marca = "Mitsubishi";
+            modelo = "Evolution";
+            for(int i=0; i<2; i++){
+                v = new Veiculo("Mitsubishi","Evolution","TR-45-DG",2007,230.0,50.0,classif,0,0);
+                m.adiciona(v);
+            }
+
+
 
             marca = "bus";
             modelo = "BUSModel";
