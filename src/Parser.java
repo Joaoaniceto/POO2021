@@ -10,13 +10,26 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Parser {
+public class Parser implements Cloneable {
+    //INSTANCE VARIABLES
+    public static Equipas equipas; //nome, equipa
+    public static Map<Integer, Jogador> jogadores; //numero, jogador
+    public static List<Jogo> jogos;
+
+    public Parser() {
+        this.equipas = new Equipas();
+        this.jogadores = new HashMap<>();
+        this.jogos = new ArrayList<>();
+    }
+
+    public Parser (Parser obj){
+        this.equipas = obj.getEquipas();
+        this.jogadores = obj.getJogadores();
+        this.jogos = obj.getJogos();
+    }
 
     public static void parse() throws LinhaIncorretaException, FileNotFoundException, IOException {
         List<String> linhas = lerFicheiro("input.txt");
-        Equipas equipas = new Equipas(); //nome, equipa
-        Map<Integer, Jogador> jogadores = new HashMap<>(); //numero, jogador
-        List<Jogo> jogos = new ArrayList<>();
         Equipa ultima = null; Jogador j = null;
         String[] linhaPartida;
         for (String linha : linhas) {
@@ -76,17 +89,19 @@ public class Parser {
 
 
         //debug
+        PrintWriter pw2 = new PrintWriter(new FileOutputStream("jogadores.txt"));
         for (Equipa e: equipas.equipas.values()){
-            System.out.println(e.getNome());
-            System.out.println(e.toString());
-        }
-
-
-        PrintWriter pw2 = new PrintWriter(new FileOutputStream("jogos.txt"));
-        for(Jogo jog : jogos) {
-            pw2.println(jog.toString());
+            pw2.println(e.getNome());
+            pw2.println(e.toString());
         }
         pw2.close();
+
+
+        PrintWriter pw3 = new PrintWriter(new FileOutputStream("jogos.txt"));
+        for(Jogo jog : jogos) {
+            pw3.println(jog.toString());
+        }
+        pw3.close();
 
         //for (Jogo jog: jogos){
         //    System.out.println(jog.toString());
@@ -103,6 +118,13 @@ public class Parser {
     }
 
 
+
+
+    public Parser clone() {return new Parser(this);}
+
+    public Equipas getEquipas() {return this.equipas;}
+    public Map<Integer, Jogador> getJogadores() {return this.jogadores;}
+    public List<Jogo> getJogos() {return this.jogos;}
 
 
 

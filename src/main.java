@@ -95,6 +95,6 @@ public class main {
 
         //System.out.println("\n"+game.toString());
         */
-        Parser.parse();
+        //Parser.parse();
     }
 }
