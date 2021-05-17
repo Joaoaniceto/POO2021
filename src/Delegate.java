@@ -66,13 +66,13 @@ public class Delegate {
     }
 
     public void listarEquipas() {
-        for(Equipa e : info.equipas.equipas.values()) {
+        for(Equipa e : info.equipas.values()) {
             System.out.println(e.getNome());
         }
     }
 
     public void listarEquipas_info() {
-        for(Equipa e : info.equipas.equipas.values()) {
+        for(Equipa e : info.equipas.values()) {
             System.out.println(e.toString());
         }
     }

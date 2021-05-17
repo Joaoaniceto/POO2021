@@ -68,14 +68,14 @@ public class Parser implements Cloneable {
 
 
         PrintWriter pw1 = new PrintWriter(new FileOutputStream("equipas.txt"));
-        for(Equipa e : data.equipas.equipas.values()) {
+        for(Equipa e : data.equipas.values()) {
             pw1.println(e.getNome());
         }
         pw1.close();
 
 
         PrintWriter pw2 = new PrintWriter(new FileOutputStream("jogadores.txt"));
-        for (Equipa e: data.equipas.equipas.values()){
+        for (Equipa e: data.equipas.values()){
             pw2.println(e.getNome());
             pw2.println(e.toString());
         }
