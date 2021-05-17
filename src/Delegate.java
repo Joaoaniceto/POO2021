@@ -6,14 +6,14 @@ import java.util.stream.Collectors;
 
 public class Delegate {
     //INSTANCE VARIABLES
-    private Parser info;
+    private Data info;
     private Menu menuPrincipal, menuSecundario;
     private Scanner scannerIn;
 
-    public Delegate(Parser info){
+    public Delegate(Data info){
         this.info = info;
         this.menuPrincipal = new Menu( new String[] {"Jogadores","Equipas","Jogos"} );
-        this.menuSecundario = new Menu(new String[] {""});
+        this.menuSecundario = new Menu(new String[] {"Mais Informação"});
         this.scannerIn = new Scanner(System.in);
     }
 
@@ -24,10 +24,23 @@ public class Delegate {
                 case 1:
                     System.out.println("LISTA DOS JOGADORES \n");
                     listarJogadores();
+                    this.menuSecundario.executa();
+                    switch (this.menuSecundario.getOpcao()) {
+                        case 1:
+                            listarJogadores_info();
+                            break;
+                    }
                     break;
                 case 2:
                     System.out.println("LISTA DAS EQUIPAS \n");
                     listarEquipas();
+                    this.menuSecundario.executa();
+                    switch (this.menuSecundario.getOpcao()) {
+                        case 1:
+                            listarEquipas_info();
+                            break;
+                    }
+
                     break;
                 case 3:
                     System.out.println("LISTA DOS JOGOS \n");
@@ -35,9 +48,17 @@ public class Delegate {
                     break;
             }
         } while (this.menuPrincipal.getOpcao() != 0);
+        System.out.println("OBRIGADO :)");
     }
 
     public void listarJogadores() {
+        for (Jogador j : info.jogadores.values()){
+            System.out.println(j.getNome());
+            //System.out.println(j.toString());
+        }
+    }
+
+    public void listarJogadores_info() {
         for (Jogador j : info.jogadores.values()){
             System.out.println(j.getNome());
             System.out.println(j.toString());
@@ -47,6 +68,12 @@ public class Delegate {
     public void listarEquipas() {
         for(Equipa e : info.equipas.equipas.values()) {
             System.out.println(e.getNome());
+        }
+    }
+
+    public void listarEquipas_info() {
+        for(Equipa e : info.equipas.equipas.values()) {
+            System.out.println(e.toString());
         }
     }
 

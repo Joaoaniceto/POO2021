@@ -46,9 +46,13 @@ public class Equipa implements Comparable<Equipa>, Serializable {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append(this.nome);
+        sb.append("\n");
         for (Jogador j : this.equipa.values()) {
-            sb.append(j.toString());
+            sb.append(j.getNome());
+            sb.append(" , ");
         }
+        sb.append("\n");
         return sb.toString();
     }
 
