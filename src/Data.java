@@ -6,17 +6,17 @@ import java.util.Map;
 public class Data implements Cloneable {
     //INSTANCE VARIABLES
     public static Map<String, Equipa>  equipas; //nome, equipa
-    public static Map<Integer, Jogador> jogadores; //numero, jogador
+    public static List<Jogador> jogadores; //numero, jogador
     public static List<Jogo> jogos;
 
     //CONSTRUCTORS
     public Data() {
         this.equipas = new HashMap<>();
-        this.jogadores = new HashMap<>();
+        this.jogadores = new ArrayList<>();
         this.jogos = new ArrayList<>();
     }
 
-    public Data(Map<String,Equipa> equipas, Map<Integer, Jogador> jogadores, ArrayList<Jogo> jogos) {
+    public Data(Map<String,Equipa> equipas, List<Jogador> jogadores, ArrayList<Jogo> jogos) {
         this.equipas = equipas;
         this.jogadores = jogadores;
         this.jogos = jogos;
@@ -29,7 +29,7 @@ public class Data implements Cloneable {
     }
 
     public Map<String, Equipa> getEquipas() {return this.equipas;}
-    public Map<Integer, Jogador> getJogadores() {return this.jogadores;}
+    public List<Jogador> getJogadores() {return this.jogadores;}
     public List<Jogo> getJogos() {return this.jogos;}
 
     public void addEquipa(Equipa e){
@@ -37,7 +37,7 @@ public class Data implements Cloneable {
     }
 
     public void addJogador(Jogador j){
-        this.jogadores.put(j.getNum(), j);
+        this.jogadores.add(j);
     }
 
     public void addJogo(Jogo jogo){

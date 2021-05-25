@@ -36,6 +36,8 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         return this.equipa;
     }
 
+    public Jogador getJogador(int n) {return this.equipa.get(n);}
+
     public void setNome(String nome) {
         this.nome = nome;
     }

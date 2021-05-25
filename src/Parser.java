@@ -98,8 +98,7 @@ public class Parser implements Cloneable {
         }
         pw3.close();
 
-        System.out.println(data.getJogadores().size());
-        System.out.println(c);
+
         return data;
     }
 

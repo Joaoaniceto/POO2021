@@ -52,7 +52,7 @@ public class Delegate {
     }
 
     public void listarJogadores() {
-        for (Jogador j : info.jogadores.values()){
+        for (Jogador j : info.jogadores){
             System.out.println(j.getNome());
             //System.out.println(j.toString());
         }
@@ -60,7 +60,7 @@ public class Delegate {
 
     //se possível dar surround com try catch para evitar que last seja negativo (JogadorPerdidoException)
     public void listarJogadores_info() {
-        for (Jogador j : info.jogadores.values()){
+        for (Jogador j : info.jogadores){
             int last = j.getHistorial().size() - 1;
             System.out.println(j.getNome() + " (" + j.getHistorial().get(last).getNome() + ")");
             System.out.println(j.toString());
