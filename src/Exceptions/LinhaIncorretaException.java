@@ -1,3 +1,5 @@
+package Exceptions;
+
 public class LinhaIncorretaException extends Exception {
     public LinhaIncorretaException(){
         super();

@@ -1,3 +1,5 @@
+import Exceptions.LinhaIncorretaException;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -6,13 +8,12 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Parser implements Cloneable {
 
     public static Data parse() throws LinhaIncorretaException, FileNotFoundException, IOException {
+        int c = 0;
         Data data = new Data();
         List<String> linhas = lerFicheiro("input.txt");
         Equipa ultima = null;
@@ -28,31 +29,41 @@ public class Parser implements Cloneable {
                     break;
                 case "Guarda-Redes":
                     j = GuardaRedes.parse(linhaPartida[1]);
-                    data.addJogador(j);
+                    //System.out.println(j.getNome());
+                    c+=1;
+                    data.addJogador(j.clone());
                     if (ultima == null) throw new LinhaIncorretaException(); //we need to insert the player into the team
                     ultima.addJogador(j.clone()); //if no team was parsed previously, file is not well-formed
                     break;
                 case "Defesa":
                     j = Defesa.parse(linhaPartida[1]);
-                    data.addJogador(j);
+                    //System.out.println(j.getNome());
+                    c+=1;
+                    data.addJogador(j.clone());
                     if (ultima == null) throw new LinhaIncorretaException(); //we need to insert the player into the team
                     ultima.addJogador(j.clone()); //if no team was parsed previously, file is not well-formed
                     break;
                 case "Medio":
                     j = Medio.parse(linhaPartida[1]);
-                    data.addJogador(j);
+                    //System.out.println(j.getNome());
+                    c+=1;
+                    data.addJogador(j.clone());
                     if (ultima == null) throw new LinhaIncorretaException(); //we need to insert the player into the team
                     ultima.addJogador(j.clone()); //if no team was parsed previously, file is not well-formed
                     break;
                 case "Lateral":
                     j = Lateral.parse(linhaPartida[1]);
-                    data.addJogador(j);
+                    //System.out.println(j.getNome());
+                    c+=1;
+                    data.addJogador(j.clone());
                     if (ultima == null) throw new LinhaIncorretaException(); //we need to insert the player into the team
                     ultima.addJogador(j.clone()); //if no team was parsed previously, file is not well-formed
                     break;
                 case "Avancado":
                     j = Avançado.parse(linhaPartida[1]);
-                    data.addJogador(j);
+                    //System.out.println(j.getNome());
+                    c+=1;
+                    data.addJogador(j.clone());
                     if (ultima == null) throw new LinhaIncorretaException(); //we need to insert the player into the team
                     ultima.addJogador(j.clone()); //if no team was parsed previously, file is not well-formed
                     break;
@@ -76,7 +87,6 @@ public class Parser implements Cloneable {
 
         PrintWriter pw2 = new PrintWriter(new FileOutputStream("jogadores.txt"));
         for (Equipa e: data.equipas.values()){
-            pw2.println(e.getNome());
             pw2.println(e.toString());
         }
         pw2.close();
@@ -88,7 +98,8 @@ public class Parser implements Cloneable {
         }
         pw3.close();
 
-
+        System.out.println(data.getJogadores().size());
+        System.out.println(c);
         return data;
     }
 

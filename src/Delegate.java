@@ -58,9 +58,11 @@ public class Delegate {
         }
     }
 
+    //se possível dar surround com try catch para evitar que last seja negativo (JogadorPerdidoException)
     public void listarJogadores_info() {
         for (Jogador j : info.jogadores.values()){
-            System.out.println(j.getNome());
+            int last = j.getHistorial().size() - 1;
+            System.out.println(j.getNome() + " (" + j.getHistorial().get(last).getNome() + ")");
             System.out.println(j.toString());
         }
     }
