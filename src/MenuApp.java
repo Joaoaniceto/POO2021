@@ -7,9 +7,9 @@ public class MenuApp {
         Data d = Parser.parse();
 
         //TESTE TRANSFERENCIA DE EQUIPA : PASSED
-        Equipa a = d.getEquipas().get("Schumann Athletic");
-        Equipa b = d.getEquipas().get("Stravinsky Athletic");
-        a.transferenciaJogador(b,a.getJogador(32));
+        //Equipa a = d.getEquipas().get("Schumann Athletic");
+        //Equipa b = d.getEquipas().get("Stravinsky Athletic");
+        //a.transferenciaJogador(b,a.getJogador(32));
 
         new Delegate(d).run();
 

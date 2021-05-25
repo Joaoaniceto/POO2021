@@ -86,4 +86,8 @@ public class Menu {
     public int getOpcao() {
         return this.op;
     }
+
+    public List<String> getOpcoes() {
+        return this.opcoes;
+    }
 }
