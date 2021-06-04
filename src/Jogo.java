@@ -1,8 +1,6 @@
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.lang.Math;
 
 /*
 o projeto teve q levar mts alterações, mudei os tipos das variaveis
@@ -167,6 +165,24 @@ public class Jogo {
         return new Jogo(eC,eV, subsC, subsF,Integer.parseInt(campos[2]), Integer.parseInt(campos[3]),
                 LocalDate.of(Integer.parseInt(data[0]), Integer.parseInt(data[1]), Integer.parseInt(data[2])),
                 jc,  jf);
+    }
+
+
+    public void startJogo() {
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            Fase fase = new Fase(0,1,2);
+            //Fase fase;
+            //if(Math.random() > 0.5){fase = new Fase(0,1,2);}
+            //else{fase = new Fase(0,0,2);}
+            @Override
+            public void run() {
+                System.out.println(fase.getState(fase.getEquipaAtacante(),fase.getFase()));
+
+            }
+        }, 0, 1000);//wait 0 ms before doing the action and do it evry 1000ms (1second)
+
+        //timer.cancel();//stop the timer
     }
 
 

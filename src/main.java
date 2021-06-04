@@ -1,6 +1,7 @@
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 
 public class main {
@@ -95,6 +96,12 @@ public class main {
 
         //System.out.println("\n"+game.toString());
         */
-        //Parser.parse();
+
+        Data d = Parser.parse();
+        List<Jogo> jogos = d.getJogos();
+        Jogo j = jogos.get(0);
+        System.out.println(j.toString());
+        j.startJogo();
+
     }
 }
