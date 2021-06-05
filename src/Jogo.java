@@ -169,16 +169,23 @@ public class Jogo {
 
 
     public void startJogo() {
+        System.out.println("Começa o jogo na casa do " + this.equipaCasa.getNome()+ " contra " + this.equipaVisitante.getNome() );
+
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
-            Fase fase = new Fase(0,1,2);
+            Fase fase = new Fase(equipaCasa,equipaVisitante,0,1,2);
+
             //Fase fase;
             //if(Math.random() > 0.5){fase = new Fase(0,1,2);}
             //else{fase = new Fase(0,0,2);}
             @Override
             public void run() {
-                System.out.println(fase.getState(fase.getEquipaAtacante(),fase.getFase()));
-
+                fase.getState(fase.getEquipaAtacante(),fase.getFase());
+                fase.setTime(fase.getTime() + 1);
+                if (fase.getTime() == 90) {
+                    timer.cancel();
+                    fase.result();
+                };
             }
         }, 0, 1000);//wait 0 ms before doing the action and do it evry 1000ms (1second)
 
