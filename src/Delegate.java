@@ -7,17 +7,19 @@ import java.util.stream.Collectors;
 public class Delegate {
     //INSTANCE VARIABLES
     private Data info;
-    private Menu menuPrincipal, menuSecundario, menuEquipas;
+    private Menu menuPrincipal, menuSecundario, menuEquipas, menuJogos;
     private Scanner scannerIn;
 
     public Delegate(Data info){
         this.info = info;
-        this.menuPrincipal = new Menu( new String[] {"Jogadores","Equipas","Jogos","Efetuar Transferência"} );
+        this.menuPrincipal = new Menu( new String[] {"Jogadores","Equipas","Jogos","Efetuar Transferência","Simular um Jogo"} );
         this.menuSecundario = new Menu(new String[] {"Mais Informação"});
         this.menuEquipas = new Menu(new String[] {"Schumann Athletic","Stravinsky Athletic","Bach F. C.","Debussy Athletic",
                 "Mozart F. C.", "Handel Athletic", "Mendelssohn F. C.", "Sporting Club Shostakovich", "Sporting Club Schubert",
                 "Sporting Club Chopin", "Mahler Athletic", "Bartok F. C.", "Beethoven F. C.", "Sporting Club Prokofiev", "Vivaldi F. C.",
                 "Sporting Club Dvorak", "Brahms F. C.", "Wagner Athletic"});
+        this.menuJogos = new Menu(new String[] {
+                "Sporting Club Shostakovich VS Mendelssohn F. C.", "Mozart F. C. VS Sporting Club Dvorak", "Debussy Athletic  VS Stravinsky Athletic" });
         this.scannerIn = new Scanner(System.in);
     }
 
@@ -52,6 +54,11 @@ public class Delegate {
                     break;
                 case 4:
                     listarEquipas_upgraded();
+                    break;
+                case 5:
+                    System.out.println("\nBEM-VINDO À SIMULAÇÃO DE JOGOS \nPor favor, escolha uma jogo:");
+                    listarJogos_upgraded();
+                    break;
             }
         } while (this.menuPrincipal.getOpcao() != 0);
         System.out.println("OBRIGADO :)");
@@ -68,7 +75,7 @@ public class Delegate {
     public void listarJogadores_info() {
         for (Jogador j : info.jogadores){
             int last = j.getHistorial().size() - 1;
-            System.out.println(j.getNome() + " (" + j.getHistorial().get(last).getNome() + ")");
+            System.out.println(j.getNome() + " (" + j.getClass().getName() + " , " + j.getHistorial().get(last).getNome() + ")");
             System.out.println(j.toString());
         }
     }
@@ -225,6 +232,22 @@ public class Delegate {
     }
 
 
+    public void listarJogos_upgraded() {
+        List<Jogo> jogos = this.info.getJogos();
+        this.menuJogos.executa();
+        switch (this.menuJogos.getOpcao()){
+            case 1:
+                jogos.get(0).startJogo();
+                break;
+            case 2:
+                jogos.get(1).startJogo();
+                break;
+            case 3:
+                jogos.get(2).startJogo();
+                break;
+        }
+
+    }
 
 
 }

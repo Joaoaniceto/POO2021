@@ -21,6 +21,8 @@ public class Jogo {
     private int golosCasa , golosVisitante;
     private HashMap<String,ArrayList<Integer>> modeloCasa;
     private HashMap<String,ArrayList<Integer>> modeloVisitante;
+    private List<Integer> titularesCasa;
+    private List<Integer> titularesVisitante;
 
     public Jogo() {
         this.equipaCasa = new Equipa();
@@ -42,7 +44,8 @@ public class Jogo {
         this.golosCasa = golosC;
         this.golosVisitante = golosV;
         this.data = data;
-        //falta adicionar jogadores idk what to do
+        this.titularesCasa = jc;
+        this.titularesVisitante = jv;
     }
 
     public Jogo(Equipa casa,Equipa visitante,Map<Integer,Integer> subsCasa,Map<Integer,Integer> subsVisitante,int golosCasa,int golosVisitante,HashMap<String,ArrayList<Integer>> mc,HashMap<String,ArrayList<Integer>> mv){
@@ -93,6 +96,26 @@ public class Jogo {
     public void setModeloCasa(HashMap<String,ArrayList<Integer>> mc) {this.modeloCasa = mc;}
     public void setModeloVisitante(HashMap<String,ArrayList<Integer>> mv) {this.modeloVisitante = mv;}
 
+    public void setTitularesCasa(List<Integer> jc) {
+        HashMap<Integer,Jogador> e = this.equipaCasa.getEquipa();
+        for (Map.Entry<Integer, Jogador> entry : e.entrySet()) {
+            Integer i = entry.getKey();
+            Jogador j = entry.getValue();
+            if (jc.contains(i)) {j.setTitular(true);}
+            else {j.setTitular(false);}
+        }
+    }
+
+    public void setTitularesVisitante(List<Integer> jv) {
+        HashMap<Integer,Jogador> e = this.equipaVisitante.getEquipa();
+        for (Map.Entry<Integer, Jogador> entry : e.entrySet()) {
+            Integer i = entry.getKey();
+            Jogador j = entry.getValue();
+            if (jv.contains(i)) {j.setTitular(true);}
+            else {j.setTitular(false);}
+            }
+    }
+
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -106,6 +129,8 @@ public class Jogo {
         sb.append("\nGolos da Equipa Visitante: "+this.golosVisitante);
         sb.append("\nModelo Tático Equipa Casa: "+this.modeloCasa);
         sb.append("\nModelo Tático Equipa Visitante: "+this.modeloVisitante);
+        sb.append("\nLista de Jogadores Titulares da Casa: "+this.titularesCasa);
+        sb.append("\nLista de Jogadores Titulares Visitantes: "+this.titularesVisitante);
         sb.append("\n");
         return sb.toString();
     }
@@ -168,7 +193,14 @@ public class Jogo {
     }
 
 
+
     public void startJogo() {
+        //antes do jogo começar, convém atribuir os valores de titular a cada um dos jogadores
+        //cada jogo tem titulares diferentes. temos que percorrer todos os jogadores de ambas as equipas,
+        //caso um jogador que nao esteja em titularesCasa esteja definido como titular em consequencia de um jogo anterior.
+        setTitularesCasa(this.titularesCasa);
+        setTitularesVisitante(this.titularesVisitante);
+
         System.out.println("Começa o jogo na casa do " + this.equipaCasa.getNome()+ " contra " + this.equipaVisitante.getNome() );
 
         Timer timer = new Timer();
@@ -183,13 +215,12 @@ public class Jogo {
                 fase.getState(fase.getEquipaAtacante(),fase.getFase());
                 fase.setTime(fase.getTime() + 1);
                 if (fase.getTime() == 90) {
-                    timer.cancel();
+                    timer.cancel();  //stop the timer
                     fase.result();
                 };
             }
         }, 0, 1000);//wait 0 ms before doing the action and do it evry 1000ms (1second)
 
-        //timer.cancel();//stop the timer
     }
 
 

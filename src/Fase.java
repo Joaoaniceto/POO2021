@@ -2,7 +2,7 @@
 public class Fase {
     private int golosVisitante;
     private int golosCasa;
-    private int equipaAtacante;
+    private int equipaAtacante; //caso seja 1 é equipa da casa, caso seja 0 é visitante
     private int fase;
     private int time;
     private Equipa equipaCasa;
@@ -84,4 +84,14 @@ public class Fase {
         }
         return this.fase;
     }
+
+    private double luck() {
+        double habC = this.equipaCasa.gethabilidades();
+        double habD = this.equipaVisitante.gethabilidades();
+
+
+
+        return 0.0;
+    }
+
 }
