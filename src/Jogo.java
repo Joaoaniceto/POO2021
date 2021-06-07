@@ -19,8 +19,8 @@ public class Jogo {
     private Map<Integer,Integer> subsVisitante;  //falta metodo atualiza subs casa
     private estado state;
     private int golosCasa , golosVisitante;
-    private HashMap<String,ArrayList<Integer>> modeloCasa;
-    private HashMap<String,ArrayList<Integer>> modeloVisitante;
+    private HashMap<String,List<Integer>> modeloCasa;
+    private HashMap<String,List<Integer>> modeloVisitante;
     private List<Integer> titularesCasa;
     private List<Integer> titularesVisitante;
 
@@ -48,7 +48,7 @@ public class Jogo {
         this.titularesVisitante = jv;
     }
 
-    public Jogo(Equipa casa,Equipa visitante,Map<Integer,Integer> subsCasa,Map<Integer,Integer> subsVisitante,int golosCasa,int golosVisitante,HashMap<String,ArrayList<Integer>> mc,HashMap<String,ArrayList<Integer>> mv){
+    public Jogo(Equipa casa,Equipa visitante,Map<Integer,Integer> subsCasa,Map<Integer,Integer> subsVisitante,int golosCasa,int golosVisitante,HashMap<String,List<Integer>> mc,HashMap<String,List<Integer>> mv){
         this.equipaCasa = casa;
         this.equipaVisitante = visitante;
         this.data = LocalDate.now();
@@ -82,8 +82,10 @@ public class Jogo {
     public estado getEstado() {return this.state;}
     public int getGolosCasa() {return this.golosCasa;}
     public int getGolosVisitante() {return this.golosVisitante;}
-    public HashMap<String,ArrayList<Integer>> getModeloCasa() {return this.modeloCasa;}
-    public HashMap<String,ArrayList<Integer>> getModeloVisitante() {return this.modeloVisitante;}
+    public List<Integer> getTitularesCasa() {return this.titularesCasa;}
+    public List<Integer> getTitularesVisitante() {return this.titularesVisitante;}
+    public HashMap<String,List<Integer>> getModeloCasa() {return this.modeloCasa;}
+    public HashMap<String,List<Integer>> getModeloVisitante() {return this.modeloVisitante;}
 
     public void setEquipaCasa(Equipa casa) {this.equipaCasa = casa; }
     public void setEquipaVisitante(Equipa visitante) {this.equipaVisitante = visitante;}
@@ -93,27 +95,59 @@ public class Jogo {
     public void setEstado(estado e) {this.state = e;} //falta dar bound no argumento, para que seja apenas possivel e=0, e=1 ou e=-1 // bounded argument
     public void setGolosCasa(int gc) {this.golosCasa = gc;}
     public void setGolosVisitante(int gv) {this.golosVisitante = gv;}
-    public void setModeloCasa(HashMap<String,ArrayList<Integer>> mc) {this.modeloCasa = mc;}
-    public void setModeloVisitante(HashMap<String,ArrayList<Integer>> mv) {this.modeloVisitante = mv;}
+    public void setModeloCasa(HashMap<String,List<Integer>> mc) {this.modeloCasa = mc;}
+    public void setModeloVisitante(HashMap<String,List<Integer>> mv) {this.modeloVisitante = mv;}
 
     public void setTitularesCasa(List<Integer> jc) {
         HashMap<Integer,Jogador> e = this.equipaCasa.getEquipa();
+        HashMap<String,List<Integer>> tactic = new HashMap<>();
         for (Map.Entry<Integer, Jogador> entry : e.entrySet()) {
             Integer i = entry.getKey();
             Jogador j = entry.getValue();
-            if (jc.contains(i)) {j.setTitular(true);}
+            if (jc.contains(i)) {
+                //faz jogador ser titular :)
+                j.setTitular(true);
+
+                //adiciona o jogador à tatica :)
+                String role = j.getClass().getName();
+                if ( tactic.containsKey(role) ) {
+                    tactic.get(role).add(i);
+                }
+                else {
+                    ArrayList<Integer> nr = new ArrayList<>();
+                    nr.add(i);
+                    tactic.put(role,nr);
+                }
+            }
             else {j.setTitular(false);}
         }
+        this.modeloCasa = tactic;
     }
 
     public void setTitularesVisitante(List<Integer> jv) {
         HashMap<Integer,Jogador> e = this.equipaVisitante.getEquipa();
+        HashMap<String,List<Integer>> tactic = new HashMap<>();
         for (Map.Entry<Integer, Jogador> entry : e.entrySet()) {
             Integer i = entry.getKey();
             Jogador j = entry.getValue();
-            if (jv.contains(i)) {j.setTitular(true);}
-            else {j.setTitular(false);}
+            if (jv.contains(i)) {
+                //faz jogador ser titular :)
+                j.setTitular(true);
+
+                //adiciona o jogador à tatica :)
+                String role = j.getClass().getName();
+                if ( tactic.containsKey(role) ) {
+                    tactic.get(role).add(i);
+                }
+                else {
+                    ArrayList<Integer> nr = new ArrayList<>();
+                    nr.add(i);
+                    tactic.put(role,nr);
+                }
             }
+            else {j.setTitular(false);}
+        }
+        this.modeloVisitante = tactic;
     }
 
 
@@ -201,7 +235,7 @@ public class Jogo {
         setTitularesCasa(this.titularesCasa);
         setTitularesVisitante(this.titularesVisitante);
 
-        System.out.println("Começa o jogo na casa do " + this.equipaCasa.getNome()+ " contra " + this.equipaVisitante.getNome() );
+        System.out.println("Começa o jogo na casa do " + this.equipaCasa.getNome()+ " contra " + this.equipaVisitante.getNome() + "\n" );
 
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
