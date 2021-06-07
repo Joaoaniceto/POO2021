@@ -101,10 +101,10 @@ public class main {
         Data d = Parser.parse();
         List<Jogo> jogos = d.getJogos();
         Jogo j = jogos.get(0);
-        //j.startJogo();
-        j.setTitularesCasa(j.getTitularesCasa());
-        j.setTitularesVisitante(j.getTitularesVisitante());
-        System.out.println(j.toString());
+        j.startJogo();
+        //j.setTitularesCasa(j.getTitularesCasa());
+        //j.setTitularesVisitante(j.getTitularesVisitante());
+        //System.out.println(j.toString());
 
     }
 }
