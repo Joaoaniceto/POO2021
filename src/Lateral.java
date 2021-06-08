@@ -55,7 +55,7 @@ public class Lateral extends Jogador {
                 return super.getVel()*0.1 + super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getCab()*0.1 + super.getRem()*0.1 + super.getPasse()*0.1 ;
 
 
-            case "Guarda-Redes":
+            case "GuardaRedes":
                 return super.getVel()*0.1+ super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getRem()*0.1 + super.getPasse()*0.1;
 
 

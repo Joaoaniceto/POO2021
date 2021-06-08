@@ -100,10 +100,12 @@ public class Jogo {
 
     public void setTitularesCasa(List<Integer> jc) {
         HashMap<Integer,Jogador> e = this.equipaCasa.getEquipa();
+        System.out.println("e: "+e);
         HashMap<String,List<Integer>> tactic = new HashMap<>();
         for (Map.Entry<Integer, Jogador> entry : e.entrySet()) {
             Integer i = entry.getKey();
             Jogador j = entry.getValue();
+            System.out.println("contains? "+jc.contains(i));
             if (jc.contains(i)) {
                 //faz jogador ser titular :)
                 j.setTitular(true);
@@ -121,7 +123,8 @@ public class Jogo {
             }
             else {j.setTitular(false);}
         }
-        this.modeloCasa = tactic;
+        System.out.println("tactic: "+tactic);
+        setModeloCasa(tactic);
     }
 
     public void setTitularesVisitante(List<Integer> jv) {
@@ -156,8 +159,8 @@ public class Jogo {
         sb.append("Equipa da casa: "+this.equipaCasa.getNome());
         sb.append("\nEquipa visitante: "+this.equipaVisitante.getNome());
         sb.append("\nData: "+this.data);
-        sb.append("\nSubstituições da Equipa da Casa: ");        //falta percorrer a lista de jogadores
-        sb.append("\nSubstituições da Equipa Visitante: ");     //substituidos e dar append do nome
+        sb.append("\nSubstituições da Equipa da Casa: "+this.subsCasa);        //falta percorrer a lista de jogadores
+        sb.append("\nSubstituições da Equipa Visitante: "+this.subsVisitante);     //substituidos e dar append do nome
         sb.append("\nEstado do jogo: "+this.state);
         sb.append("\nGolos da Equipa da Casa: "+this.golosCasa);
         sb.append("\nGolos da Equipa Visitante: "+this.golosVisitante);
@@ -253,7 +256,7 @@ public class Jogo {
                     fase.result();
                 };
             }
-        }, 0, 1000);//wait 0 ms before doing the action and do it evry 1000ms (1second)
+        }, 0, 1000);//wait 0 ms before doing the action and do it every 1000ms (1second)
 
     }
 

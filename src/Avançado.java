@@ -38,16 +38,16 @@ public class Avançado extends Jogador {
 
     public double gethabilidade(String posicao){
         switch (posicao){
-            case "medio":
+            case "Medio":
                 return super.getVel()*0.1 + super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getCab()*0.1 + super.getRem()*0.1 + super.getPasse()*0.1 ;
 
-            case "guarda-redes":
+            case "GuardaRedes":
                 return super.getVel()*0.1+ super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.1 + super.getRem()*0.1 + super.getPasse()*0.1;
 
-            case "defesa":
+            case "Defesa":
                 return super.getVel()*0.05 + super.getRes()*0.2+ super.getDes()*0.1 + super.getImp()*0.1 + super.getCab()*0.2 + super.getRem()*0.1 + super.getPasse()*0.1;
 
-            case "lateral":
+            case "Lateral":
                 return super.getVel()*0.1 + super.getRes()*0.1+ super.getDes()*0.1 + super.getImp()*0.05 + super.getCab()*0.1 + super.getRem()*0.15 + super.getPasse()*0.15;
 
             default:

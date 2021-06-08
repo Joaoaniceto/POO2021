@@ -1,0 +1,13 @@
+REQUISITOS
+
+->Probabilidade da simulação com base na habilidade de jogadores e equipas
+->Salvar estado do programa
+->ENCAPSULAMENTO
+->Inicializar jogadores/equipa (mandar mail ao stor)
+->Substituições
+
+{
+"guardaredes" : [1] ,
+"defesa" : [5,32,21] ,
+"medio"
+}
