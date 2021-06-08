@@ -112,6 +112,7 @@ public class Jogo {
 
                 //adiciona o jogador à tatica :)
                 String role = j.getClass().getName();
+                System.out.println("role: "+role);
                 if ( tactic.containsKey(role) ) {
                     tactic.get(role).add(i);
                 }
@@ -129,7 +130,7 @@ public class Jogo {
 
     public void setTitularesVisitante(List<Integer> jv) {
         HashMap<Integer,Jogador> e = this.equipaVisitante.getEquipa();
-        HashMap<String,List<Integer>> tactic = new HashMap<>();
+
         for (Map.Entry<Integer, Jogador> entry : e.entrySet()) {
             Integer i = entry.getKey();
             Jogador j = entry.getValue();
@@ -139,18 +140,19 @@ public class Jogo {
 
                 //adiciona o jogador à tatica :)
                 String role = j.getClass().getName();
-                if ( tactic.containsKey(role) ) {
-                    tactic.get(role).add(i);
+
+                if ( this.modeloVisitante.containsKey(role) ) {
+                    this.modeloVisitante.get(role).add(i);
                 }
                 else {
                     ArrayList<Integer> nr = new ArrayList<>();
                     nr.add(i);
-                    tactic.put(role,nr);
+                    this.modeloVisitante.put(role,nr);
                 }
             }
             else {j.setTitular(false);}
         }
-        this.modeloVisitante = tactic;
+        this.modeloVisitante = this.modeloVisitante;
     }
 
 
@@ -237,7 +239,7 @@ public class Jogo {
         //caso um jogador que nao esteja em titularesCasa esteja definido como titular em consequencia de um jogo anterior.
         setTitularesCasa(this.titularesCasa);
         setTitularesVisitante(this.titularesVisitante);
-
+        this.toString();
         System.out.println("Começa o jogo na casa do " + this.equipaCasa.getNome()+ " contra " + this.equipaVisitante.getNome() + "\n" );
 
         Timer timer = new Timer();
@@ -259,6 +261,6 @@ public class Jogo {
         }, 0, 1000);//wait 0 ms before doing the action and do it every 1000ms (1second)
 
     }
-
+// teste de comentario
 
 }
