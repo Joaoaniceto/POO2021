@@ -68,7 +68,7 @@ public class Parser implements Cloneable {
                     ultima.addJogador(j.clone()); //if no team was parsed previously, file is not well-formed
                     break;
                 case "Jogo":
-                    Jogo jo = Jogo.parse(linhaPartida[1]);
+                    Jogo jo = Jogo.parse(linhaPartida[1],data.getEquipas());
                     data.addJogo(jo);
                     break;
                 default:

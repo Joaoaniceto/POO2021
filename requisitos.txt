@@ -5,6 +5,7 @@ REQUISITOS
 ->ENCAPSULAMENTO
 ->Inicializar jogadores/equipa (mandar mail ao stor)
 ->Substituições
+->Exceptions
 
 {
 "guardaredes" : [1] ,

@@ -100,19 +100,19 @@ public class Jogo {
 
     public void setTitularesCasa(List<Integer> jc) {
         HashMap<Integer,Jogador> e = this.equipaCasa.getEquipa();
-        System.out.println("e: "+e);
+        //System.out.println("e: "+e);
         HashMap<String,List<Integer>> tactic = new HashMap<>();
         for (Map.Entry<Integer, Jogador> entry : e.entrySet()) {
             Integer i = entry.getKey();
             Jogador j = entry.getValue();
-            System.out.println("contains? "+jc.contains(i));
+            //System.out.println("contains? "+jc.contains(i));
             if (jc.contains(i)) {
                 //faz jogador ser titular :)
                 j.setTitular(true);
 
                 //adiciona o jogador à tatica :)
                 String role = j.getClass().getName();
-                System.out.println("role: "+role);
+                //System.out.println("role: "+role);
                 if ( tactic.containsKey(role) ) {
                     tactic.get(role).add(i);
                 }
@@ -124,13 +124,13 @@ public class Jogo {
             }
             else {j.setTitular(false);}
         }
-        System.out.println("tactic: "+tactic);
+        //System.out.println("tactic: "+tactic);
         setModeloCasa(tactic);
     }
 
     public void setTitularesVisitante(List<Integer> jv) {
         HashMap<Integer,Jogador> e = this.equipaVisitante.getEquipa();
-
+        HashMap<String,List<Integer>> tactic = new HashMap<>();
         for (Map.Entry<Integer, Jogador> entry : e.entrySet()) {
             Integer i = entry.getKey();
             Jogador j = entry.getValue();
@@ -141,18 +141,18 @@ public class Jogo {
                 //adiciona o jogador à tatica :)
                 String role = j.getClass().getName();
 
-                if ( this.modeloVisitante.containsKey(role) ) {
-                    this.modeloVisitante.get(role).add(i);
+                if ( tactic.containsKey(role) ) {
+                    tactic.get(role).add(i);
                 }
                 else {
                     ArrayList<Integer> nr = new ArrayList<>();
                     nr.add(i);
-                    this.modeloVisitante.put(role,nr);
+                    tactic.put(role,nr);
                 }
             }
             else {j.setTitular(false);}
         }
-        this.modeloVisitante = this.modeloVisitante;
+        this.modeloVisitante = tactic;
     }
 
 
@@ -203,15 +203,22 @@ public class Jogo {
         this.modeloVisitante.get(pos).set(order,ID);
     }
 
-    public static Jogo parse(String input){
+    public static Jogo parse(String input,Map<String, Equipa> equipas){
+        Equipa eC = new Equipa();
+        Equipa eV = new Equipa();
         String[] campos = input.split(",");
         String[] data = campos[4].split("-");
         List<Integer> jc = new ArrayList<>();
         List<Integer> jf = new ArrayList<>();
         Map<Integer, Integer> subsC = new HashMap<>();
         Map<Integer, Integer> subsF = new HashMap<>();
-        Equipa eC = new Equipa(campos[0]);
-        Equipa eV = new Equipa(campos[1]);
+        Integer c = 0;
+        //System.out.println("compare: "+equipas.get("Schumann Athletic").getNome()+" with "+campos[0]);
+        for (Map.Entry<String, Equipa> entry : equipas.entrySet()) {
+            //System.out.println("compare: "+entry.getKey()+" with: "+campos[0]);
+            if(campos[0].equals(entry.getKey())){eC=entry.getValue();c++;}
+            if(campos[1].equals(entry.getKey())){eV=entry.getValue();c++;}
+        }
         for (int i = 5; i < 16; i++){
             jc.add(Integer.parseInt(campos[i]));
         }

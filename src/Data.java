@@ -1,9 +1,10 @@
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Data implements Cloneable {
+public class Data implements Cloneable,Serializable {
     //INSTANCE VARIABLES
     public static Map<String, Equipa>  equipas; //nome, equipa
     public static List<Jogador> jogadores; //numero, jogador
@@ -45,4 +46,37 @@ public class Data implements Cloneable {
     }
 
     public Data clone() {return new Data(this);}
+
+    /*
+    public void saveToCSV(String fn) throws FileNotFoundException, IOException {
+
+        PrintWriter pw = new PrintWriter(new FileOutputStream(fn));
+        pw.println(this.nome);
+
+        for(Veiculo v : this.veiculos.values()) {
+            pw.println(v.toString());
+        }
+
+        pw.close();
+    }
+*/
+    public void deleteEstado() {
+        this.equipas = new HashMap<>();
+        this.jogadores = new ArrayList<>() ;
+        this.jogos = new ArrayList<>();
+    }
+
+    public void guardaEstado() throws FileNotFoundException, IOException {
+        FileOutputStream fos = new FileOutputStream("save.tmp");
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(this);
+        oos.close();
+    }
+
+    public static Data carregaEstado(String fn) throws FileNotFoundException, IOException, ClassNotFoundException {
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fn));
+        Data d = (Data) ois.readObject();
+        ois.close();
+        return d;
+    }
 }
