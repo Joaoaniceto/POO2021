@@ -251,14 +251,17 @@ public class Jogo {
 
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
-            Fase fase = new Fase(equipaCasa,equipaVisitante,0,1,2);
+            double coin = Math.random();
+
+            Fase fase = new Fase(equipaCasa,equipaVisitante,0,coin >0.5 ? 1 : 0 ,2,coin>0.5 ? equipaCasa.getJogador(modeloCasa.get("Medio").get(0)) : equipaVisitante.getJogador(modeloVisitante.get("Medio").get(0)),modeloCasa,modeloVisitante );
+
 
             //Fase fase;
             //if(Math.random() > 0.5){fase = new Fase(0,1,2);}
             //else{fase = new Fase(0,0,2);}
             @Override
             public void run() {
-                fase.getState(fase.getEquipaAtacante(),fase.getFase());
+                fase.getState(fase.getEquipaAtacante(),fase.getFase(),fase.getJogador());
                 fase.setTime(fase.getTime() + 1);
                 if (fase.getTime() == 90) {
                     timer.cancel();  //stop the timer

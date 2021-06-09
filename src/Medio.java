@@ -5,7 +5,8 @@ public class Medio extends Jogador {
     private int recup;
     
     //construtor por omissão
-    public Medio(int i, String name, boolean b, ArrayList<Equipa> hist, int parseInt, int anInt, int i1, int parseInt1, int anInt1, int i2, int parseInt2, int anInt2, int i3){
+
+    public Medio(){
         super();
         this.recup=0;
     }

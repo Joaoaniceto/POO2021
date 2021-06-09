@@ -6,7 +6,7 @@ public class GuardaRedes extends Jogador {
     private int elasticidade;
 
     //construtor por omissão
-    public GuardaRedes(int i, String name, boolean b, ArrayList<Equipa> hist, int parseInt, int anInt, int i1, int parseInt1, int anInt1, int i2, int parseInt2, int anInt2, int i3){
+    public GuardaRedes(){
         super();
         this.elasticidade = 0;
     }

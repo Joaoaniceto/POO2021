@@ -26,13 +26,14 @@ public class Parser implements Cloneable {
                     Equipa e = Equipa.parse(linhaPartida[1]);
                     data.addEquipa(e);
                     ultima = e;
+
                     break;
                 case "Guarda-Redes":
                     j = GuardaRedes.parse(linhaPartida[1]);
-                    //System.out.println(j.getNome());
                     c+=1;
                     data.addJogador(j.clone());
                     if (ultima == null) throw new LinhaIncorretaException(); //we need to insert the player into the team
+                    data.getEquipas().get(ultima.getNome()).addJogador(j.clone());
                     ultima.addJogador(j.clone()); //if no team was parsed previously, file is not well-formed
                     break;
                 case "Defesa":

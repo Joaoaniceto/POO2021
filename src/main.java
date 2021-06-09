@@ -98,20 +98,16 @@ public class main {
         //System.out.println("\n"+game.toString());
         */
 
-        //Data d = Parser.parse();
-        //List<Jogo> jogos = d.getJogos();
-        //Jogo j = jogos.get(0);
-        //j.startJogo();
-
-        //j.setTitularesCasa(j.getTitularesCasa());
-        //j.setTitularesVisitante(j.getTitularesVisitante());
-        //System.out.println(j.toString());
-
         Data d = Parser.parse();
-        d.guardaEstado();
-        d.deleteEstado();
-        Data load = d.carregaEstado("save.tmp");
-        System.out.println(load.getEquipas().toString());
+        List<Jogo> jogos = d.getJogos();
+        Jogo j = jogos.get(0);
+
+        // j.startJogo();
+
+         j.setTitularesCasa(j.getTitularesCasa());
+         j.setTitularesVisitante(j.getTitularesVisitante());
+
+        j.startJogo();
 
     }
 }
