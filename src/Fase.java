@@ -67,13 +67,21 @@ public class Fase {
 
                if ( luckME > 20) {
                     // caso passe
-                    Equipa nova = this.equipaAtacante == 1 ? equipaCasa : equipaVisitante;
-                    HashMap<String, List<Integer>> a = this.equipaAtacante == 1 ? modeloCasa : modeloVisitante;
-                   this.fase  += 1;
-                   Avançado recetordebola = new Avançado( (Avançado) nova.getJogador(a.get("Avançado").get(0)) );
+                   Equipa nova = this.equipaAtacante == 1 ? equipaCasa : equipaVisitante;
+                   HashMap<String, List<Integer>> a = this.equipaAtacante == 1 ? modeloCasa : modeloVisitante;
+                   if(Math.random() >0.5) { //passe para Avançado
 
-                   System.out.println(bola.getNomeReduzido() + " passa para " +  recetordebola.getNomeReduzido());
-                   this.bola = recetordebola;
+                       this.fase += 1;
+                       Avançado recetordebola = new Avançado((Avançado) nova.getJogador(a.get("Avançado").get(0)));
+
+                       System.out.println(bola.getNomeReduzido() + " passa para " + recetordebola.getNomeReduzido());
+                       this.bola = recetordebola;
+                   } else{ // passe para lateral
+                       Lateral latrec = new Lateral((Lateral) nova.getJogador(a.get("Lateral").get(0)));
+                       System.out.println(this.bola.getNomeReduzido() + " passa a bola para " + latrec.getNomeReduzido());
+                       this.bola = latrec;
+                       this.fase = 2;
+                   }
                }else{
                    //caso perde a bola
                    this.equipaAtacante = 1 - this.equipaAtacante;
@@ -93,9 +101,22 @@ public class Fase {
                 HashMap<String, List<Integer>> a = this.equipaAtacante == 1 ? modeloCasa : modeloVisitante;
                 if ( luckAv > 20) {
                     // caso em que o avançado passa por o defesa
+                    GuardaRedes guardaredes = new GuardaRedes( (GuardaRedes) nova.getJogador(a.get("GuardaRedes").get(0)));
 
-                      GuardaRedes guardaredes = new GuardaRedes( (GuardaRedes) nova.getJogador(a.get("GuardaRedes").get(0)));
-                    if (Math.random() *100 > this.bola.getRem()){
+                     if (this.fase == 5){
+                    System.out.println(this.bola.getNomeReduzido() +  " consegue cabeceaaaaar " );
+                       if (this.bola.getCab() * Math.random() > guardaredes.getDes() * Math.random()){
+                           System.out.println(" Que Golaçoooooooo de " +  this.bola.getNomeReduzido());
+                           Medio novo = new Medio((Medio) nova.getEquipa().get(a.get("Medio").get(0)));
+                           this.bola = novo;
+                           this.fase = 4;
+                       } else {
+                           System.out.println(" Grande defesa de " + guardaredes.getNomeReduzido());
+                           this.bola = guardaredes;
+                           this.fase = 1;
+                       }
+                     }
+                    else if (Math.random() *100 > this.bola.getRem()){
                         // caso chute e falhe a bola é do guarda redes;
                         System.out.println( "Remate de " + bola.getNomeReduzido() + " saiu completamente ao lado ");
                         System.out.println( "Bola na mão do guarda redes ");
@@ -106,7 +127,7 @@ public class Fase {
                         if (Math.random()*100 > guardaredes.getElast()){
                             System.out.println( "Mas grande defesa de " + guardaredes.getNomeReduzido());
                             this.bola = guardaredes;
-
+                            this.fase = 1;
 
                         } else {
                             //caso guardaredes nao defenda
@@ -134,7 +155,93 @@ public class Fase {
                 break;
 
             case "Lateral":
-                System.out.println("lateral");
+                Equipa atlateral =  this.equipaAtacante == 1 ? equipaCasa : equipaVisitante;
+                HashMap<String, List<Integer>> modellar = this.equipaAtacante == 1 ? modeloCasa : modeloVisitante;
+                double luckLT = Math.random() * bola.gethabilidade("GuardaRedes");
+                switch (this.fase){
+                    case 1:
+                        //caso anda com a bola para a frente
+                        if (luckLT>30){
+                            System.out.println( this.bola.getNomeReduzido() + " Consegue avançar no terreno para o meio campo");
+                            this.fase+=1;
+                        }
+                        //passa para defesa
+                        else if (luckLT>20){
+                           Defesa recebe = new Defesa((Defesa) atlateral.getEquipa().get(modellar.get("Defesa").get(0)));
+                            System.out.println( this.bola.getNomeReduzido() + " faz passe interior para " + recebe.getNomeReduzido());
+                            this.bola = recebe;
+                       }
+                        //caso em que perde a bola
+                         else{
+                            this.equipaAtacante = 1- this.equipaAtacante;
+                             atlateral =  this.equipaAtacante == 1 ? equipaCasa : equipaVisitante;
+                             modellar = this.equipaAtacante == 1 ? modeloCasa : modeloVisitante;
+                             Lateral def = new Lateral((Lateral) atlateral.getEquipa().get(modellar.get("Lateral").get(0)));
+                             System.out.println( this.bola.getNomeReduzido() + " perdeu a bola " + def.getNomeReduzido() + " na zona de perigo ");
+                             this.fase = 3;
+
+                        }
+                        break;
+                    case 2:
+                        //caso anda com a bola para a frente
+                        if (luckLT>30){
+                            System.out.println( this.bola.getNomeReduzido() + " Consegue avançar no terreno para a zona de perigo");
+                            this.fase+=1;
+                        }
+                        //passa para médio
+                        else if (luckLT>20){
+                            Medio rece = new Medio( (Medio) atlateral.getEquipa().get( modellar.get("Medio").get(0)));
+                            System.out.println(this.bola.getNomeReduzido() + " faz um passe interior para " + rece.getNomeReduzido());
+                            this.bola = rece;
+
+                        }
+                        //caso em que perde a bola
+                        else{
+                            this.equipaAtacante = 1- this.equipaAtacante;
+                            atlateral =  this.equipaAtacante == 1 ? equipaCasa : equipaVisitante;
+                            modellar = this.equipaAtacante == 1 ? modeloCasa : modeloVisitante;
+                            Lateral cort = new Lateral((Lateral) atlateral.getEquipa().get(modellar.get("Lateral").get(0)));
+                            System.out.println(this.bola.getNomeReduzido() + "perde a bola no meio campo para " + cort.getNomeReduzido());
+                            this.bola = cort;
+
+
+                        }
+                        break;
+                    case 3:
+                        //caso faz cruzamento
+                        if (luckLT>30){
+                            Avançado cabeca = new Avançado( (Avançado) atlateral.getEquipa().get(modellar.get("Avançado").get(0)));
+                            System.out.println(this.bola.getNomeReduzido() + " Faz Cruzamentoooo para " + cabeca.getNomeReduzido());
+                            atlateral =  !(this.equipaAtacante == 1) ? equipaCasa : equipaVisitante;
+                            modellar = !(this.equipaAtacante == 1) ? modeloCasa : modeloVisitante;
+                            Defesa def = new Defesa((Defesa) atlateral.getEquipa().get(modellar.get("Defesa").get(0)));
+                            // caso avançado consiga cabecear
+                            if (Math.random() * cabeca.getCab() > Math.random() * def.getCab()){
+                                this.fase = 5;
+                                this.bola = cabeca;
+
+                                //caso defesa consiga defender
+                            }else {
+                                this.bola = def;
+                                this.equipaAtacante = 1- this.equipaAtacante;
+                                System.out.println( this.bola.getNomeReduzido() + " consegue cortar a bola no ar");
+                            }
+
+                            //caso em que perde a bola
+                        } else {
+                            this.equipaAtacante = 1 - this.equipaAtacante;
+                            atlateral =  this.equipaAtacante == 1 ? equipaCasa : equipaVisitante;
+                            modellar = this.equipaAtacante == 1 ? modeloCasa : modeloVisitante;
+
+                            Lateral cut = new Lateral((Lateral) atlateral.getEquipa().get(modellar.get("Lateral").get(0)));
+                            System.out.println( this.bola.getNomeReduzido() + " perde a bola para " + cut.getNomeReduzido());
+                            this.bola = cut;
+                            this.fase = 1;
+
+                        }
+
+                        break;
+                }
                 break;
 
             case "GuardaRedes":
@@ -160,12 +267,19 @@ public class Fase {
                 double luckDF = Math.random() * bola.gethabilidade("GuardaRedes");
                 if(luckDF>20){
                     //Passar para médio
-                    Equipa troca = this.equipaAtacante==1 ? this.equipaCasa : this.equipaVisitante;
-                    HashMap<String,List<Integer>> modelo = this.equipaAtacante==1 ? this.modeloCasa : this.modeloVisitante;
-                    Medio recetor = new Medio((Medio) troca.getEquipa().get(modelo.get("Medio").get(0)));
-                    System.out.println(this.bola.getNomeReduzido() + " passa a bola para " + recetor.getNomeReduzido() );
-                    this.bola = recetor;
-                    this.fase++;
+                    Equipa troca = this.equipaAtacante == 1 ? this.equipaCasa : this.equipaVisitante;
+                    HashMap<String, List<Integer>> modelo = this.equipaAtacante == 1 ? this.modeloCasa : this.modeloVisitante;
+                    if(Math.random() > 0.5) {
+                        Medio recetor = new Medio((Medio) troca.getEquipa().get(modelo.get("Medio").get(0)));
+                        System.out.println(this.bola.getNomeReduzido() + " passa a bola para " + recetor.getNomeReduzido());
+                        this.bola = recetor;
+                        this.fase++;
+                    } else { //passe para lateral mais
+                        Lateral rec = new Lateral((Lateral) troca.getEquipa().get(modelo.get("Lateral").get(0)));
+                        System.out.println(this.bola.getNomeReduzido() + " passa a bola para " + rec.getNomeReduzido());
+                        this.fase = 1;
+                        this.bola = rec;
+                    }
                 } else{
                     //perde a bola
                     this.equipaAtacante = 1-this.equipaAtacante;
