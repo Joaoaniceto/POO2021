@@ -238,6 +238,14 @@ public class Jogo {
                 jc,  jf);
     }
 
+    public String gethab() {
+        double a = this.equipaCasa.gethabilidades();
+        double b = this.equipaVisitante.gethabilidades();
+
+        return  this.equipaCasa.getNome() + " tem habilidade de " + a + "\n" + this.equipaVisitante.getNome() + " tem hab de " + b;
+    }
+
+
 
 
     public void startJogo() {
@@ -248,17 +256,14 @@ public class Jogo {
         setTitularesVisitante(this.titularesVisitante);
         this.toString();
         System.out.println("Começa o jogo na casa do " + this.equipaCasa.getNome()+ " contra " + this.equipaVisitante.getNome() + "\n" );
-
+        System.out.println(this.gethab());
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             double coin = Math.random();
 
-            Fase fase = new Fase(equipaCasa,equipaVisitante,0,coin >0.5 ? 1 : 0 ,2,coin>0.5 ? equipaCasa.getJogador(modeloCasa.get("Medio").get(0)) : equipaVisitante.getJogador(modeloVisitante.get("Medio").get(0)),modeloCasa,modeloVisitante );
+            Fase fase = new Fase(equipaCasa,equipaVisitante,0,coin >0.5 ? 1 : 0 ,4,coin>0.5 ? equipaCasa.getJogador(modeloCasa.get("Medio").get(0)) : equipaVisitante.getJogador(modeloVisitante.get("Medio").get(0)),modeloCasa,modeloVisitante );
 
 
-            //Fase fase;
-            //if(Math.random() > 0.5){fase = new Fase(0,1,2);}
-            //else{fase = new Fase(0,0,2);}
             @Override
             public void run() {
                 fase.getState(fase.getEquipaAtacante(),fase.getFase(),fase.getJogador());

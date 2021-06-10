@@ -102,7 +102,7 @@ public class main {
         List<Jogo> jogos = d.getJogos();
         Jogo j = jogos.get(0);
 
-        // j.startJogo();
+
 
          j.setTitularesCasa(j.getTitularesCasa());
          j.setTitularesVisitante(j.getTitularesVisitante());
