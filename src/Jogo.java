@@ -15,12 +15,17 @@ public class Jogo {
     private Equipa equipaCasa;
     private Equipa equipaVisitante;
     private LocalDate data;
-    private Map<Integer,Integer> subsCasa;        //falta metodo atualiza subs casa
-    private Map<Integer,Integer> subsVisitante;  //falta metodo atualiza subs casa
+    private Map<Integer,Integer> subsCasa;
+    private Map<Integer,Integer> subsVisitante;
     private estado state;
     private int golosCasa , golosVisitante;
     private HashMap<String,List<Integer>> modeloCasa;
     private HashMap<String,List<Integer>> modeloVisitante;
+    private ArrayList<Integer> entracasa;
+    private ArrayList<Integer> saicasa;
+    private ArrayList<Integer> entraVisitante;
+    private ArrayList<Integer> saiVisitante;
+
     private List<Integer> titularesCasa;
     private List<Integer> titularesVisitante;
 
@@ -29,6 +34,10 @@ public class Jogo {
         this.equipaVisitante = new Equipa();
         this.subsCasa = new HashMap<Integer,Integer>();
         this.subsVisitante = new HashMap<Integer,Integer>();
+        this.entracasa = new ArrayList<>();
+        this.saicasa = new ArrayList<>();
+        this.entraVisitante = new ArrayList<>();
+        this.saiVisitante = new ArrayList<>();
         this.state= estado.por_iniciar;
         this.golosCasa = 0;
         this.golosVisitante = 0;
@@ -36,16 +45,22 @@ public class Jogo {
         this.modeloVisitante = new HashMap<>();
     }
 
-    public Jogo(Equipa casa, Equipa visitante, Map<Integer,Integer> subsC, Map<Integer,Integer> subsV, int golosC, int golosV, LocalDate data, List<Integer> jc, List<Integer> jv) {
+    public Jogo(Equipa casa, Equipa visitante, Map<Integer,Integer> subsC, Map<Integer,Integer> subsV,ArrayList<Integer> ec,ArrayList<Integer> sc,ArrayList<Integer> ev,ArrayList<Integer> sv, int golosC, int golosV, LocalDate data, List<Integer> jc, List<Integer> jv) {
         this.equipaCasa = casa;
         this.equipaVisitante = visitante;
         this.subsCasa = subsC;
         this.subsVisitante = subsV;
+        this.entracasa =ec;
+        this.saicasa = sc;
+        this.entraVisitante = ev;
+        this.saiVisitante = sv;
         this.golosCasa = golosC;
         this.golosVisitante = golosV;
         this.data = data;
         this.titularesCasa = jc;
         this.titularesVisitante = jv;
+        this.state = estado.por_iniciar;
+        this.data = LocalDate.now();
     }
 
     public Jogo(Equipa casa,Equipa visitante,Map<Integer,Integer> subsCasa,Map<Integer,Integer> subsVisitante,int golosCasa,int golosVisitante,HashMap<String,List<Integer>> mc,HashMap<String,List<Integer>> mv){
@@ -79,6 +94,10 @@ public class Jogo {
     public LocalDate getData() {return this.data;}
     public Map<Integer,Integer> getSubsCasa() {return this.subsCasa;}
     public Map<Integer,Integer> getSubsVisitante() {return this.subsVisitante;}
+    public ArrayList<Integer> getEntracasa(){return this.entracasa;}
+    public ArrayList<Integer> getSaicasa(){return this.saicasa;}
+    public ArrayList<Integer> getEntraVisitante(){return this.entraVisitante;}
+    public ArrayList<Integer> getSaiVisitante(){return this.saiVisitante;}
     public estado getEstado() {return this.state;}
     public int getGolosCasa() {return this.golosCasa;}
     public int getGolosVisitante() {return this.golosVisitante;}
@@ -212,6 +231,11 @@ public class Jogo {
         List<Integer> jf = new ArrayList<>();
         Map<Integer, Integer> subsC = new HashMap<>();
         Map<Integer, Integer> subsF = new HashMap<>();
+        ArrayList<Integer> entrac = new ArrayList<>();
+        ArrayList<Integer> saic = new ArrayList<>();
+        ArrayList<Integer> entraV = new ArrayList<>();
+        ArrayList<Integer> saiV = new ArrayList<>();
+
         Integer c = 0;
         //System.out.println("compare: "+equipas.get("Schumann Athletic").getNome()+" with "+campos[0]);
         for (Map.Entry<String, Equipa> entry : equipas.entrySet()) {
@@ -225,6 +249,8 @@ public class Jogo {
         for (int i = 16; i < 19; i++){
             String[] sub = campos[i].split("->");
             subsC.put(Integer.parseInt(sub[0]), Integer.parseInt(sub[1]));
+            entrac.add(Integer.parseInt(sub[0]));
+            saic.add(Integer.parseInt(sub[1]));
         }
         for (int i = 19; i < 30; i++){
             jf.add(Integer.parseInt(campos[i]));
@@ -232,8 +258,10 @@ public class Jogo {
         for (int i = 30; i < 33; i++){
             String[] sub = campos[i].split("->");
             subsF.put(Integer.parseInt(sub[0]), Integer.parseInt(sub[1]));
+            entraV.add(Integer.parseInt(sub[0]));
+            saiV.add(Integer.parseInt(sub[1]));
         }              //equipaC   equipaV   subsC   subsV      golosC                    gologV
-        return new Jogo(eC,eV, subsC, subsF,Integer.parseInt(campos[2]), Integer.parseInt(campos[3]),
+        return new Jogo(eC,eV, subsC, subsF,entrac,saic,entraV,saiV ,Integer.parseInt(campos[2]), Integer.parseInt(campos[3]),
                 LocalDate.of(Integer.parseInt(data[0]), Integer.parseInt(data[1]), Integer.parseInt(data[2])),
                 jc,  jf);
     }
@@ -261,7 +289,7 @@ public class Jogo {
         timer.schedule(new TimerTask() {
             double coin = Math.random();
 
-            Fase fase = new Fase(equipaCasa,equipaVisitante,0,coin >0.5 ? 1 : 0 ,4,coin>0.5 ? equipaCasa.getJogador(modeloCasa.get("Medio").get(0)) : equipaVisitante.getJogador(modeloVisitante.get("Medio").get(0)),modeloCasa,modeloVisitante );
+            Fase fase = new Fase(equipaCasa,equipaVisitante,0,coin >0.5 ? 1 : 0 ,4,coin>0.5 ? equipaCasa.getJogador(modeloCasa.get("Medio").get(0)) : equipaVisitante.getJogador(modeloVisitante.get("Medio").get(0)),modeloCasa,modeloVisitante,entracasa,saicasa,entraVisitante,saiVisitante );
 
 
             @Override
@@ -273,7 +301,7 @@ public class Jogo {
                     fase.result();
                 };
             }
-        }, 0, 1000);//wait 0 ms before doing the action and do it every 1000ms (1second)
+        }, 0, 100);//wait 0 ms before doing the action and do it every 1000ms (1second)
 
     }
 // teste de comentario

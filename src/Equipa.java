@@ -103,6 +103,7 @@ public class Equipa implements Comparable<Equipa>, Serializable {
     //FALTA ATUALIZAÇÃO DINAMICA DA VARIAVEL SUBSCASA
     //E SUBSVISITANTE NA CLASSE JOGO
     public void substituicao(Jogador t, Jogador b) {
+
         int flag = 0;
         boolean b1 = t.getTitular();
         boolean b2 = b.getTitular();
@@ -117,6 +118,7 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         else {
             System.out.println("\nErro na substituição de jogadores (verifique se têm valor titular distinto ou se pertencem à mesma equipa)");
         }
+        System.out.println(t.getNomeReduzido() + " vai ser substituido por : " + b.getNomeReduzido() + "\n");
     }
 
     public double gethabilidades() {
