@@ -96,7 +96,7 @@ public class main {
         //game.estadoModeloCasa("defesas",32,1);
 
         //System.out.println("\n"+game.toString());
-        */
+
 
         Data d = Parser.parse();
         List<Jogo> jogos = d.getJogos();
@@ -108,6 +108,13 @@ public class main {
          j.setTitularesVisitante(j.getTitularesVisitante());
 
         j.startJogo();
+        */
+        Data d = Parser.parse();
+        d.guardaEstado();
+        d.deleteEstado();
+        Data f = Data.carregaEstado("save.tmp");
+        System.out.println(f.getJogos().toString());
+
 
     }
 }

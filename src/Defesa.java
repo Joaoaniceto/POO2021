@@ -5,7 +5,7 @@ public class Defesa extends Jogador {
     private int corte;
 
     //construtor por omissão
-    public Defesa(int i, String name, boolean b, ArrayList<Equipa> hist, int parseInt, int anInt, int i1, int parseInt1, int anInt1, int i2, int parseInt2, int anInt2, int i3){
+    public Defesa(){
         super();
         this.corte = 0;
     }

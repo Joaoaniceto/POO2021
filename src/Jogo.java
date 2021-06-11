@@ -1,3 +1,4 @@
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.*;
 import java.lang.Math;
@@ -11,7 +12,7 @@ acordo com o parser dos stores. tb criei um construtor novo para a classe Jogo.
 
 enum estado {por_iniciar,decorrer,terminado}
 
-public class Jogo {
+public class Jogo implements Serializable {
     private Equipa equipaCasa;
     private Equipa equipaVisitante;
     private LocalDate data;

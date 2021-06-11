@@ -3,12 +3,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.io.Serializable;
 
 public class Data implements Cloneable,Serializable {
     //INSTANCE VARIABLES
-    public static Map<String, Equipa>  equipas; //nome, equipa
-    public static List<Jogador> jogadores; //numero, jogador
-    public static List<Jogo> jogos;
+    private Map<String, Equipa>  equipas; //nome, equipa
+    private List<Jogador> jogadores; //numero, jogador
+    private List<Jogo> jogos;
 
     //CONSTRUCTORS
     public Data() {

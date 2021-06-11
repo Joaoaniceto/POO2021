@@ -1,18 +1,17 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Delegate {
     //INSTANCE VARIABLES
     private Data info;
-    private Menu menuPrincipal, menuSecundario, menuEquipas, menuJogos;
+    private Menu menuPrincipal, menuSecundario, menuEquipas, menuJogos, menuCriacao;
     private Scanner scannerIn;
 
     public Delegate(Data info){
         this.info = info;
-        this.menuPrincipal = new Menu( new String[] {"Jogadores","Equipas","Jogos","Efetuar Transferência","Simular um Jogo"} );
+        this.menuPrincipal = new Menu( new String[] {"Jogadores","Equipas","Jogos","Efetuar Transferência","Simular um Jogo","Modo Criação"} );
         this.menuSecundario = new Menu(new String[] {"Mais Informação"});
         this.menuEquipas = new Menu(new String[] {"Schumann Athletic","Stravinsky Athletic","Bach F. C.","Debussy Athletic",
                 "Mozart F. C.", "Handel Athletic", "Mendelssohn F. C.", "Sporting Club Shostakovich", "Sporting Club Schubert",
@@ -21,6 +20,7 @@ public class Delegate {
         this.menuJogos = new Menu(new String[] {
                 "Sporting Club Shostakovich VS Mendelssohn F. C.", "Mozart F. C. VS Sporting Club Dvorak", "Debussy Athletic  VS Stravinsky Athletic" });
         this.scannerIn = new Scanner(System.in);
+        this.menuCriacao = new Menu(new String[] {"Criar Jogador","Criar Equipa","Criar Jogo"});
     }
 
     public void run() {
@@ -59,13 +59,29 @@ public class Delegate {
                     System.out.println("\nBEM-VINDO À SIMULAÇÃO DE JOGOS \nPor favor, escolha uma jogo:");
                     listarJogos_upgraded();
                     break;
+                case 6:
+                    System.out.println("\nMENU DE PERSONALIZAÇÃO\nPor favor, escolha uma opção:");
+                    this.menuCriacao.executa();
+                    switch (this.menuCriacao.getOpcao()) {
+                        case 1:
+                            criarJogador();
+                            break;
+                        case 2:
+                            criarEquipa();
+                            break;
+                        case 3:
+                            criarJogo();
+                            break;
+                    }
+                    break;
+
             }
         } while (this.menuPrincipal.getOpcao() != 0);
         System.out.println("OBRIGADO :)");
     }
 
     public void listarJogadores() {
-        for (Jogador j : info.jogadores){
+        for (Jogador j : info.getJogadores()){
             System.out.println(j.getNome());
             //System.out.println(j.toString());
         }
@@ -73,7 +89,7 @@ public class Delegate {
 
     //se possível dar surround com try catch para evitar que last seja negativo (JogadorPerdidoException)
     public void listarJogadores_info() {
-        for (Jogador j : info.jogadores){
+        for (Jogador j : info.getJogadores()){
             int last = j.getHistorial().size() - 1;
             System.out.println(j.getNome() + " (" + j.getClass().getName() + " , " + j.getHistorial().get(last).getNome() + ")");
             System.out.println(j.toString());
@@ -81,19 +97,19 @@ public class Delegate {
     }
 
     public void listarEquipas() {
-        for(Equipa e : info.equipas.values()) {
+        for(Equipa e : info.getEquipas().values()) {
             System.out.println(e.getNome());
         }
     }
 
     public void listarEquipas_info() {
-        for(Equipa e : info.equipas.values()) {
+        for(Equipa e : info.getEquipas().values()) {
             System.out.println(e.toString());
         }
     }
 
     public void listarJogos() {
-        for(Jogo jog : info.jogos) {
+        for(Jogo jog : info.getJogos()) {
             System.out.println(jog.toString());
         }
     }
@@ -246,8 +262,92 @@ public class Delegate {
                 jogos.get(2).startJogo();
                 break;
         }
+    }
+//    public GuardaRedes(int numero, String nome, boolean titular, ArrayList<Equipa> h, int vel, int res,
+//                       int des, int imp, int cab, int rem, int passe, int elast){
+    public void criarJogador() {
+        System.out.println("Qual é o número de camisola?\n");
+        Scanner s_num = new Scanner(System.in);
+        int n = s_num.nextInt();
 
+        System.out.println("Qual é o nome do Jogador?\n");
+        Scanner s_nome = new Scanner((System.in));
+        String nome = s_nome.nextLine();
+
+        boolean titular = false;
+        System.out.println("Joga como titular?\n");
+        Scanner s_t = new Scanner(System.in);
+        String t = s_t.nextLine();
+        switch (t) {
+            case "true":
+            case "True":
+                titular = true;
+                break;
+            case "false":
+            case "False":
+                titular = false;
+                break;
+        }
+
+        System.out.println("Qual é o seu historial?\n");
+        Scanner h = new Scanner(System.in);
+        String hist = h.nextLine();
+        String[] split = hist.split(",");
+        ArrayList<Equipa> historial = new ArrayList<>();
+        for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()){
+            String eq_nome = entry.getKey();
+            Equipa eq_obj = entry.getValue();
+            if ( Arrays.asList(split).contains(eq_nome) ) {historial.add(eq_obj);}
+        }
+        //falta fazer
+        //Equipa nova = new Equipa("nome equipa");
+        //historial.add(nova);
+        //para a nova equipa selecionada
+
+        System.out.println("É GuardaRedes, Avançado, Lateral, Médio ou Defesa?\n");
+        Scanner s = new Scanner(System.in);
+        String role = s.nextLine();
+
+        switch (role) {
+            case "GuardaRedes":
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e elasticidade por ordem?\n");
+                Scanner hab = new Scanner(System.in);
+                String habilidades = h.nextLine();
+                String[] hab_split = hist.split("\\s+");
+                Integer[] converted = {};
+                for (int i = 0; i < hab_split.length; i++) converted[i] = Integer.parseInt(hab_split[i]);
+                GuardaRedes gr = new GuardaRedes(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
+                break;
+            case "Avançado":
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
+
+                Avançado a = new Avançado();
+                break;
+            case "Lateral":
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
+
+                Lateral l = new Lateral();
+                break;
+            case "Médio":
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
+
+                Medio m = new Medio();
+                break;
+            case "Defesa":
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
+                Defesa d = new Defesa();
+                break;
+        }
     }
 
+    public void criarEquipa() {
+        System.out.println("Qual o nome da equipa?\n");
+        Scanner s = new Scanner(System.in);
+        Equipa e = new Equipa(s.toString());
+    }
+
+    public void criarJogo() {
+        Jogo j = new Jogo(); //isto está mal
+    }
 
 }

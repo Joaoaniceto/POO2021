@@ -5,7 +5,7 @@ public class Avançado extends Jogador {
     private int drible;
 
     //construtor por omissão
-    public Avançado(int i, String name, boolean b, ArrayList<Equipa> hist, int parseInt, int anInt, int i1, int parseInt1, int anInt1, int i2, int parseInt2, int anInt2, int i3){
+    public Avançado(){
         super();
         this.drible = 0;
     }
