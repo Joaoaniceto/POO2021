@@ -248,6 +248,7 @@ public class Delegate {
     }
 
 
+
     public void listarJogos_upgraded() {
         List<Jogo> jogos = this.info.getJogos();
         this.menuJogos.executa();
@@ -263,8 +264,16 @@ public class Delegate {
                 break;
         }
     }
-//    public GuardaRedes(int numero, String nome, boolean titular, ArrayList<Equipa> h, int vel, int res,
-//                       int des, int imp, int cab, int rem, int passe, int elast){
+
+    public Integer[] hibilitiesAUX() {
+        Scanner hab = new Scanner(System.in);
+        String habilidades = hab.nextLine();
+        String[] hab_split = habilidades.split("\\s+");
+        Integer[] converted = new Integer[8];
+        for (int i = 0; i < hab_split.length; i++) converted[i] = Integer.parseInt(hab_split[i]);
+        return converted;
+    }
+
     public void criarJogador() {
         System.out.println("Qual é o número de camisola?\n");
         Scanner s_num = new Scanner(System.in);
@@ -293,49 +302,56 @@ public class Delegate {
         Scanner h = new Scanner(System.in);
         String hist = h.nextLine();
         String[] split = hist.split(",");
+        List<String> list = Arrays.asList(split);
         ArrayList<Equipa> historial = new ArrayList<>();
         for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()){
             String eq_nome = entry.getKey();
             Equipa eq_obj = entry.getValue();
-            if ( Arrays.asList(split).contains(eq_nome) ) {historial.add(eq_obj);}
+            if ( list.contains(eq_nome) ) {historial.add(eq_obj);list.remove(eq_nome);}
         }
-        //falta fazer
-        //Equipa nova = new Equipa("nome equipa");
-        //historial.add(nova);
-        //para a nova equipa selecionada
+        if (!list.isEmpty()) {
+            for (String s : list) {
+                Equipa nova = new Equipa(s);
+                historial.add(nova);
+            }
+        }
 
         System.out.println("É GuardaRedes, Avançado, Lateral, Médio ou Defesa?\n");
         Scanner s = new Scanner(System.in);
         String role = s.nextLine();
 
+        Integer[] converted;
+
         switch (role) {
             case "GuardaRedes":
                 System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e elasticidade por ordem?\n");
-                Scanner hab = new Scanner(System.in);
-                String habilidades = h.nextLine();
-                String[] hab_split = hist.split("\\s+");
-                Integer[] converted = {};
-                for (int i = 0; i < hab_split.length; i++) converted[i] = Integer.parseInt(hab_split[i]);
+                converted = hibilitiesAUX();
                 GuardaRedes gr = new GuardaRedes(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
+                this.info.addJogador(gr);
                 break;
             case "Avançado":
                 System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
-
-                Avançado a = new Avançado();
+                converted = hibilitiesAUX();
+                Avançado a = new Avançado(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
+                this.info.addJogador(a);
                 break;
             case "Lateral":
                 System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
-
-                Lateral l = new Lateral();
+                converted = hibilitiesAUX();
+                Lateral l = new Lateral(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
+                this.info.addJogador(l);
                 break;
             case "Médio":
                 System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
-
-                Medio m = new Medio();
+                converted = hibilitiesAUX();
+                Medio m = new Medio(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
+                this.info.addJogador(m);
                 break;
             case "Defesa":
                 System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
-                Defesa d = new Defesa();
+                converted = hibilitiesAUX();
+                Defesa d = new Defesa(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
+                this.info.addJogador(d);
                 break;
         }
     }
