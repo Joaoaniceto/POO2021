@@ -1,0 +1,10 @@
+REQUISITOS
+
+->Probabilidade da simulação com base na habilidade de jogadores e equipas
+->Salvar estado do programa --DONE
+->ENCAPSULAMENTO
+->Inicializar jogadores/equipa --DONE
+->Substituições --DONE
+->Exceptions
+->estado do jogo é useless
+->falta decidir se equipas no historial sao adicionada

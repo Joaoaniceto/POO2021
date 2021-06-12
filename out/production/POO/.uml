@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1216.0" y="779.0">Equipas</node>
+    <node x="1460.0" y="779.0">estado</node>
+    <node x="1673.0" y="779.0">main</node>
+    <node x="1867.0" y="779.0">Exceptions</node>
+    <node x="0.0" y="535.0">Defesa</node>
+    <node x="1967.0" y="524.0">Lateral</node>
+    <node x="1470.0" y="535.0">Avançado</node>
+    <node x="0.0" y="779.0">Jogo</node>
+    <node x="998.0" y="0.0">Jogador</node>
+    <node x="479.0" y="524.0">GuardaRedes</node>
+    <node x="886.0" y="779.0">Equipa</node>
+    <node x="992.0" y="535.0">Medio</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="GuardaRedes" target="Jogador">
+      <point x="0.0" y="-105.0" />
+      <point x="725.5" y="504.0" />
+      <point x="1131.8" y="504.0" />
+      <point x="-89.20000000000005" y="237.0" />
+    </edge>
+    <edge source="Avançado" target="Jogador">
+      <point x="0.0" y="-94.0" />
+      <point x="1708.5" y="504.0" />
+      <point x="1310.1999999999998" y="504.0" />
+      <point x="89.19999999999982" y="237.0" />
+    </edge>
+    <edge source="Defesa" target="Jogador">
+      <point x="0.0" y="-94.0" />
+      <point x="229.5" y="494.0" />
+      <point x="1042.6" y="494.0" />
+      <point x="-178.39999999999998" y="237.0" />
+    </edge>
+    <edge source="Medio" target="Jogador">
+      <point x="0.0" y="-94.0" />
+      <point x="0.0" y="237.0" />
+    </edge>
+    <edge source="Lateral" target="Jogador">
+      <point x="0.0" y="-105.0" />
+      <point x="2196.5" y="494.0" />
+      <point x="1399.3999999999999" y="494.0" />
+      <point x="178.39999999999986" y="237.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6959937156323645" x="1213.0" y="626.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

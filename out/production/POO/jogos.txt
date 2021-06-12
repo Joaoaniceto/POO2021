@@ -1,0 +1,871 @@
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Mendelssohn F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [37, 25, 3](out)[22, 43, 25](in)
+Substituições da Equipa Visitante: [42, 31, 45](out)[1, 49, 14](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Sporting Club Dvorak
+Data: 2021-06-12
+Substituições da Equipa da Casa: [11, 28, 42](out)[36, 35, 34](in)
+Substituições da Equipa Visitante: [13, 37, 42](out)[19, 49, 45](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Debussy Athletic
+Equipa visitante: Stravinsky Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [47, 18, 31](out)[3, 21, 45](in)
+Substituições da Equipa Visitante: [44, 24, 23](out)[17, 22, 36](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 5
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Beethoven F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 20, 5](out)[11, 37, 32](in)
+Substituições da Equipa Visitante: [16, 40, 19](out)[39, 38, 3](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mendelssohn F. C.
+Equipa visitante: Bartok F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [45, 31, 22](out)[49, 41, 2](in)
+Substituições da Equipa Visitante: [19, 45, 18](out)[1, 40, 8](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bach F. C.
+Equipa visitante: Sporting Club Shostakovich
+Data: 2021-06-12
+Substituições da Equipa da Casa: [0, 30, 21](out)[14, 4, 36](in)
+Substituições da Equipa Visitante: [3, 34, 20](out)[43, 31, 12](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Beethoven F. C.
+Equipa visitante: Handel Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 48, 19](out)[43, 50, 38](in)
+Substituições da Equipa Visitante: [0, 39, 47](out)[11, 0, 30](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Wagner Athletic
+Equipa visitante: Stravinsky Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [45, 27, 15](out)[33, 28, 12](in)
+Substituições da Equipa Visitante: [44, 10, 4](out)[0, 36, 19](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Wagner Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [38, 18, 47](out)[13, 8, 4](in)
+Substituições da Equipa Visitante: [27, 45, 9](out)[12, 42, 38](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Stravinsky Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [34, 20, 25](out)[11, 12, 43](in)
+Substituições da Equipa Visitante: [44, 46, 10](out)[17, 8, 36](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Sporting Club Schubert
+Data: 2021-06-12
+Substituições da Equipa da Casa: [40, 47, 38](out)[44, 20, 42](in)
+Substituições da Equipa Visitante: [5, 30, 43](out)[17, 39, 30](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 4
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Brahms F. C.
+Equipa visitante: Sporting Club Chopin
+Data: 2021-06-12
+Substituições da Equipa da Casa: [46, 2, 25](out)[43, 38, 31](in)
+Substituições da Equipa Visitante: [38, 40, 31](out)[42, 8, 26](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-06-12
+Substituições da Equipa da Casa: [46, 48, 14](out)[36, 5, 20](in)
+Substituições da Equipa Visitante: [1, 23, 8](out)[38, 9, 43](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Sporting Club Chopin
+Data: 2021-06-12
+Substituições da Equipa da Casa: [48, 32, 14](out)[34, 6, 20](in)
+Substituições da Equipa Visitante: [10, 47, 48](out)[16, 20, 8](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 5
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Debussy Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [13, 30, 1](out)[38, 3, 5](in)
+Substituições da Equipa Visitante: [31, 42, 38](out)[12, 5, 21](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Beethoven F. C.
+Equipa visitante: Bach F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 16, 23](out)[38, 39, 44](in)
+Substituições da Equipa Visitante: [27, 1, 34](out)[2, 32, 27](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Wagner Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [14, 19, 11](out)[20, 35, 36](in)
+Substituições da Equipa Visitante: [37, 45, 47](out)[2, 38, 29](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Brahms F. C.
+Equipa visitante: Vivaldi F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 46, 1](out)[41, 23, 29](in)
+Substituições da Equipa Visitante: [10, 4, 7](out)[43, 39, 28](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Mendelssohn F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [47, 31, 10](out)[20, 25, 42](in)
+Substituições da Equipa Visitante: [42, 23, 12](out)[25, 1, 23](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Handel Athletic
+Equipa visitante: Mahler Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [0, 6, 47](out)[11, 0, 30](in)
+Substituições da Equipa Visitante: [15, 32, 22](out)[29, 39, 2](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Sporting Club Dvorak
+Data: 2021-06-12
+Substituições da Equipa da Casa: [47, 40, 38](out)[20, 8, 42](in)
+Substituições da Equipa Visitante: [13, 23, 37](out)[19, 6, 23](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Handel Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [4, 49, 5](out)[36, 4, 32](in)
+Substituições da Equipa Visitante: [35, 39, 29](out)[37, 11, 50](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Debussy Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [3, 4, 5](out)[36, 3, 32](in)
+Substituições da Equipa Visitante: [18, 4, 15](out)[21, 32, 12](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Debussy Athletic
+Equipa visitante: Bartok F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [31, 38, 15](out)[48, 21, 45](in)
+Substituições da Equipa Visitante: [16, 18, 38](out)[4, 8, 31](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Mendelssohn F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [43, 34, 40](out)[39, 36, 22](in)
+Substituições da Equipa Visitante: [28, 45, 42](out)[25, 17, 1](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Dvorak
+Equipa visitante: Vivaldi F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [40, 13, 42](out)[49, 19, 32](in)
+Substituições da Equipa Visitante: [16, 30, 7](out)[3, 28, 33](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Vivaldi F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [47, 16, 45](out)[1, 4, 7](in)
+Substituições da Equipa Visitante: [30, 20, 4](out)[33, 18, 31](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Schumann Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [9, 20, 4](out)[39, 6, 20](in)
+Substituições da Equipa Visitante: [4, 23, 20](out)[36, 26, 37](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Handel Athletic
+Equipa visitante: Vivaldi F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [10, 35, 47](out)[30, 27, 1](in)
+Substituições da Equipa Visitante: [47, 38, 10](out)[42, 3, 26](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Beethoven F. C.
+Equipa visitante: Sporting Club Dvorak
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 48, 23](out)[3, 5, 6](in)
+Substituições da Equipa Visitante: [48, 23, 42](out)[33, 6, 32](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Brahms F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [34, 9, 47](out)[38, 11, 30](in)
+Substituições da Equipa Visitante: [23, 14, 7](out)[41, 43, 23](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Debussy Athletic
+Equipa visitante: Sporting Club Dvorak
+Data: 2021-06-12
+Substituições da Equipa da Casa: [42, 38, 36](out)[5, 21, 45](in)
+Substituições da Equipa Visitante: [26, 23, 13](out)[32, 49, 19](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Sporting Club Shostakovich
+Data: 2021-06-12
+Substituições da Equipa da Casa: [28, 11, 46](out)[35, 36, 25](in)
+Substituições da Equipa Visitante: [4, 20, 37](out)[6, 12, 1](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Wagner Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [40, 7, 22](out)[44, 40, 20](in)
+Substituições da Equipa Visitante: [47, 25, 9](out)[29, 2, 7](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-06-12
+Substituições da Equipa da Casa: [5, 38, 40](out)[15, 48, 39](in)
+Substituições da Equipa Visitante: [12, 7, 1](out)[48, 28, 5](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mendelssohn F. C.
+Equipa visitante: Schumann Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [13, 22, 45](out)[33, 2, 14](in)
+Substituições da Equipa Visitante: [30, 5, 20](out)[11, 28, 37](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Vivaldi F. C.
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 38, 41](out)[33, 3, 30](in)
+Substituições da Equipa Visitante: [23, 35, 7](out)[9, 43, 17](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Brahms F. C.
+Equipa visitante: Sporting Club Shostakovich
+Data: 2021-06-12
+Substituições da Equipa da Casa: [7, 14, 27](out)[43, 7, 29](in)
+Substituições da Equipa Visitante: [34, 3, 47](out)[39, 43, 30](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Bach F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [1, 8, 2](out)[38, 47, 8](in)
+Substituições da Equipa Visitante: [0, 1, 24](out)[43, 50, 35](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Mahler Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [45, 33, 15](out)[40, 31, 45](in)
+Substituições da Equipa Visitante: [25, 15, 28](out)[20, 25, 2](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mahler Athletic
+Equipa visitante: Sporting Club Schubert
+Data: 2021-06-12
+Substituições da Equipa da Casa: [22, 25, 15](out)[39, 29, 25](in)
+Substituições da Equipa Visitante: [30, 38, 40](out)[22, 1, 39](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bach F. C.
+Equipa visitante: Stravinsky Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [0, 24, 1](out)[5, 2, 50](in)
+Substituições da Equipa Visitante: [11, 10, 23](out)[42, 36, 10](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Stravinsky Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [1, 12, 23](out)[38, 48, 15](in)
+Substituições da Equipa Visitante: [24, 46, 4](out)[8, 1, 19](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Shostakovich
+Equipa visitante: Beethoven F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [34, 47, 20](out)[38, 30, 6](in)
+Substituições da Equipa Visitante: [40, 16, 48](out)[38, 39, 50](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mendelssohn F. C.
+Equipa visitante: Bach F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [13, 31, 43](out)[36, 17, 25](in)
+Substituições da Equipa Visitante: [3, 27, 34](out)[43, 35, 27](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Vivaldi F. C.
+Equipa visitante: Handel Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [41, 38, 47](out)[33, 3, 38](in)
+Substituições da Equipa Visitante: [39, 47, 10](out)[11, 1, 47](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 5
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Vivaldi F. C.
+Equipa visitante: Beethoven F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [4, 41, 47](out)[39, 28, 42](in)
+Substituições da Equipa Visitante: [40, 23, 25](out)[3, 13, 7](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Dvorak
+Equipa visitante: Stravinsky Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [48, 43, 37](out)[33, 32, 49](in)
+Substituições da Equipa Visitante: [46, 11, 44](out)[1, 42, 17](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Sporting Club Shostakovich
+Data: 2021-06-12
+Substituições da Equipa da Casa: [12, 30, 38](out)[36, 39, 48](in)
+Substituições da Equipa Visitante: [25, 47, 9](out)[43, 33, 39](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Handel Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [38, 16, 33](out)[26, 1, 25](in)
+Substituições da Equipa Visitante: [35, 10, 46](out)[27, 30, 37](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Mozart F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [3, 5, 50](out)[36, 28, 26](in)
+Substituições da Equipa Visitante: [42, 11, 14](out)[34, 36, 20](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Wagner Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [46, 43, 40](out)[50, 22, 39](in)
+Substituições da Equipa Visitante: [45, 47, 14](out)[33, 34, 42](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 4
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-06-12
+Substituições da Equipa da Casa: [40, 47, 38](out)[8, 20, 42](in)
+Substituições da Equipa Visitante: [35, 23, 7](out)[28, 15, 35](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 4
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bach F. C.
+Equipa visitante: Vivaldi F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [37, 34, 0](out)[32, 35, 5](in)
+Substituições da Equipa Visitante: [7, 41, 4](out)[33, 7, 39](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Chopin
+Equipa visitante: Handel Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 38, 31](out)[35, 16, 26](in)
+Substituições da Equipa Visitante: [46, 10, 13](out)[27, 1, 22](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Vivaldi F. C.
+Equipa visitante: Brahms F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [41, 7, 30](out)[28, 33, 7](in)
+Substituições da Equipa Visitante: [34, 23, 7](out)[36, 41, 23](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Handel Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [5, 3, 40](out)[50, 16, 39](in)
+Substituições da Equipa Visitante: [47, 0, 13](out)[1, 11, 12](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Schumann Athletic
+Equipa visitante: Vivaldi F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [3, 50, 4](out)[36, 37, 3](in)
+Substituições da Equipa Visitante: [41, 38, 16](out)[28, 3, 42](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bach F. C.
+Equipa visitante: Brahms F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 1, 21](out)[4, 50, 47](in)
+Substituições da Equipa Visitante: [46, 1, 34](out)[41, 29, 33](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Bartok F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 8, 13](out)[15, 43, 5](in)
+Substituições da Equipa Visitante: [38, 15, 45](out)[31, 40, 15](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 0
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Schubert
+Equipa visitante: Sporting Club Chopin
+Data: 2021-06-12
+Substituições da Equipa da Casa: [38, 5, 34](out)[48, 50, 36](in)
+Substituições da Equipa Visitante: [7, 23, 47](out)[8, 35, 20](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 0
+Golos da Equipa Visitante: 4
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Bartok F. C.
+Equipa visitante: Mendelssohn F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [15, 14, 16](out)[40, 22, 4](in)
+Substituições da Equipa Visitante: [22, 43, 45](out)[2, 1, 14](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 3
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mendelssohn F. C.
+Equipa visitante: Sporting Club Schubert
+Data: 2021-06-12
+Substituições da Equipa da Casa: [13, 45, 31](out)[36, 49, 45](in)
+Substituições da Equipa Visitante: [12, 5, 46](out)[36, 11, 15](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Mozart F. C.
+Equipa visitante: Mahler Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [11, 29, 48](out)[36, 35, 5](in)
+Substituições da Equipa Visitante: [30, 15, 23](out)[29, 30, 11](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 5
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Sporting Club Prokofiev
+Equipa visitante: Mahler Athletic
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 2, 13](out)[3, 28, 38](in)
+Substituições da Equipa Visitante: [27, 23, 22](out)[48, 17, 39](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 1
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Beethoven F. C.
+Equipa visitante: Brahms F. C.
+Data: 2021-06-12
+Substituições da Equipa da Casa: [48, 20, 19](out)[50, 44, 3](in)
+Substituições da Equipa Visitante: [34, 7, 25](out)[33, 43, 31](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 1
+Golos da Equipa Visitante: 3
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
+Equipa da casa: Stravinsky Athletic
+Equipa visitante: Sporting Club Prokofiev
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 24, 10](out)[36, 1, 23](in)
+Substituições da Equipa Visitante: [1, 35, 30](out)[38, 47, 3](in)
+Estado do jogo: por_iniciar
+Golos da Equipa da Casa: 2
+Golos da Equipa Visitante: 2
+Modelo Tático Equipa Casa: null
+Modelo Tático Equipa Visitante: null
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
+
