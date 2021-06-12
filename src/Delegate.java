@@ -1,9 +1,6 @@
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Delegate {
     //INSTANCE VARIABLES
@@ -60,7 +57,7 @@ public class Delegate {
                     break;
                 case 5:
                     System.out.println("\nBEM-VINDO À SIMULAÇÃO DE JOGOS \nPor favor, escolha uma jogo:");
-                    listarJogos_upgraded();
+                    listarJogos_upgraded2();
                     break;
                 case 6:
                     System.out.println("\nMENU DE PERSONALIZAÇÃO\nPor favor, escolha uma opção:");
@@ -261,6 +258,17 @@ public class Delegate {
 
     }
 
+    public void listarJogos_upgraded2() {
+        List<Jogo> jogos = this.info.getJogos();
+        for(int i=0;i<jogos.size();i++){
+            System.out.printf("%d - ",i);
+            System.out.println(jogos.get(i).getCasa().getNome()+" VS "+jogos.get(i).getVisitante().getNome());
+        }
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        jogos.get(n).startJogo();
+    }
+
 
 
     public void listarJogos_upgraded() {
@@ -285,22 +293,24 @@ public class Delegate {
         String[] hab_split = habilidades.split("\\s+");
         Integer[] converted = new Integer[8];
         for (int i = 0; i < hab_split.length; i++) converted[i] = Integer.parseInt(hab_split[i]);
+        //hab.close();
         return converted;
     }
 
     public void criarJogador() {
         System.out.println("Qual é o número de camisola?\n");
-        Scanner s_num = new Scanner(System.in);
-        int n = s_num.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        scan.nextLine();  // Consume newline left-over
 
         System.out.println("Qual é o nome do Jogador?\n");
-        Scanner s_nome = new Scanner((System.in));
-        String nome = s_nome.nextLine();
+        //Scanner s_nome = new Scanner((System.in));
+        String nome = scan.nextLine();
 
         boolean titular = false;
         System.out.println("Joga como titular?\n");
-        Scanner s_t = new Scanner(System.in);
-        String t = s_t.nextLine();
+        //Scanner s_t = new Scanner(System.in);
+        String t = scan.nextLine();
         switch (t) {
             case "true":
             case "True":
@@ -313,8 +323,8 @@ public class Delegate {
         }
 
         System.out.println("Qual é o seu historial?\n");
-        Scanner h = new Scanner(System.in);
-        String hist = h.nextLine();
+        //Scanner h = new Scanner(System.in);
+        String hist = scan.nextLine();
         String[] split = hist.split(",");
         //List<String> list = Arrays.asList(split);
         List<String> list = new ArrayList<>(Arrays.asList(split));
@@ -332,14 +342,14 @@ public class Delegate {
             for (String s : list) {
                 Equipa nova = new Equipa(s);
                 historial.add(nova);
-                this.info.addEquipa(nova);      //não aparece no menu even though eu lhe digo p fazer isto
-                this.menuEquipas.addOpcao(s);  //e isto.
+                //this.info.addEquipa(nova);
+                //this.menuEquipas.addOpcao(s);
             }
         }
 
         System.out.println("É GuardaRedes, Avançado, Lateral, Médio ou Defesa?\n");
-        Scanner s = new Scanner(System.in);
-        String role = s.nextLine();
+        //Scanner s = new Scanner(System.in);
+        String role = scan.nextLine();
 
         //scope variables
         Integer[] converted;
@@ -354,8 +364,8 @@ public class Delegate {
                 GuardaRedes gr = new GuardaRedes(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
                 this.info.addJogador(gr);
                 System.out.println("Finalmente, qual é a sua equipa?\n");
-                e = new Scanner(System.in);
-                equipa = e.nextLine();
+                //e = new Scanner(System.in);
+                equipa = scan.nextLine();
                 i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
                 for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
                     String eq_nome = entry.getKey();
@@ -367,6 +377,7 @@ public class Delegate {
                     nova.addJogador(gr);
                     this.info.addEquipa(nova);
                 }
+                //scan.close();
                 break;
             case "Avançado":
                 System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e drible por ordem?\n");
@@ -410,6 +421,7 @@ public class Delegate {
                 }
 
                 break;
+            case "Medio":
             case "Médio":
                 System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e recuperação por ordem?\n");
                 converted = hibilitiesAUX();
@@ -437,8 +449,8 @@ public class Delegate {
                 Defesa d = new Defesa(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
                 this.info.addJogador(d);
                 System.out.println("Finalmente, qual é a sua equipa?\n");
-                e = new Scanner(System.in);
-                equipa = e.nextLine();
+                //e = new Scanner(System.in);
+                equipa = scan.nextLine();
                 i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
                 for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
                     String eq_nome = entry.getKey();
@@ -461,20 +473,20 @@ public class Delegate {
         String s = scan.nextLine();
         Equipa e = new Equipa(s);
         this.info.addEquipa(e);
+        scan.close();
     }
 
-//    public Jogo(Equipa casa, Equipa visitanteArrayList<Integer> ec,
-//    ArrayList<Integer> sc,ArrayList<Integer> ev,ArrayList<Integer> sv, int golosC, int golosV, LocalDate data, List<Integer> jc, List<Integer> jv) {
+
     public void criarJogo() {
         int i=0;
 
         System.out.println("Qual é a equipa da casa?\n");
-        Scanner casa_scan = new Scanner(System.in);
-        String Casa = casa_scan.nextLine();
+        Scanner scan = new Scanner(System.in);
+        String Casa = scan.nextLine();
 
         System.out.println("Quais são as substituições da equipa da casa?\n"+"Jogadores que entram: ");
-        Scanner ec_scan = new Scanner(System.in);
-        String ec = ec_scan.nextLine();
+        //Scanner ec_scan = new Scanner(System.in);
+        String ec = scan.nextLine();
         String[] ec_split = ec.split(" ");
         ArrayList<Integer> entraCasa = new ArrayList<>();
         entraCasa.add(Integer.parseInt(ec_split[0]));
@@ -482,8 +494,8 @@ public class Delegate {
         entraCasa.add(Integer.parseInt(ec_split[2]));
 
         System.out.println("Jogadores que entram: ");
-        Scanner sc_scan = new Scanner(System.in);
-        String sc = sc_scan.nextLine();
+        //Scanner sc_scan = new Scanner(System.in);
+        String sc = scan.nextLine();
         String[] sc_split = sc.split(" ");
         ArrayList<Integer> saiCasa = new ArrayList<>();
         saiCasa.add(Integer.parseInt(sc_split[0]));
@@ -491,12 +503,10 @@ public class Delegate {
         saiCasa.add(Integer.parseInt(sc_split[2]));
 
         System.out.println("Qual é a equipa Visitante?\n");
-        Scanner Visitante_scan = new Scanner(System.in);
-        String Visitante = Visitante_scan.nextLine();
+        String Visitante = scan.nextLine();
 
         System.out.println("Quais são as substituições da equipa Visitante?\n"+"Jogadores que entram: ");
-        Scanner ev_scan = new Scanner(System.in);
-        String ev = ev_scan.nextLine();
+        String ev = scan.nextLine();
         String[] ev_split = ev.split(" ");
         ArrayList<Integer> entraVisitante = new ArrayList<>();
         entraVisitante.add(Integer.parseInt(ev_split[0]));
@@ -504,8 +514,7 @@ public class Delegate {
         entraVisitante.add(Integer.parseInt(ev_split[2]));
 
         System.out.println("Jogadores que entram: ");
-        Scanner sv_scan = new Scanner(System.in);
-        String sv = sv_scan.nextLine();
+        String sv = scan.nextLine();
         String[] sv_split = sv.split(" ");
         ArrayList<Integer> saiVisitante = new ArrayList<>();
         saiVisitante.add(Integer.parseInt(sv_split[0]));
@@ -515,8 +524,7 @@ public class Delegate {
 
 
         System.out.println("Quais os 11 titulares da equipa da Casa?\n");
-        Scanner tc_scan = new Scanner(System.in);
-        String tc = tc_scan.nextLine();
+        String tc = scan.nextLine();
         String[] tc_split = tc.split(" ");
         List<Integer> titularesCasa = new ArrayList<>();
         for (i = 0; i < tc_split.length; i++) {
@@ -524,8 +532,7 @@ public class Delegate {
         }
 
         System.out.println("Quais os 11 titulares da equipa Visitante?\n");
-        Scanner tv_scan = new Scanner(System.in);
-        String tv = tv_scan.nextLine();
+        String tv = scan.nextLine();
         String[] tv_split = tv.split(" ");
         List<Integer> titularesVisitante = new ArrayList<>();
         for (i = 0; i < tv_split.length; i++) {
@@ -543,8 +550,8 @@ public class Delegate {
         }
 
         Jogo j = new Jogo(c,v,entraCasa,saiCasa,entraVisitante,saiVisitante,0,0, LocalDate.now(),titularesCasa,titularesVisitante);
-
-
+        this.info.addJogo(j);
+        //scan.close();
 
         }
 

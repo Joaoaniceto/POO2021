@@ -76,7 +76,10 @@ public abstract class Jogador implements Comparable<Jogador>, Serializable {
     public String getNome(){return this.nome;}
     public String getNomeReduzido(){
          String[] res= this.nome.split("\\s");
-         return res[0] + " " + res[1];
+         if (res.length>1) {
+             return res[0] + " " + res[1];
+         }
+         else {return res[0];}
     }
     public boolean getTitular(){return this.titular;}
     public ArrayList<Equipa> getHistorial(){return this.historial;}

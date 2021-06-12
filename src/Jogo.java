@@ -296,7 +296,7 @@ public class Jogo implements Serializable {
                     fase.result();
                 };
             }
-        }, 0, 100);//wait 0 ms before doing the action and do it every 1000ms (1second)
+        }, 0, 1000);//wait 0 ms before doing the action and do it every 1000ms (1second)
 
     }
 // teste de comentario
