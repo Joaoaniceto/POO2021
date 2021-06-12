@@ -44,10 +44,12 @@ public class Menu {
      *
      */
     public void executa() {
+        Scanner is = new Scanner(System.in);
         do {
             showMenu();
-            this.op = lerOpcao();
+            this.op = lerOpcao(is);
         } while (this.op == -1);
+
     }
 
     /** Apresentar o menu */
@@ -62,9 +64,9 @@ public class Menu {
     }
 
     /** Ler uma opÃ§Ã£o vÃ¡lida */
-    private int lerOpcao() {
+    private int lerOpcao(Scanner is ) {
         int op;
-        Scanner is = new Scanner(System.in);
+
 
         System.out.print("Opção: ");
         try {

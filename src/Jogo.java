@@ -293,7 +293,7 @@ public class Jogo implements Serializable {
                 fase.setTime(fase.getTime() + 1);
                 if (fase.getTime() == 90) {
                     timer.cancel();  //stop the timer
-                    fase.result();
+                    fase.result(90);
                 };
             }
         }, 0, 1000);//wait 0 ms before doing the action and do it every 1000ms (1second)

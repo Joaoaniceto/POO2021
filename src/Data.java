@@ -35,15 +35,15 @@ public class Data implements Cloneable,Serializable {
     public List<Jogo> getJogos() {return this.jogos;}
 
     public void addEquipa(Equipa e){
-        this.equipas.put(e.getNome(),e);
+        this.equipas.put(e.getNome(),e.clone());
     }
 
     public void addJogador(Jogador j){
-        this.jogadores.add(j);
+        this.jogadores.add(j.clone());
     }
 
     public void addJogo(Jogo jogo){
-        this.jogos.add(jogo);
+        this.jogos.add(jogo.clone());
     }
 
     public Data clone() {return new Data(this);}

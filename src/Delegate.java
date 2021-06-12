@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.*;
+import Exceptions.*;
 
 public class Delegate {
     //INSTANCE VARIABLES
@@ -21,7 +22,7 @@ public class Delegate {
         this.menuCriacao = new Menu(new String[] {"Criar Jogador","Criar Equipa","Criar Jogo"});
     }
 
-    public void run() throws IOException, ClassNotFoundException {
+    public void run() throws IOException, ClassNotFoundException, JogadorPerdidoException, JogadorNExisteException {
         do {
             this.menuPrincipal.executa();
             switch (this.menuPrincipal.getOpcao()) {
@@ -97,11 +98,16 @@ public class Delegate {
     }
 
     //se possível dar surround com try catch para evitar que last seja negativo (JogadorPerdidoException)
-    public void listarJogadores_info() {
-        for (Jogador j : info.getJogadores()){
-            int last = j.getHistorial().size() - 1;
-            System.out.println(j.getNome() + " (" + j.getClass().getName() + " , " + j.getHistorial().get(last).getNome() + ")");
-            System.out.println(j.toString());
+    public void listarJogadores_info() throws JogadorPerdidoException {
+        try {
+            for (Jogador j : info.getJogadores()) {
+                if (j.getHistorial().size() == 0) throw new JogadorPerdidoException();
+                int last = j.getHistorial().size() - 1;
+                System.out.println(j.getNome() + " (" + j.getClass().getName() + " , " + j.getHistorial().get(last).getNome() + ")");
+                System.out.println(j.toString());
+            }
+        } catch (JogadorPerdidoException e){
+            System.out.println("Jogador sem historial");
         }
     }
 
@@ -123,14 +129,15 @@ public class Delegate {
         }
     }
 
-    public void listarEquipas_upgraded() {
+    public void listarEquipas_upgraded() throws JogadorNExisteException {
         String equipaS = null;
         String equipaE = null;
         int n;
 
         System.out.println("\nIndique a Equipa com jogador de saida");
         this.menuEquipas.executa();
-        switch (this.menuEquipas.getOpcao()){
+        while(equipaS == null){
+        switch (this.menuEquipas.getOpcao()) {
             case 1:
                 equipaS = menuEquipas.getOpcoes().get(0);
                 break;
@@ -185,11 +192,15 @@ public class Delegate {
             case 18:
                 equipaS = menuEquipas.getOpcoes().get(17);
                 break;
+            default:
+                System.out.println("Opção inválida!!!");
+        }
         }
 
         System.out.println("\nIndique a Equipa com jogador de entrada");
         this.menuEquipas.executa();
-        switch (this.menuEquipas.getOpcao()){
+        while(equipaE == null){
+        switch (this.menuEquipas.getOpcao()) {
             case 1:
                 equipaE = menuEquipas.getOpcoes().get(0);
                 break;
@@ -244,13 +255,23 @@ public class Delegate {
             case 18:
                 equipaE = menuEquipas.getOpcoes().get(17);
                 break;
+            default:
+                System.out.println("Opção inválida!!!");
         }
+        }
+
+        Equipa a = info.getEquipas().get(equipaS);
+        Equipa b = info.getEquipas().get(equipaE);
 
         Scanner tf = new Scanner(System.in);
         System.out.println("\nIndique o número do Jogador");
         n = tf.nextInt();
-        Equipa a = info.getEquipas().get(equipaS);
-        Equipa b = info.getEquipas().get(equipaE);
+
+        while(a.getJogador(n) == null){
+            System.out.println( "Não existe o jogador com o número" + n + "\nIndique o número do Jogador");
+            n = tf.nextInt();
+        }
+
 
         a.transferenciaJogador(b,a.getJogador(n));
 
@@ -264,188 +285,214 @@ public class Delegate {
         }
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
+        while(jogos.get(n) == null){
+            System.out.println( "Não existe o jogo que selecionou" + "\nIndique outro jogo:");
+            n = scan.nextInt();
+        }
+        scan.close();
         jogos.get(n).startJogo();
     }
 
 
-    public Integer[] hibilitiesAUX() {
-        Scanner hab = new Scanner(System.in);
-        String habilidades = hab.nextLine();
-        String[] hab_split = habilidades.split("\\s+");
-        Integer[] converted = new Integer[8];
-        for (int i = 0; i < hab_split.length; i++) converted[i] = Integer.parseInt(hab_split[i]);
-        //hab.close();
-        return converted;
-    }
+    public Integer[] hibilitiesAUX(Scanner scan) {
+        try {
 
-    public void criarJogador() {
-        System.out.println("Qual é o número de camisola?\n");
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        scan.nextLine();  // Consume newline left-over
+            String habilidades = scan.nextLine();
 
-        System.out.println("Qual é o nome do Jogador?\n");
-        //Scanner s_nome = new Scanner((System.in));
-        String nome = scan.nextLine();
+            String[] hab_split = habilidades.split("\\s+");
 
-        boolean titular = false;
-        System.out.println("Joga como titular?\n");
-        //Scanner s_t = new Scanner(System.in);
-        String t = scan.nextLine();
-        switch (t) {
-            case "true":
-            case "True":
-                titular = true;
-                break;
-            case "false":
-            case "False":
-                titular = false;
-                break;
+            Integer[] converted = new Integer[8];
+            if (hab_split.length != 8) {
+                throw new habmalcriadaException();
+            }
+            for (int i = 0; i < hab_split.length; i++) {
+                converted[i] = Integer.parseInt(hab_split[i]);
+                if (0 > converted[i] && converted[i] > 100) {
+                  throw new habmalcriadaException();
+                }
+
+
+            }
+            return converted;
+        }catch (habmalcriadaException e){
+            System.out.println("Todos os valores tem de estar entre 0 e 100. \nA string tem de conter 8 valores todos separados por espaços");
+            return hibilitiesAUX(scan);
         }
+        //hab.close();
+    }
+//num jogador
+  private int numjogador(Scanner scan){
+      System.out.println("Qual é o número de camisola?\n");
 
-        System.out.println("Qual é o seu historial?\n");
-        //Scanner h = new Scanner(System.in);
-        String hist = scan.nextLine();
-        String[] split = hist.split(",");
-        //List<String> list = Arrays.asList(split);
-        List<String> list = new ArrayList<>(Arrays.asList(split));
-        ArrayList<Equipa> historial = new ArrayList<>();
-        for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
+      int n = scan.nextInt();
+      return n;
+
+  }
+  //nome do jogador
+  private String nomejogador(Scanner scan){
+
+      scan.nextLine();  // Consume newline left-over
+
+      System.out.println("Qual é o nome do Jogador?\n");
+      //Scanner s_nome = new Scanner((System.in));
+      String nome = scan.nextLine();
+
+      return nome;
+  }
+// se e titular
+  private boolean titjogador(Scanner scan){
+
+      boolean titular = false;
+      System.out.println("Joga como titular?\n");
+      //Scanner s_t = new Scanner(System.in);
+      String t = scan.nextLine();
+      switch (t) {
+          case "true":
+              titular = true;
+              break;
+          default:
+              titular = false;
+              break;
+      }
+
+      return titular;
+  }
+ // historial do jog
+  private ArrayList<Equipa> histjogador(Scanner scan){
+
+      System.out.println("Qual é o seu historial?\n");
+      //Scanner h = new Scanner(System.in);
+      String hist = scan.nextLine();
+
+      String[] split = hist.split(",");
+      //List<String> list = Arrays.asList(split);
+      List<String> list = new ArrayList<>(Arrays.asList(split));
+      ArrayList<Equipa> historial = new ArrayList<>();
+      for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
+          String eq_nome = entry.getKey();
+          Equipa eq_obj = entry.getValue();
+          if (list.contains(eq_nome)) {
+              historial.add(eq_obj);
+              list.remove(eq_nome);
+          }
+      }
+
+      if (!list.isEmpty()) {
+          for (String s : list) {
+              Equipa nova = new Equipa(s);
+              historial.add(nova);
+              //this.info.addEquipa(nova);
+              //this.menuEquipas.addOpcao(s);
+          }
+      }
+
+      return historial;
+  }
+
+  // get equipa jogador
+    private void eqpJogador(Jogador gr,Scanner scan){
+
+        String equipa = scan.nextLine();
+        int i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
+        for (Map.Entry<String, Equipa> entry : this.info.getEquipas().entrySet()) {
             String eq_nome = entry.getKey();
             Equipa eq_obj = entry.getValue();
-            if (list.contains(eq_nome)) {
-                historial.add(eq_obj);
-                list.remove(eq_nome);
+            if (equipa.equals(eq_nome)) {
+                eq_obj.addJogador(gr);
+                i = 1;
             }
         }
-
-        if (!list.isEmpty()) {
-            for (String s : list) {
-                Equipa nova = new Equipa(s);
-                historial.add(nova);
-                //this.info.addEquipa(nova);
-                //this.menuEquipas.addOpcao(s);
-            }
+        if (i == 0) {
+            Equipa nova = new Equipa(equipa);
+            nova.addJogador(gr);
+            this.info.addEquipa(nova);
         }
 
+    }
+ //posicao do jogador
+  private void posijogador(int n,String nome,boolean titular,ArrayList<Equipa> historial,Scanner scan){
+        try{
+
+
+      //Scanner s = new Scanner(System.in);
+      String role = scan.nextLine();
+
+      //scope variables
+      Integer[] converted;
+      Scanner e;
+      String equipa;
+      int i;
+
+      switch (role) {
+          case "GuardaRedes":
+              System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e elasticidade por ordem?\n");
+              converted = hibilitiesAUX(scan);
+              GuardaRedes gr = new GuardaRedes(n, nome, titular, historial, converted[0], converted[1], converted[2], converted[3], converted[4], converted[5], converted[6], converted[7]);
+              this.info.addJogador(gr);
+              System.out.println("Finalmente, qual é a sua equipa?\n");
+              eqpJogador(gr,scan);
+              //scan.close();
+              break;
+          case "Avançado":
+              System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e drible por ordem?\n");
+              converted = hibilitiesAUX(scan);
+              Avançado a = new Avançado(n, nome, titular, historial, converted[0], converted[1], converted[2], converted[3], converted[4], converted[5], converted[6], converted[7]);
+              this.info.addJogador(a);
+              eqpJogador(a,scan);
+
+              break;
+          case "Lateral":
+              System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e cruzamento por ordem?\n");
+              converted = hibilitiesAUX(scan);
+              Lateral l = new Lateral(n, nome, titular, historial, converted[0], converted[1], converted[2], converted[3], converted[4], converted[5], converted[6], converted[7]);
+              this.info.addJogador(l);
+              System.out.println("Finalmente, qual é a sua equipa?\n");
+              eqpJogador(l,scan);
+
+              break;
+          case "Medio":
+
+              System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e recuperação por ordem?\n");
+              converted = hibilitiesAUX(scan);
+              Medio m = new Medio(n, nome, titular, historial, converted[0], converted[1], converted[2], converted[3], converted[4], converted[5], converted[6], converted[7]);
+              this.info.addJogador(m);
+              System.out.println("Finalmente, qual é a sua equipa?\n");
+              eqpJogador(m,scan);
+
+              break;
+          case "Defesa":
+              System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e corte por ordem?\n");
+              converted = hibilitiesAUX(scan);
+              Defesa d = new Defesa(n, nome, titular, historial, converted[0], converted[1], converted[2], converted[3], converted[4], converted[5], converted[6], converted[7]);
+              this.info.addJogador(d);
+              System.out.println("Finalmente, qual é a sua equipa?\n");
+              eqpJogador(d,scan);
+              break;
+          default:
+              throw new habmalcriadaException();
+
+
+      }
+            System.out.println("Jogador criado com sucesso");
+      } catch (habmalcriadaException e){
+            System.out.println("Posição inválido tente Novamente\n");
+            posijogador(n,nome, titular,historial,scan);
+        }
+
+  }
+
+    public void criarJogador() {
+        Scanner scan = new Scanner(System.in);
+
+        int n = numjogador(scan);
+        String nome = nomejogador(scan);
+
+        boolean titular = titjogador(scan);
+
+        ArrayList<Equipa> historial = histjogador(scan);
         System.out.println("É GuardaRedes, Avançado, Lateral, Médio ou Defesa?\n");
-        //Scanner s = new Scanner(System.in);
-        String role = scan.nextLine();
+        posijogador(n,nome,titular,historial,scan);
 
-        //scope variables
-        Integer[] converted;
-        Scanner e;
-        String equipa;
-        int i;
-
-        switch (role) {
-            case "GuardaRedes":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e elasticidade por ordem?\n");
-                converted = hibilitiesAUX();
-                GuardaRedes gr = new GuardaRedes(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
-                this.info.addJogador(gr);
-                System.out.println("Finalmente, qual é a sua equipa?\n");
-                //e = new Scanner(System.in);
-                equipa = scan.nextLine();
-                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
-                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
-                    String eq_nome = entry.getKey();
-                    Equipa eq_obj = entry.getValue();
-                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(gr);i=1;}
-                }
-                if (i==0) {
-                    Equipa nova = new Equipa(equipa);
-                    nova.addJogador(gr);
-                    this.info.addEquipa(nova);
-                }
-                //scan.close();
-                break;
-            case "Avançado":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e drible por ordem?\n");
-                converted = hibilitiesAUX();
-                Avançado a = new Avançado(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
-                this.info.addJogador(a);
-                System.out.println("Finalmente, qual é a sua equipa?\n");
-                e = new Scanner(System.in);
-                equipa = e.nextLine();
-                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
-                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
-                    String eq_nome = entry.getKey();
-                    Equipa eq_obj = entry.getValue();
-                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(a);i=1;}
-                }
-                if (i==0) {
-                    Equipa nova = new Equipa(equipa);
-                    nova.addJogador(a);
-                    this.info.addEquipa(nova);
-                }
-
-                break;
-            case "Lateral":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e cruzamento por ordem?\n");
-                converted = hibilitiesAUX();
-                Lateral l = new Lateral(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
-                this.info.addJogador(l);
-                System.out.println("Finalmente, qual é a sua equipa?\n");
-                e = new Scanner(System.in);
-                equipa = e.nextLine();
-                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
-                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
-                    String eq_nome = entry.getKey();
-                    Equipa eq_obj = entry.getValue();
-                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(l);i=1;}
-                }
-                if (i==0) {
-                    Equipa nova = new Equipa(equipa);
-                    nova.addJogador(l);
-                    this.info.addEquipa(nova);
-                }
-
-                break;
-            case "Medio":
-            case "Médio":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e recuperação por ordem?\n");
-                converted = hibilitiesAUX();
-                Medio m = new Medio(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
-                this.info.addJogador(m);
-                System.out.println("Finalmente, qual é a sua equipa?\n");
-                e = new Scanner(System.in);
-                equipa = e.nextLine();
-                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
-                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
-                    String eq_nome = entry.getKey();
-                    Equipa eq_obj = entry.getValue();
-                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(m);i=1;}
-                }
-                if (i==0) {
-                    Equipa nova = new Equipa(equipa);
-                    nova.addJogador(m);
-                    this.info.addEquipa(nova);
-                }
-
-                break;
-            case "Defesa":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e corte por ordem?\n");
-                converted = hibilitiesAUX();
-                Defesa d = new Defesa(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
-                this.info.addJogador(d);
-                System.out.println("Finalmente, qual é a sua equipa?\n");
-                //e = new Scanner(System.in);
-                equipa = scan.nextLine();
-                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
-                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
-                    String eq_nome = entry.getKey();
-                    Equipa eq_obj = entry.getValue();
-                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(d);i=1;}
-                }
-                if (i==0) {
-                    Equipa nova = new Equipa(equipa);
-                    nova.addJogador(d);
-                    this.info.addEquipa(nova);
-                }
-
-                break;
-        }
     }
 
     public void criarEquipa() {
@@ -454,12 +501,14 @@ public class Delegate {
         String s = scan.nextLine();
         Equipa e = new Equipa(s);
         this.info.addEquipa(e);
-        scan.close();
+
     }
 
 
     public void criarJogo() {
         int i=0;
+
+
 
         System.out.println("Qual é a equipa da casa?\n");
         Scanner scan = new Scanner(System.in);

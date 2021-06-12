@@ -1,8 +1,10 @@
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 import java.io.Serializable;
 import java.util.List;
 import java.util.stream.IntStream;
+import Exceptions.*;
 
 public class Equipa implements Comparable<Equipa>, Serializable {
     private String nome;                        //nome da equipa
@@ -36,14 +38,18 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         return this.equipa;
     }
 
-    public Jogador getJogador(int n) {return this.equipa.get(n);}
+    public Jogador getJogador(int n) {return this.equipa.get(n).clone();}
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
     public void setEquipa(HashMap<Integer, Jogador> nome) {
-        this.equipa = nome;
+        HashMap<Integer, Jogador> clone = new HashMap<Integer,Jogador>();
+        for(Map.Entry<Integer,Jogador> a : nome.entrySet()){
+            clone.put(a.getKey(),a.getValue().clone());
+        }
+        this.equipa = clone;
     }
 
     public String toString() {
@@ -79,26 +85,33 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         o.atualizaHist(this);
     }
 
-    public void removeJogador(Jogador o) {
-        for (Jogador j : this.equipa.values()) {
-            if (o.getNum() == j.getNum()) {
-                this.equipa.remove(o.getNum());
-                break;
+    public void removeJogador(Jogador o)  {
+
+            int i = 1;
+            for (Jogador j : this.equipa.values()) {
+                if (o.getNum() == j.getNum()) {
+                    i = 0;
+                    this.equipa.remove(o.getNum());
+                    break;
+                }
+                //falta uma exception bonita
             }
-            //falta uma exception bonita
-        }
+
     }
 
     //equipaAtual.transferenciaJogador(equipaAserTransferido,jogador da equipa atual)
-    public void transferenciaJogador(Equipa a, Jogador o) {
-        for (Jogador j : this.equipa.values()) {
-            if (o.getNum() == j.getNum()) {
-                removeJogador(o);
-                a.addJogador(o);
-                break;
+    public void transferenciaJogador(Equipa a, Jogador o)  {
+
+            for (Jogador j : this.equipa.values()) {
+                if (o.getNum() == j.getNum()) {
+                    removeJogador(o);
+                    a.addJogador(o);
+                    break;
+                }
+                //falta uma exception
             }
-            //falta uma exception
-        }
+
+
     }
 
     //jogador t e b trocam os seus valores de Titular
