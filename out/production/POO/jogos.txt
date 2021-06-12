@@ -8,8 +8,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
-Lista de Jogadores Titulares Visitantes: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 36]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Sporting Club Dvorak
@@ -21,8 +21,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 9, 25, 36, 40, 49, 34, 6, 5, 47, 35]
-Lista de Jogadores Titulares Visitantes: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Debussy Athletic
 Equipa visitante: Stravinsky Athletic
@@ -34,8 +34,8 @@ Golos da Equipa da Casa: 5
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [21, 32, 5, 6, 41, 45, 12, 22, 48, 28, 3]
-Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 0]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Beethoven F. C.
@@ -47,8 +47,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28, 32]
-Lista de Jogadores Titulares Visitantes: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mendelssohn F. C.
 Equipa visitante: Bartok F. C.
@@ -60,8 +60,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 36]
-Lista de Jogadores Titulares Visitantes: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bach F. C.
 Equipa visitante: Sporting Club Shostakovich
@@ -73,8 +73,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 50]
-Lista de Jogadores Titulares Visitantes: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Beethoven F. C.
 Equipa visitante: Handel Athletic
@@ -86,8 +86,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
-Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Wagner Athletic
 Equipa visitante: Stravinsky Athletic
@@ -99,8 +99,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 2]
-Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 0]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Wagner Athletic
@@ -112,8 +112,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43]
-Lista de Jogadores Titulares Visitantes: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 2]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Stravinsky Athletic
@@ -125,8 +125,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
-Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 0]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Sporting Club Schubert
@@ -138,8 +138,8 @@ Golos da Equipa da Casa: 4
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
-Lista de Jogadores Titulares Visitantes: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Brahms F. C.
 Equipa visitante: Sporting Club Chopin
@@ -151,8 +151,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33, 36]
-Lista de Jogadores Titulares Visitantes: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Sporting Club Prokofiev
@@ -164,8 +164,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 9, 25, 36, 40, 49, 34, 6, 5, 47, 35]
-Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Sporting Club Chopin
@@ -177,8 +177,8 @@ Golos da Equipa da Casa: 5
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 9, 25, 36, 40, 49, 34, 6, 5, 47, 35]
-Lista de Jogadores Titulares Visitantes: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Debussy Athletic
@@ -190,8 +190,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
-Lista de Jogadores Titulares Visitantes: [21, 32, 5, 6, 41, 45, 12, 22, 48, 28, 3]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Beethoven F. C.
 Equipa visitante: Bach F. C.
@@ -203,8 +203,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
-Lista de Jogadores Titulares Visitantes: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 50]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Wagner Athletic
@@ -216,8 +216,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 9, 25, 36, 40, 49, 34, 6, 5, 47, 35]
-Lista de Jogadores Titulares Visitantes: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 2]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Brahms F. C.
 Equipa visitante: Vivaldi F. C.
@@ -229,8 +229,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33, 36]
-Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Mendelssohn F. C.
@@ -242,8 +242,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
-Lista de Jogadores Titulares Visitantes: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 36]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Handel Athletic
 Equipa visitante: Mahler Athletic
@@ -255,8 +255,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27]
-Lista de Jogadores Titulares Visitantes: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39, 2]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Sporting Club Dvorak
@@ -268,8 +268,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
-Lista de Jogadores Titulares Visitantes: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Handel Athletic
@@ -281,8 +281,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28, 32]
-Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Debussy Athletic
@@ -294,8 +294,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28, 32]
-Lista de Jogadores Titulares Visitantes: [21, 32, 5, 6, 41, 45, 12, 22, 48, 28, 3]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Debussy Athletic
 Equipa visitante: Bartok F. C.
@@ -307,8 +307,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [21, 32, 5, 6, 41, 45, 12, 22, 48, 28, 3]
-Lista de Jogadores Titulares Visitantes: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Mendelssohn F. C.
@@ -320,8 +320,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
-Lista de Jogadores Titulares Visitantes: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 36]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Dvorak
 Equipa visitante: Vivaldi F. C.
@@ -333,8 +333,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 28]
-Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Vivaldi F. C.
@@ -346,8 +346,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43]
-Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Schumann Athletic
@@ -359,8 +359,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
-Lista de Jogadores Titulares Visitantes: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28, 32]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Handel Athletic
 Equipa visitante: Vivaldi F. C.
@@ -372,8 +372,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27]
-Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Beethoven F. C.
 Equipa visitante: Sporting Club Dvorak
@@ -385,8 +385,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
-Lista de Jogadores Titulares Visitantes: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Brahms F. C.
@@ -398,8 +398,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
-Lista de Jogadores Titulares Visitantes: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33, 36]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Debussy Athletic
 Equipa visitante: Sporting Club Dvorak
@@ -411,8 +411,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [21, 32, 5, 6, 41, 45, 12, 22, 48, 28, 3]
-Lista de Jogadores Titulares Visitantes: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Sporting Club Shostakovich
@@ -424,8 +424,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 9, 25, 36, 40, 49, 34, 6, 5, 47, 35]
-Lista de Jogadores Titulares Visitantes: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Wagner Athletic
@@ -437,8 +437,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
-Lista de Jogadores Titulares Visitantes: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 2]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Sporting Club Prokofiev
@@ -450,8 +450,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
-Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mendelssohn F. C.
 Equipa visitante: Schumann Athletic
@@ -463,8 +463,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 36]
-Lista de Jogadores Titulares Visitantes: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28, 32]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Vivaldi F. C.
 Equipa visitante: Sporting Club Prokofiev
@@ -476,8 +476,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
-Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Brahms F. C.
 Equipa visitante: Sporting Club Shostakovich
@@ -489,8 +489,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33, 36]
-Lista de Jogadores Titulares Visitantes: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Bach F. C.
@@ -502,8 +502,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
-Lista de Jogadores Titulares Visitantes: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 50]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Mahler Athletic
@@ -515,8 +515,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43]
-Lista de Jogadores Titulares Visitantes: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39, 2]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mahler Athletic
 Equipa visitante: Sporting Club Schubert
@@ -528,8 +528,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39, 2]
-Lista de Jogadores Titulares Visitantes: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bach F. C.
 Equipa visitante: Stravinsky Athletic
@@ -541,8 +541,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 50]
-Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 0]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Stravinsky Athletic
@@ -554,8 +554,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
-Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 0]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Beethoven F. C.
@@ -567,8 +567,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
-Lista de Jogadores Titulares Visitantes: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mendelssohn F. C.
 Equipa visitante: Bach F. C.
@@ -580,8 +580,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 36]
-Lista de Jogadores Titulares Visitantes: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 50]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Vivaldi F. C.
 Equipa visitante: Handel Athletic
@@ -593,8 +593,8 @@ Golos da Equipa da Casa: 5
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
-Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Vivaldi F. C.
 Equipa visitante: Beethoven F. C.
@@ -606,8 +606,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
-Lista de Jogadores Titulares Visitantes: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Dvorak
 Equipa visitante: Stravinsky Athletic
@@ -619,8 +619,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 28]
-Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 0]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Sporting Club Shostakovich
@@ -632,8 +632,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
-Lista de Jogadores Titulares Visitantes: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 12]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Handel Athletic
@@ -645,8 +645,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43]
-Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Mozart F. C.
@@ -658,8 +658,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28, 32]
-Lista de Jogadores Titulares Visitantes: [20, 9, 25, 36, 40, 49, 34, 6, 5, 47, 35]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Wagner Athletic
@@ -671,8 +671,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 4
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
-Lista de Jogadores Titulares Visitantes: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 2]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Sporting Club Prokofiev
@@ -684,8 +684,8 @@ Golos da Equipa da Casa: 4
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
-Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bach F. C.
 Equipa visitante: Vivaldi F. C.
@@ -697,8 +697,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 50]
-Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Handel Athletic
@@ -710,8 +710,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
-Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Vivaldi F. C.
 Equipa visitante: Brahms F. C.
@@ -723,8 +723,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
-Lista de Jogadores Titulares Visitantes: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33, 36]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Handel Athletic
@@ -736,8 +736,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
-Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Vivaldi F. C.
@@ -749,8 +749,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28, 32]
-Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 28]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bach F. C.
 Equipa visitante: Brahms F. C.
@@ -762,8 +762,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 50]
-Lista de Jogadores Titulares Visitantes: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33, 36]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Bartok F. C.
@@ -775,8 +775,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
-Lista de Jogadores Titulares Visitantes: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Sporting Club Chopin
@@ -788,8 +788,8 @@ Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 4
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
-Lista de Jogadores Titulares Visitantes: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 37]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Mendelssohn F. C.
@@ -801,8 +801,8 @@ Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43]
-Lista de Jogadores Titulares Visitantes: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 36]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mendelssohn F. C.
 Equipa visitante: Sporting Club Schubert
@@ -814,8 +814,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 36]
-Lista de Jogadores Titulares Visitantes: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22, 39]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Mahler Athletic
@@ -827,8 +827,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 5
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [20, 9, 25, 36, 40, 49, 34, 6, 5, 47, 35]
-Lista de Jogadores Titulares Visitantes: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39, 2]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Mahler Athletic
@@ -840,8 +840,8 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
-Lista de Jogadores Titulares Visitantes: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39, 2]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Beethoven F. C.
 Equipa visitante: Brahms F. C.
@@ -853,8 +853,8 @@ Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 3
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
-Lista de Jogadores Titulares Visitantes: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33, 36]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
 Equipa da casa: Stravinsky Athletic
 Equipa visitante: Sporting Club Prokofiev
@@ -866,6 +866,6 @@ Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
 Modelo Tático Equipa Casa: null
 Modelo Tático Equipa Visitante: null
-Lista de Jogadores Titulares da Casa: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 0]
-Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 48]
+Lista de Jogadores Titulares da Casa: null
+Lista de Jogadores Titulares Visitantes: null
 
