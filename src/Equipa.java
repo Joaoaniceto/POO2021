@@ -72,6 +72,8 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         return (this.equipa) == (e.getEquipa()) && (this.nome) == (e.getNome());
     }
 
+    //este metodo não verifica a priori se o jogador sai da equipa anterior,
+    //caso esteja registado noutra equipa antes do call do método.
     public void addJogador(Jogador o) {
         this.equipa.put(o.getNum(), o.clone());
         o.atualizaHist(this);

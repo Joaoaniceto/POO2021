@@ -16,14 +16,14 @@ public class Jogo implements Serializable {
     private Equipa equipaCasa;
     private Equipa equipaVisitante;
     private LocalDate data;
-    private Map<Integer,Integer> subsCasa;
-    private Map<Integer,Integer> subsVisitante;
+    //private Map<Integer,Integer> subsCasa;
+    //private Map<Integer,Integer> subsVisitante;
     private estado state;
     private int golosCasa , golosVisitante;
     private HashMap<String,List<Integer>> modeloCasa;
     private HashMap<String,List<Integer>> modeloVisitante;
-    private ArrayList<Integer> entracasa;
-    private ArrayList<Integer> saicasa;
+    private ArrayList<Integer> entraCasa;
+    private ArrayList<Integer> saiCasa;
     private ArrayList<Integer> entraVisitante;
     private ArrayList<Integer> saiVisitante;
 
@@ -33,10 +33,10 @@ public class Jogo implements Serializable {
     public Jogo() {
         this.equipaCasa = new Equipa();
         this.equipaVisitante = new Equipa();
-        this.subsCasa = new HashMap<Integer,Integer>();
-        this.subsVisitante = new HashMap<Integer,Integer>();
-        this.entracasa = new ArrayList<>();
-        this.saicasa = new ArrayList<>();
+        //this.subsCasa = new HashMap<Integer,Integer>();
+        //this.subsVisitante = new HashMap<Integer,Integer>();
+        this.entraCasa = new ArrayList<>();
+        this.saiCasa = new ArrayList<>();
         this.entraVisitante = new ArrayList<>();
         this.saiVisitante = new ArrayList<>();
         this.state= estado.por_iniciar;
@@ -46,13 +46,13 @@ public class Jogo implements Serializable {
         this.modeloVisitante = new HashMap<>();
     }
 
-    public Jogo(Equipa casa, Equipa visitante, Map<Integer,Integer> subsC, Map<Integer,Integer> subsV,ArrayList<Integer> ec,ArrayList<Integer> sc,ArrayList<Integer> ev,ArrayList<Integer> sv, int golosC, int golosV, LocalDate data, List<Integer> jc, List<Integer> jv) {
+    public Jogo(Equipa casa, Equipa visitante, ArrayList<Integer> ec,ArrayList<Integer> sc,ArrayList<Integer> ev,ArrayList<Integer> sv, int golosC, int golosV, LocalDate data, List<Integer> jc, List<Integer> jv) {
         this.equipaCasa = casa;
         this.equipaVisitante = visitante;
-        this.subsCasa = subsC;
-        this.subsVisitante = subsV;
-        this.entracasa =ec;
-        this.saicasa = sc;
+        //this.subsCasa = subsC;
+        //this.subsVisitante = subsV;
+        this.entraCasa =ec;
+        this.saiCasa = sc;
         this.entraVisitante = ev;
         this.saiVisitante = sv;
         this.golosCasa = golosC;
@@ -64,25 +64,15 @@ public class Jogo implements Serializable {
         this.data = LocalDate.now();
     }
 
-    public Jogo(Equipa casa,Equipa visitante,Map<Integer,Integer> subsCasa,Map<Integer,Integer> subsVisitante,int golosCasa,int golosVisitante,HashMap<String,List<Integer>> mc,HashMap<String,List<Integer>> mv){
-        this.equipaCasa = casa;
-        this.equipaVisitante = visitante;
-        this.data = LocalDate.now();
-        this.subsCasa = subsCasa;
-        this.subsVisitante = subsVisitante;
-        this.state = estado.por_iniciar;
-        this.golosCasa = golosCasa;
-        this.golosVisitante = golosVisitante;
-        this.modeloCasa = mc;
-        this.modeloVisitante = mv;
-    }
 
     public Jogo(Jogo o){
         this.equipaCasa = o.getCasa();
         this.equipaVisitante = o.getVisitante();
         this.data = o.getData();
-        this.subsCasa = o.getSubsCasa();
-        this.subsVisitante = o.getSubsVisitante();
+        this.entraCasa = o.getEntracasa();
+        this.saiCasa = o.getSaicasa();
+        this.entraVisitante = o.getEntraVisitante();
+        this.saiVisitante = o.getSaiVisitante();
         this.state = estado.por_iniciar;
         this.golosCasa = o.getGolosCasa();
         this.golosVisitante = o.getGolosVisitante();
@@ -93,10 +83,10 @@ public class Jogo implements Serializable {
     public Equipa getCasa() {return this.equipaCasa;}
     public Equipa getVisitante() {return this.equipaVisitante;}
     public LocalDate getData() {return this.data;}
-    public Map<Integer,Integer> getSubsCasa() {return this.subsCasa;}
-    public Map<Integer,Integer> getSubsVisitante() {return this.subsVisitante;}
-    public ArrayList<Integer> getEntracasa(){return this.entracasa;}
-    public ArrayList<Integer> getSaicasa(){return this.saicasa;}
+    //public Map<Integer,Integer> getSubsCasa() {return this.subsCasa;}
+    //public Map<Integer,Integer> getSubsVisitante() {return this.subsVisitante;}
+    public ArrayList<Integer> getEntracasa(){return this.entraCasa;}
+    public ArrayList<Integer> getSaicasa(){return this.saiCasa;}
     public ArrayList<Integer> getEntraVisitante(){return this.entraVisitante;}
     public ArrayList<Integer> getSaiVisitante(){return this.saiVisitante;}
     public estado getEstado() {return this.state;}
@@ -110,8 +100,10 @@ public class Jogo implements Serializable {
     public void setEquipaCasa(Equipa casa) {this.equipaCasa = casa; }
     public void setEquipaVisitante(Equipa visitante) {this.equipaVisitante = visitante;}
     public void setData(LocalDate data) {this.data = data;};
-    public void setSubsCasa(Map<Integer,Integer> sc) {this.subsCasa = sc;}
-    public void setSubsVisitante(Map<Integer,Integer> sv) {this.subsVisitante = sv;}
+    public void setEntraCasa(ArrayList<Integer> ec) {this.entraCasa = ec;}
+    public void setSaiCasa(ArrayList<Integer> sc) {this.saiCasa = sc;}
+    public void setEntraVisitante(ArrayList<Integer> ev) {this.entraVisitante = ev;}
+    public void setSaiVisitante(ArrayList<Integer> sv) {this.saiVisitante = sv;}
     public void setEstado(estado e) {this.state = e;} //falta dar bound no argumento, para que seja apenas possivel e=0, e=1 ou e=-1 // bounded argument
     public void setGolosCasa(int gc) {this.golosCasa = gc;}
     public void setGolosVisitante(int gv) {this.golosVisitante = gv;}
@@ -181,8 +173,8 @@ public class Jogo implements Serializable {
         sb.append("Equipa da casa: "+this.equipaCasa.getNome());
         sb.append("\nEquipa visitante: "+this.equipaVisitante.getNome());
         sb.append("\nData: "+this.data);
-        sb.append("\nSubstituições da Equipa da Casa: "+this.subsCasa);        //falta percorrer a lista de jogadores
-        sb.append("\nSubstituições da Equipa Visitante: "+this.subsVisitante);     //substituidos e dar append do nome
+        sb.append("\nSubstituições da Equipa da Casa: "+this.saiCasa+"(out)"+this.entraCasa+"(in)");
+        sb.append("\nSubstituições da Equipa Visitante: "+this.saiVisitante+"(out)"+this.entraVisitante+"(in)");
         sb.append("\nEstado do jogo: "+this.state);
         sb.append("\nGolos da Equipa da Casa: "+this.golosCasa);
         sb.append("\nGolos da Equipa Visitante: "+this.golosVisitante);
@@ -208,8 +200,10 @@ public class Jogo implements Serializable {
         return (this.equipaCasa) == (e.getCasa()) &&
                 (this.equipaVisitante) == (e.getVisitante()) &&
                 (this.data) == (e.getData()) &&
-                (this.subsCasa) == (e.getSubsCasa()) &&
-                (this.subsVisitante) == (e.getSubsVisitante()) &&
+                (this.entraCasa) == (e.getEntracasa()) &&
+                (this.saiCasa) == (e.getSaicasa()) &&
+                (this.entraVisitante) == (e.getEntraVisitante()) &&
+                (this.saiVisitante) == (e.getSaiVisitante()) &&
                 (this.state) == (e.getEstado()) &&
                 (this.golosCasa) == (e.getGolosCasa()) &&
                 (this.golosVisitante) == (e.getGolosVisitante());
@@ -230,8 +224,8 @@ public class Jogo implements Serializable {
         String[] data = campos[4].split("-");
         List<Integer> jc = new ArrayList<>();
         List<Integer> jf = new ArrayList<>();
-        Map<Integer, Integer> subsC = new HashMap<>();
-        Map<Integer, Integer> subsF = new HashMap<>();
+        //Map<Integer, Integer> subsC = new HashMap<>();
+        //Map<Integer, Integer> subsF = new HashMap<>();
         ArrayList<Integer> entrac = new ArrayList<>();
         ArrayList<Integer> saic = new ArrayList<>();
         ArrayList<Integer> entraV = new ArrayList<>();
@@ -249,7 +243,7 @@ public class Jogo implements Serializable {
         }
         for (int i = 16; i < 19; i++){
             String[] sub = campos[i].split("->");
-            subsC.put(Integer.parseInt(sub[0]), Integer.parseInt(sub[1]));
+            //subsC.put(Integer.parseInt(sub[0]), Integer.parseInt(sub[1]));
             entrac.add(Integer.parseInt(sub[0]));
             saic.add(Integer.parseInt(sub[1]));
         }
@@ -258,11 +252,11 @@ public class Jogo implements Serializable {
         }
         for (int i = 30; i < 33; i++){
             String[] sub = campos[i].split("->");
-            subsF.put(Integer.parseInt(sub[0]), Integer.parseInt(sub[1]));
+            //subsF.put(Integer.parseInt(sub[0]), Integer.parseInt(sub[1]));
             entraV.add(Integer.parseInt(sub[0]));
             saiV.add(Integer.parseInt(sub[1]));
         }              //equipaC   equipaV   subsC   subsV      golosC                    gologV
-        return new Jogo(eC,eV, subsC, subsF,entrac,saic,entraV,saiV ,Integer.parseInt(campos[2]), Integer.parseInt(campos[3]),
+        return new Jogo(eC,eV, entrac,saic,entraV,saiV ,Integer.parseInt(campos[2]), Integer.parseInt(campos[3]),
                 LocalDate.of(Integer.parseInt(data[0]), Integer.parseInt(data[1]), Integer.parseInt(data[2])),
                 jc,  jf);
     }
@@ -290,7 +284,7 @@ public class Jogo implements Serializable {
         timer.schedule(new TimerTask() {
             double coin = Math.random();
 
-            Fase fase = new Fase(equipaCasa,equipaVisitante,0,coin >0.5 ? 1 : 0 ,4,coin>0.5 ? equipaCasa.getJogador(modeloCasa.get("Medio").get(0)) : equipaVisitante.getJogador(modeloVisitante.get("Medio").get(0)),modeloCasa,modeloVisitante,entracasa,saicasa,entraVisitante,saiVisitante );
+            Fase fase = new Fase(equipaCasa,equipaVisitante,0,coin >0.5 ? 1 : 0 ,4,coin>0.5 ? equipaCasa.getJogador(modeloCasa.get("Medio").get(0)) : equipaVisitante.getJogador(modeloVisitante.get("Medio").get(0)),modeloCasa,modeloVisitante,entraCasa,saiCasa,entraVisitante,saiVisitante );
 
 
             @Override

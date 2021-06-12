@@ -67,8 +67,8 @@ public class Data implements Cloneable,Serializable {
         this.jogos = new ArrayList<>();
     }
 
-    public void guardaEstado() throws FileNotFoundException, IOException {
-        FileOutputStream fos = new FileOutputStream("save.tmp");
+    public void guardaEstado(String fn) throws FileNotFoundException, IOException {
+        FileOutputStream fos = new FileOutputStream(fn);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(this);
         oos.close();

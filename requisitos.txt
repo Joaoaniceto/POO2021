@@ -1,14 +1,10 @@
 REQUISITOS
 
 ->Probabilidade da simulação com base na habilidade de jogadores e equipas
-->Salvar estado do programa
+->Salvar estado do programa --DONE
 ->ENCAPSULAMENTO
-->Inicializar jogadores/equipa (mandar mail ao stor)
-->Substituições
+->Inicializar jogadores/equipa
+->Substituições --DONE
 ->Exceptions
-
-{
-"guardaredes" : [1] ,
-"defesa" : [5,32,21] ,
-"medio"
-}
+->estado do jogo é useless
+->falta decidir se equipas no historial sao adicionada

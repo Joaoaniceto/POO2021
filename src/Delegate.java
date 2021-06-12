@@ -1,5 +1,7 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -11,7 +13,8 @@ public class Delegate {
 
     public Delegate(Data info){
         this.info = info;
-        this.menuPrincipal = new Menu( new String[] {"Jogadores","Equipas","Jogos","Efetuar Transferência","Simular um Jogo","Modo Criação"} );
+        this.menuPrincipal = new Menu( new String[] {"Jogadores","Equipas","Jogos","Efetuar Transferência","Simular um Jogo","Modo Criação",
+                "Salvar Dados","Carregar Dados","Eliminar Dados"} );
         this.menuSecundario = new Menu(new String[] {"Mais Informação"});
         this.menuEquipas = new Menu(new String[] {"Schumann Athletic","Stravinsky Athletic","Bach F. C.","Debussy Athletic",
                 "Mozart F. C.", "Handel Athletic", "Mendelssohn F. C.", "Sporting Club Shostakovich", "Sporting Club Schubert",
@@ -23,7 +26,7 @@ public class Delegate {
         this.menuCriacao = new Menu(new String[] {"Criar Jogador","Criar Equipa","Criar Jogo"});
     }
 
-    public void run() {
+    public void run() throws IOException, ClassNotFoundException {
         do {
             this.menuPrincipal.executa();
             switch (this.menuPrincipal.getOpcao()) {
@@ -74,7 +77,18 @@ public class Delegate {
                             break;
                     }
                     break;
-
+                case 7:
+                    this.info.guardaEstado("save.tmp");
+                    System.out.println("Salvaguarda de dados completa.\n");
+                    break;
+                case 8:
+                    this.info = Data.carregaEstado("save.tmp");
+                    System.out.println("Carregamento de dados efetuado.\n");
+                    break;
+                case 9:
+                    System.out.println("Tem a certeza que pretende eliminar todos os dados?\n");
+                    this.info.deleteEstado();
+                    break;
             }
         } while (this.menuPrincipal.getOpcao() != 0);
         System.out.println("OBRIGADO :)");
@@ -302,17 +316,24 @@ public class Delegate {
         Scanner h = new Scanner(System.in);
         String hist = h.nextLine();
         String[] split = hist.split(",");
-        List<String> list = Arrays.asList(split);
+        //List<String> list = Arrays.asList(split);
+        List<String> list = new ArrayList<>(Arrays.asList(split));
         ArrayList<Equipa> historial = new ArrayList<>();
-        for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()){
+        for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
             String eq_nome = entry.getKey();
             Equipa eq_obj = entry.getValue();
-            if ( list.contains(eq_nome) ) {historial.add(eq_obj);list.remove(eq_nome);}
+            if (list.contains(eq_nome)) {
+                historial.add(eq_obj);
+                list.remove(eq_nome);
+            }
         }
+
         if (!list.isEmpty()) {
             for (String s : list) {
                 Equipa nova = new Equipa(s);
                 historial.add(nova);
+                this.info.addEquipa(nova);      //não aparece no menu even though eu lhe digo p fazer isto
+                this.menuEquipas.addOpcao(s);  //e isto.
             }
         }
 
@@ -320,7 +341,11 @@ public class Delegate {
         Scanner s = new Scanner(System.in);
         String role = s.nextLine();
 
+        //scope variables
         Integer[] converted;
+        Scanner e;
+        String equipa;
+        int i;
 
         switch (role) {
             case "GuardaRedes":
@@ -328,42 +353,199 @@ public class Delegate {
                 converted = hibilitiesAUX();
                 GuardaRedes gr = new GuardaRedes(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
                 this.info.addJogador(gr);
+                System.out.println("Finalmente, qual é a sua equipa?\n");
+                e = new Scanner(System.in);
+                equipa = e.nextLine();
+                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
+                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
+                    String eq_nome = entry.getKey();
+                    Equipa eq_obj = entry.getValue();
+                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(gr);i=1;}
+                }
+                if (i==0) {
+                    Equipa nova = new Equipa(equipa);
+                    nova.addJogador(gr);
+                    this.info.addEquipa(nova);
+                }
                 break;
             case "Avançado":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e drible por ordem?\n");
                 converted = hibilitiesAUX();
                 Avançado a = new Avançado(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
                 this.info.addJogador(a);
+                System.out.println("Finalmente, qual é a sua equipa?\n");
+                e = new Scanner(System.in);
+                equipa = e.nextLine();
+                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
+                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
+                    String eq_nome = entry.getKey();
+                    Equipa eq_obj = entry.getValue();
+                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(a);i=1;}
+                }
+                if (i==0) {
+                    Equipa nova = new Equipa(equipa);
+                    nova.addJogador(a);
+                    this.info.addEquipa(nova);
+                }
+
                 break;
             case "Lateral":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e cruzamento por ordem?\n");
                 converted = hibilitiesAUX();
                 Lateral l = new Lateral(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
                 this.info.addJogador(l);
+                System.out.println("Finalmente, qual é a sua equipa?\n");
+                e = new Scanner(System.in);
+                equipa = e.nextLine();
+                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
+                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
+                    String eq_nome = entry.getKey();
+                    Equipa eq_obj = entry.getValue();
+                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(l);i=1;}
+                }
+                if (i==0) {
+                    Equipa nova = new Equipa(equipa);
+                    nova.addJogador(l);
+                    this.info.addEquipa(nova);
+                }
+
                 break;
             case "Médio":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e recuperação por ordem?\n");
                 converted = hibilitiesAUX();
                 Medio m = new Medio(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
                 this.info.addJogador(m);
+                System.out.println("Finalmente, qual é a sua equipa?\n");
+                e = new Scanner(System.in);
+                equipa = e.nextLine();
+                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
+                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
+                    String eq_nome = entry.getKey();
+                    Equipa eq_obj = entry.getValue();
+                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(m);i=1;}
+                }
+                if (i==0) {
+                    Equipa nova = new Equipa(equipa);
+                    nova.addJogador(m);
+                    this.info.addEquipa(nova);
+                }
+
                 break;
             case "Defesa":
-                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e // por ordem?\n");
+                System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e corte por ordem?\n");
                 converted = hibilitiesAUX();
                 Defesa d = new Defesa(n,nome,titular,historial,converted[0],converted[1],converted[2],converted[3],converted[4],converted[5],converted[6],converted[7]);
                 this.info.addJogador(d);
+                System.out.println("Finalmente, qual é a sua equipa?\n");
+                e = new Scanner(System.in);
+                equipa = e.nextLine();
+                i = 0;  //se for zero significa q não foi encontrada uma equipa com o nome especificado logo é necessário criar uma
+                for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
+                    String eq_nome = entry.getKey();
+                    Equipa eq_obj = entry.getValue();
+                    if ( equipa.equals(eq_nome) ) {eq_obj.addJogador(d);i=1;}
+                }
+                if (i==0) {
+                    Equipa nova = new Equipa(equipa);
+                    nova.addJogador(d);
+                    this.info.addEquipa(nova);
+                }
+
                 break;
         }
     }
 
     public void criarEquipa() {
         System.out.println("Qual o nome da equipa?\n");
-        Scanner s = new Scanner(System.in);
-        Equipa e = new Equipa(s.toString());
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        Equipa e = new Equipa(s);
+        this.info.addEquipa(e);
     }
 
+//    public Jogo(Equipa casa, Equipa visitanteArrayList<Integer> ec,
+//    ArrayList<Integer> sc,ArrayList<Integer> ev,ArrayList<Integer> sv, int golosC, int golosV, LocalDate data, List<Integer> jc, List<Integer> jv) {
     public void criarJogo() {
-        Jogo j = new Jogo(); //isto está mal
-    }
+        int i=0;
+
+        System.out.println("Qual é a equipa da casa?\n");
+        Scanner casa_scan = new Scanner(System.in);
+        String Casa = casa_scan.nextLine();
+
+        System.out.println("Quais são as substituições da equipa da casa?\n"+"Jogadores que entram: ");
+        Scanner ec_scan = new Scanner(System.in);
+        String ec = ec_scan.nextLine();
+        String[] ec_split = ec.split(" ");
+        ArrayList<Integer> entraCasa = new ArrayList<>();
+        entraCasa.add(Integer.parseInt(ec_split[0]));
+        entraCasa.add(Integer.parseInt(ec_split[1]));
+        entraCasa.add(Integer.parseInt(ec_split[2]));
+
+        System.out.println("Jogadores que entram: ");
+        Scanner sc_scan = new Scanner(System.in);
+        String sc = sc_scan.nextLine();
+        String[] sc_split = sc.split(" ");
+        ArrayList<Integer> saiCasa = new ArrayList<>();
+        saiCasa.add(Integer.parseInt(sc_split[0]));
+        saiCasa.add(Integer.parseInt(sc_split[1]));
+        saiCasa.add(Integer.parseInt(sc_split[2]));
+
+        System.out.println("Qual é a equipa Visitante?\n");
+        Scanner Visitante_scan = new Scanner(System.in);
+        String Visitante = Visitante_scan.nextLine();
+
+        System.out.println("Quais são as substituições da equipa Visitante?\n"+"Jogadores que entram: ");
+        Scanner ev_scan = new Scanner(System.in);
+        String ev = ev_scan.nextLine();
+        String[] ev_split = ev.split(" ");
+        ArrayList<Integer> entraVisitante = new ArrayList<>();
+        entraVisitante.add(Integer.parseInt(ev_split[0]));
+        entraVisitante.add(Integer.parseInt(ev_split[1]));
+        entraVisitante.add(Integer.parseInt(ev_split[2]));
+
+        System.out.println("Jogadores que entram: ");
+        Scanner sv_scan = new Scanner(System.in);
+        String sv = sv_scan.nextLine();
+        String[] sv_split = sv.split(" ");
+        ArrayList<Integer> saiVisitante = new ArrayList<>();
+        saiVisitante.add(Integer.parseInt(sv_split[0]));
+        saiVisitante.add(Integer.parseInt(sv_split[1]));
+        saiVisitante.add(Integer.parseInt(sv_split[2]));
+
+
+
+        System.out.println("Quais os 11 titulares da equipa da Casa?\n");
+        Scanner tc_scan = new Scanner(System.in);
+        String tc = tc_scan.nextLine();
+        String[] tc_split = tc.split(" ");
+        List<Integer> titularesCasa = new ArrayList<>();
+        for (i = 0; i < tc_split.length; i++) {
+            titularesCasa.add(Integer.parseInt(tc_split[i]));
+        }
+
+        System.out.println("Quais os 11 titulares da equipa Visitante?\n");
+        Scanner tv_scan = new Scanner(System.in);
+        String tv = tv_scan.nextLine();
+        String[] tv_split = tv.split(" ");
+        List<Integer> titularesVisitante = new ArrayList<>();
+        for (i = 0; i < tv_split.length; i++) {
+            titularesVisitante.add(Integer.parseInt(tv_split[i]));
+        }
+
+
+        Equipa c = new Equipa();
+        Equipa v = new Equipa();
+        for(Map.Entry<String,Equipa> entry : this.info.getEquipas().entrySet()) {
+            String eq_nome = entry.getKey();
+            Equipa eq_obj = entry.getValue();
+            if (Casa.equals(eq_nome)) {c=eq_obj;}
+            if (Visitante.equals(eq_nome)) {v=eq_obj;}
+        }
+
+        Jogo j = new Jogo(c,v,entraCasa,saiCasa,entraVisitante,saiVisitante,0,0, LocalDate.now(),titularesCasa,titularesVisitante);
+
+
+
+        }
 
 }

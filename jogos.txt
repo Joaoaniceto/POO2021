@@ -1,8 +1,8 @@
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Mendelssohn F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {22=37, 25=3, 43=25}
-Substituições da Equipa Visitante: {1=42, 49=31, 14=45}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [37, 25, 3](out)[22, 43, 25](in)
+Substituições da Equipa Visitante: [42, 31, 45](out)[1, 49, 14](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 0
@@ -13,9 +13,9 @@ Lista de Jogadores Titulares Visitantes: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Sporting Club Dvorak
-Data: 2021-06-11
-Substituições da Equipa da Casa: {34=42, 35=28, 36=11}
-Substituições da Equipa Visitante: {49=37, 19=13, 45=42}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [11, 28, 42](out)[36, 35, 34](in)
+Substituições da Equipa Visitante: [13, 37, 42](out)[19, 49, 45](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
@@ -26,9 +26,9 @@ Lista de Jogadores Titulares Visitantes: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 
 
 Equipa da casa: Debussy Athletic
 Equipa visitante: Stravinsky Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {3=47, 21=18, 45=31}
-Substituições da Equipa Visitante: {17=44, 36=23, 22=24}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [47, 18, 31](out)[3, 21, 45](in)
+Substituições da Equipa Visitante: [44, 24, 23](out)[17, 22, 36](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 5
 Golos da Equipa Visitante: 2
@@ -39,9 +39,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Beethoven F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {32=5, 37=20, 11=30}
-Substituições da Equipa Visitante: {3=19, 38=40, 39=16}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 20, 5](out)[11, 37, 32](in)
+Substituições da Equipa Visitante: [16, 40, 19](out)[39, 38, 3](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
@@ -52,9 +52,9 @@ Lista de Jogadores Titulares Visitantes: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
 
 Equipa da casa: Mendelssohn F. C.
 Equipa visitante: Bartok F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {49=45, 2=22, 41=31}
-Substituições da Equipa Visitante: {1=19, 40=45, 8=18}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [45, 31, 22](out)[49, 41, 2](in)
+Substituições da Equipa Visitante: [19, 45, 18](out)[1, 40, 8](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
@@ -65,9 +65,9 @@ Lista de Jogadores Titulares Visitantes: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43
 
 Equipa da casa: Bach F. C.
 Equipa visitante: Sporting Club Shostakovich
-Data: 2021-06-11
-Substituições da Equipa da Casa: {4=30, 36=21, 14=0}
-Substituições da Equipa Visitante: {43=3, 12=20, 31=34}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [0, 30, 21](out)[14, 4, 36](in)
+Substituições da Equipa Visitante: [3, 34, 20](out)[43, 31, 12](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 3
@@ -78,9 +78,9 @@ Lista de Jogadores Titulares Visitantes: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 
 
 Equipa da casa: Beethoven F. C.
 Equipa visitante: Handel Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {50=48, 38=19, 43=23}
-Substituições da Equipa Visitante: {0=39, 11=0, 30=47}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 48, 19](out)[43, 50, 38](in)
+Substituições da Equipa Visitante: [0, 39, 47](out)[11, 0, 30](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 2
@@ -91,9 +91,9 @@ Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27
 
 Equipa da casa: Wagner Athletic
 Equipa visitante: Stravinsky Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {33=45, 28=27, 12=15}
-Substituições da Equipa Visitante: {0=44, 19=4, 36=10}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [45, 27, 15](out)[33, 28, 12](in)
+Substituições da Equipa Visitante: [44, 10, 4](out)[0, 36, 19](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
@@ -104,9 +104,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Wagner Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {4=47, 8=18, 13=38}
-Substituições da Equipa Visitante: {38=9, 42=45, 12=27}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [38, 18, 47](out)[13, 8, 4](in)
+Substituições da Equipa Visitante: [27, 45, 9](out)[12, 42, 38](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 1
@@ -117,9 +117,9 @@ Lista de Jogadores Titulares Visitantes: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 
 
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Stravinsky Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {11=34, 43=25, 12=20}
-Substituições da Equipa Visitante: {17=44, 36=10, 8=46}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [34, 20, 25](out)[11, 12, 43](in)
+Substituições da Equipa Visitante: [44, 46, 10](out)[17, 8, 36](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
@@ -130,9 +130,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Sporting Club Schubert
-Data: 2021-06-11
-Substituições da Equipa da Casa: {20=47, 42=38, 44=40}
-Substituições da Equipa Visitante: {17=5, 39=30, 30=43}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [40, 47, 38](out)[44, 20, 42](in)
+Substituições da Equipa Visitante: [5, 30, 43](out)[17, 39, 30](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 4
 Golos da Equipa Visitante: 0
@@ -143,9 +143,9 @@ Lista de Jogadores Titulares Visitantes: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22,
 
 Equipa da casa: Brahms F. C.
 Equipa visitante: Sporting Club Chopin
-Data: 2021-06-11
-Substituições da Equipa da Casa: {38=2, 43=46, 31=25}
-Substituições da Equipa Visitante: {8=40, 42=38, 26=31}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [46, 2, 25](out)[43, 38, 31](in)
+Substituições da Equipa Visitante: [38, 40, 31](out)[42, 8, 26](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 3
@@ -156,9 +156,9 @@ Lista de Jogadores Titulares Visitantes: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Sporting Club Prokofiev
-Data: 2021-06-11
-Substituições da Equipa da Casa: {36=46, 20=14, 5=48}
-Substituições da Equipa Visitante: {38=1, 9=23, 43=8}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [46, 48, 14](out)[36, 5, 20](in)
+Substituições da Equipa Visitante: [1, 23, 8](out)[38, 9, 43](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
@@ -169,9 +169,9 @@ Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 4
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Sporting Club Chopin
-Data: 2021-06-11
-Substituições da Equipa da Casa: {34=48, 20=14, 6=32}
-Substituições da Equipa Visitante: {16=10, 20=47, 8=48}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [48, 32, 14](out)[34, 6, 20](in)
+Substituições da Equipa Visitante: [10, 47, 48](out)[16, 20, 8](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 5
 Golos da Equipa Visitante: 1
@@ -182,9 +182,9 @@ Lista de Jogadores Titulares Visitantes: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Debussy Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {3=30, 5=1, 38=13}
-Substituições da Equipa Visitante: {5=42, 21=38, 12=31}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [13, 30, 1](out)[38, 3, 5](in)
+Substituições da Equipa Visitante: [31, 42, 38](out)[12, 5, 21](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
@@ -195,9 +195,9 @@ Lista de Jogadores Titulares Visitantes: [21, 32, 5, 6, 41, 45, 12, 22, 48, 28, 
 
 Equipa da casa: Beethoven F. C.
 Equipa visitante: Bach F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {38=30, 39=16, 44=23}
-Substituições da Equipa Visitante: {32=1, 2=27, 27=34}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 16, 23](out)[38, 39, 44](in)
+Substituições da Equipa Visitante: [27, 1, 34](out)[2, 32, 27](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 3
@@ -208,9 +208,9 @@ Lista de Jogadores Titulares Visitantes: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 5
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Wagner Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {35=19, 20=14, 36=11}
-Substituições da Equipa Visitante: {2=37, 38=45, 29=47}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [14, 19, 11](out)[20, 35, 36](in)
+Substituições da Equipa Visitante: [37, 45, 47](out)[2, 38, 29](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
@@ -221,9 +221,9 @@ Lista de Jogadores Titulares Visitantes: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 
 
 Equipa da casa: Brahms F. C.
 Equipa visitante: Vivaldi F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {23=46, 41=23, 29=1}
-Substituições da Equipa Visitante: {39=4, 43=10, 28=7}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 46, 1](out)[41, 23, 29](in)
+Substituições da Equipa Visitante: [10, 4, 7](out)[43, 39, 28](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
@@ -234,9 +234,9 @@ Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Mendelssohn F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {20=47, 25=31, 42=10}
-Substituições da Equipa Visitante: {1=23, 23=12, 25=42}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [47, 31, 10](out)[20, 25, 42](in)
+Substituições da Equipa Visitante: [42, 23, 12](out)[25, 1, 23](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 3
@@ -247,9 +247,9 @@ Lista de Jogadores Titulares Visitantes: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 
 
 Equipa da casa: Handel Athletic
 Equipa visitante: Mahler Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {0=6, 11=0, 30=47}
-Substituições da Equipa Visitante: {2=22, 39=32, 29=15}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [0, 6, 47](out)[11, 0, 30](in)
+Substituições da Equipa Visitante: [15, 32, 22](out)[29, 39, 2](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 2
@@ -260,9 +260,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39,
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Sporting Club Dvorak
-Data: 2021-06-11
-Substituições da Equipa da Casa: {20=47, 8=40, 42=38}
-Substituições da Equipa Visitante: {19=13, 6=23, 23=37}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [47, 40, 38](out)[20, 8, 42](in)
+Substituições da Equipa Visitante: [13, 23, 37](out)[19, 6, 23](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 3
@@ -273,9 +273,9 @@ Lista de Jogadores Titulares Visitantes: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Handel Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {32=5, 36=4, 4=49}
-Substituições da Equipa Visitante: {50=29, 37=35, 11=39}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [4, 49, 5](out)[36, 4, 32](in)
+Substituições da Equipa Visitante: [35, 39, 29](out)[37, 11, 50](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
@@ -286,9 +286,9 @@ Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Debussy Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {32=5, 3=4, 36=3}
-Substituições da Equipa Visitante: {32=4, 21=18, 12=15}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [3, 4, 5](out)[36, 3, 32](in)
+Substituições da Equipa Visitante: [18, 4, 15](out)[21, 32, 12](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
@@ -299,9 +299,9 @@ Lista de Jogadores Titulares Visitantes: [21, 32, 5, 6, 41, 45, 12, 22, 48, 28, 
 
 Equipa da casa: Debussy Athletic
 Equipa visitante: Bartok F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {48=31, 21=38, 45=15}
-Substituições da Equipa Visitante: {4=16, 8=18, 31=38}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [31, 38, 15](out)[48, 21, 45](in)
+Substituições da Equipa Visitante: [16, 18, 38](out)[4, 8, 31](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 1
@@ -312,9 +312,9 @@ Lista de Jogadores Titulares Visitantes: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Mendelssohn F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {36=34, 22=40, 39=43}
-Substituições da Equipa Visitante: {17=45, 1=42, 25=28}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [43, 34, 40](out)[39, 36, 22](in)
+Substituições da Equipa Visitante: [28, 45, 42](out)[25, 17, 1](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 0
@@ -325,9 +325,9 @@ Lista de Jogadores Titulares Visitantes: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 
 
 Equipa da casa: Sporting Club Dvorak
 Equipa visitante: Vivaldi F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {32=42, 49=40, 19=13}
-Substituições da Equipa Visitante: {33=7, 3=16, 28=30}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [40, 13, 42](out)[49, 19, 32](in)
+Substituições da Equipa Visitante: [16, 30, 7](out)[3, 28, 33](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
@@ -338,9 +338,9 @@ Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Vivaldi F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {1=47, 4=16, 7=45}
-Substituições da Equipa Visitante: {33=30, 18=20, 31=4}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [47, 16, 45](out)[1, 4, 7](in)
+Substituições da Equipa Visitante: [30, 20, 4](out)[33, 18, 31](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 2
@@ -351,9 +351,9 @@ Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 
 
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Schumann Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {20=4, 6=20, 39=9}
-Substituições da Equipa Visitante: {36=4, 37=20, 26=23}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [9, 20, 4](out)[39, 6, 20](in)
+Substituições da Equipa Visitante: [4, 23, 20](out)[36, 26, 37](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
@@ -364,9 +364,9 @@ Lista de Jogadores Titulares Visitantes: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28,
 
 Equipa da casa: Handel Athletic
 Equipa visitante: Vivaldi F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {1=47, 27=35, 30=10}
-Substituições da Equipa Visitante: {3=38, 42=47, 26=10}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [10, 35, 47](out)[30, 27, 1](in)
+Substituições da Equipa Visitante: [47, 38, 10](out)[42, 3, 26](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 1
@@ -377,9 +377,9 @@ Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 
 
 Equipa da casa: Beethoven F. C.
 Equipa visitante: Sporting Club Dvorak
-Data: 2021-06-11
-Substituições da Equipa da Casa: {3=30, 5=48, 6=23}
-Substituições da Equipa Visitante: {32=42, 33=48, 6=23}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 48, 23](out)[3, 5, 6](in)
+Substituições da Equipa Visitante: [48, 23, 42](out)[33, 6, 32](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 1
@@ -390,9 +390,9 @@ Lista de Jogadores Titulares Visitantes: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 
 
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Brahms F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {38=34, 11=9, 30=47}
-Substituições da Equipa Visitante: {23=7, 41=23, 43=14}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [34, 9, 47](out)[38, 11, 30](in)
+Substituições da Equipa Visitante: [23, 14, 7](out)[41, 43, 23](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 3
@@ -403,9 +403,9 @@ Lista de Jogadores Titulares Visitantes: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33
 
 Equipa da casa: Debussy Athletic
 Equipa visitante: Sporting Club Dvorak
-Data: 2021-06-11
-Substituições da Equipa da Casa: {5=42, 21=38, 45=36}
-Substituições da Equipa Visitante: {32=26, 49=23, 19=13}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [42, 38, 36](out)[5, 21, 45](in)
+Substituições da Equipa Visitante: [26, 23, 13](out)[32, 49, 19](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 0
@@ -416,9 +416,9 @@ Lista de Jogadores Titulares Visitantes: [33, 19, 49, 6, 31, 45, 10, 29, 32, 4, 
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Sporting Club Shostakovich
-Data: 2021-06-11
-Substituições da Equipa da Casa: {35=28, 36=11, 25=46}
-Substituições da Equipa Visitante: {1=37, 6=4, 12=20}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [28, 11, 46](out)[35, 36, 25](in)
+Substituições da Equipa Visitante: [4, 20, 37](out)[6, 12, 1](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 2
@@ -429,9 +429,9 @@ Lista de Jogadores Titulares Visitantes: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Wagner Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {20=22, 40=7, 44=40}
-Substituições da Equipa Visitante: {2=25, 7=9, 29=47}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [40, 7, 22](out)[44, 40, 20](in)
+Substituições da Equipa Visitante: [47, 25, 9](out)[29, 2, 7](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
@@ -442,9 +442,9 @@ Lista de Jogadores Titulares Visitantes: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Sporting Club Prokofiev
-Data: 2021-06-11
-Substituições da Equipa da Casa: {48=38, 39=40, 15=5}
-Substituições da Equipa Visitante: {48=12, 5=1, 28=7}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [5, 38, 40](out)[15, 48, 39](in)
+Substituições da Equipa Visitante: [12, 7, 1](out)[48, 28, 5](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 1
@@ -455,9 +455,9 @@ Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 4
 
 Equipa da casa: Mendelssohn F. C.
 Equipa visitante: Schumann Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {33=13, 2=22, 14=45}
-Substituições da Equipa Visitante: {37=20, 11=30, 28=5}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [13, 22, 45](out)[33, 2, 14](in)
+Substituições da Equipa Visitante: [30, 5, 20](out)[11, 28, 37](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2
@@ -468,9 +468,9 @@ Lista de Jogadores Titulares Visitantes: [36, 26, 11, 7, 37, 48, 15, 14, 43, 28,
 
 Equipa da casa: Vivaldi F. C.
 Equipa visitante: Sporting Club Prokofiev
-Data: 2021-06-11
-Substituições da Equipa da Casa: {33=30, 3=38, 30=41}
-Substituições da Equipa Visitante: {17=7, 9=23, 43=35}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 38, 41](out)[33, 3, 30](in)
+Substituições da Equipa Visitante: [23, 35, 7](out)[9, 43, 17](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 3
@@ -481,9 +481,9 @@ Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 4
 
 Equipa da casa: Brahms F. C.
 Equipa visitante: Sporting Club Shostakovich
-Data: 2021-06-11
-Substituições da Equipa da Casa: {7=14, 43=7, 29=27}
-Substituições da Equipa Visitante: {39=34, 43=3, 30=47}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [7, 14, 27](out)[43, 7, 29](in)
+Substituições da Equipa Visitante: [34, 3, 47](out)[39, 43, 30](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
@@ -494,9 +494,9 @@ Lista de Jogadores Titulares Visitantes: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Bach F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {38=1, 8=2, 47=8}
-Substituições da Equipa Visitante: {50=1, 35=24, 43=0}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [1, 8, 2](out)[38, 47, 8](in)
+Substituições da Equipa Visitante: [0, 1, 24](out)[43, 50, 35](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 1
@@ -507,9 +507,9 @@ Lista de Jogadores Titulares Visitantes: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 5
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Mahler Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {40=45, 45=15, 31=33}
-Substituições da Equipa Visitante: {2=28, 20=25, 25=15}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [45, 33, 15](out)[40, 31, 45](in)
+Substituições da Equipa Visitante: [25, 15, 28](out)[20, 25, 2](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
@@ -520,9 +520,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39,
 
 Equipa da casa: Mahler Athletic
 Equipa visitante: Sporting Club Schubert
-Data: 2021-06-11
-Substituições da Equipa da Casa: {39=22, 25=15, 29=25}
-Substituições da Equipa Visitante: {1=38, 22=30, 39=40}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [22, 25, 15](out)[39, 29, 25](in)
+Substituições da Equipa Visitante: [30, 38, 40](out)[22, 1, 39](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 2
@@ -533,9 +533,9 @@ Lista de Jogadores Titulares Visitantes: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22,
 
 Equipa da casa: Bach F. C.
 Equipa visitante: Stravinsky Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {2=24, 50=1, 5=0}
-Substituições da Equipa Visitante: {36=10, 42=11, 10=23}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [0, 24, 1](out)[5, 2, 50](in)
+Substituições da Equipa Visitante: [11, 10, 23](out)[42, 36, 10](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 0
@@ -546,9 +546,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Stravinsky Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {48=12, 38=1, 15=23}
-Substituições da Equipa Visitante: {1=46, 19=4, 8=24}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [1, 12, 23](out)[38, 48, 15](in)
+Substituições da Equipa Visitante: [24, 46, 4](out)[8, 1, 19](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 0
@@ -559,9 +559,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 
 
 Equipa da casa: Sporting Club Shostakovich
 Equipa visitante: Beethoven F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {38=34, 6=20, 30=47}
-Substituições da Equipa Visitante: {50=48, 38=40, 39=16}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [34, 47, 20](out)[38, 30, 6](in)
+Substituições da Equipa Visitante: [40, 16, 48](out)[38, 39, 50](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 1
@@ -572,9 +572,9 @@ Lista de Jogadores Titulares Visitantes: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
 
 Equipa da casa: Mendelssohn F. C.
 Equipa visitante: Bach F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {17=31, 36=13, 25=43}
-Substituições da Equipa Visitante: {35=27, 43=3, 27=34}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [13, 31, 43](out)[36, 17, 25](in)
+Substituições da Equipa Visitante: [3, 27, 34](out)[43, 35, 27](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 3
@@ -585,9 +585,9 @@ Lista de Jogadores Titulares Visitantes: [4, 47, 35, 2, 36, 39, 14, 43, 5, 32, 5
 
 Equipa da casa: Vivaldi F. C.
 Equipa visitante: Handel Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {33=41, 3=38, 38=47}
-Substituições da Equipa Visitante: {1=47, 11=39, 47=10}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [41, 38, 47](out)[33, 3, 38](in)
+Substituições da Equipa Visitante: [39, 47, 10](out)[11, 1, 47](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 5
 Golos da Equipa Visitante: 1
@@ -598,9 +598,9 @@ Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27
 
 Equipa da casa: Vivaldi F. C.
 Equipa visitante: Beethoven F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {39=4, 42=47, 28=41}
-Substituições da Equipa Visitante: {3=40, 7=25, 13=23}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [4, 41, 47](out)[39, 28, 42](in)
+Substituições da Equipa Visitante: [40, 23, 25](out)[3, 13, 7](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 0
@@ -611,9 +611,9 @@ Lista de Jogadores Titulares Visitantes: [39, 38, 5, 50, 3, 6, 44, 13, 43, 7, 9]
 
 Equipa da casa: Sporting Club Dvorak
 Equipa visitante: Stravinsky Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {32=43, 33=48, 49=37}
-Substituições da Equipa Visitante: {1=46, 17=44, 42=11}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [48, 43, 37](out)[33, 32, 49](in)
+Substituições da Equipa Visitante: [46, 11, 44](out)[1, 42, 17](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 1
@@ -624,9 +624,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 13, 19, 42, 1, 50, 22, 8, 17, 
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Sporting Club Shostakovich
-Data: 2021-06-11
-Substituições da Equipa da Casa: {48=38, 36=12, 39=30}
-Substituições da Equipa Visitante: {33=47, 39=9, 43=25}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [12, 30, 38](out)[36, 39, 48](in)
+Substituições da Equipa Visitante: [25, 47, 9](out)[43, 33, 39](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 3
@@ -637,9 +637,9 @@ Lista de Jogadores Titulares Visitantes: [43, 30, 1, 22, 33, 11, 38, 31, 39, 6, 
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Handel Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {1=16, 25=33, 26=38}
-Substituições da Equipa Visitante: {37=46, 27=35, 30=10}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [38, 16, 33](out)[26, 1, 25](in)
+Substituições da Equipa Visitante: [35, 10, 46](out)[27, 30, 37](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 2
@@ -650,9 +650,9 @@ Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Mozart F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {36=3, 26=50, 28=5}
-Substituições da Equipa Visitante: {34=42, 36=11, 20=14}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [3, 5, 50](out)[36, 28, 26](in)
+Substituições da Equipa Visitante: [42, 11, 14](out)[34, 36, 20](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 1
@@ -663,9 +663,9 @@ Lista de Jogadores Titulares Visitantes: [20, 9, 25, 36, 40, 49, 34, 6, 5, 47, 3
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Wagner Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {50=46, 22=43, 39=40}
-Substituições da Equipa Visitante: {33=45, 34=47, 42=14}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [46, 43, 40](out)[50, 22, 39](in)
+Substituições da Equipa Visitante: [45, 47, 14](out)[33, 34, 42](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 4
@@ -676,9 +676,9 @@ Lista de Jogadores Titulares Visitantes: [44, 29, 12, 28, 34, 7, 38, 42, 33, 4, 
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Sporting Club Prokofiev
-Data: 2021-06-11
-Substituições da Equipa da Casa: {20=47, 8=40, 42=38}
-Substituições da Equipa Visitante: {35=7, 28=35, 15=23}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [40, 47, 38](out)[8, 20, 42](in)
+Substituições da Equipa Visitante: [35, 23, 7](out)[28, 15, 35](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 4
 Golos da Equipa Visitante: 3
@@ -689,9 +689,9 @@ Lista de Jogadores Titulares Visitantes: [3, 38, 15, 9, 5, 43, 28, 17, 47, 11, 4
 
 Equipa da casa: Bach F. C.
 Equipa visitante: Vivaldi F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {32=37, 35=34, 5=0}
-Substituições da Equipa Visitante: {33=7, 7=41, 39=4}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [37, 34, 0](out)[32, 35, 5](in)
+Substituições da Equipa Visitante: [7, 41, 4](out)[33, 7, 39](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 1
@@ -702,9 +702,9 @@ Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 
 
 Equipa da casa: Sporting Club Chopin
 Equipa visitante: Handel Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {16=38, 35=23, 26=31}
-Substituições da Equipa Visitante: {1=10, 22=13, 27=46}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 38, 31](out)[35, 16, 26](in)
+Substituições da Equipa Visitante: [46, 10, 13](out)[27, 1, 22](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 1
@@ -715,9 +715,9 @@ Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27
 
 Equipa da casa: Vivaldi F. C.
 Equipa visitante: Brahms F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {33=7, 7=30, 28=41}
-Substituições da Equipa Visitante: {36=34, 23=7, 41=23}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [41, 7, 30](out)[28, 33, 7](in)
+Substituições da Equipa Visitante: [34, 23, 7](out)[36, 41, 23](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 0
@@ -728,9 +728,9 @@ Lista de Jogadores Titulares Visitantes: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Handel Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {16=3, 50=5, 39=40}
-Substituições da Equipa Visitante: {1=47, 11=0, 12=13}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [5, 3, 40](out)[50, 16, 39](in)
+Substituições da Equipa Visitante: [47, 0, 13](out)[1, 11, 12](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
@@ -741,9 +741,9 @@ Lista de Jogadores Titulares Visitantes: [11, 4, 30, 1, 9, 22, 5, 50, 12, 37, 27
 
 Equipa da casa: Schumann Athletic
 Equipa visitante: Vivaldi F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {3=4, 36=3, 37=50}
-Substituições da Equipa Visitante: {3=38, 42=16, 28=41}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [3, 50, 4](out)[36, 37, 3](in)
+Substituições da Equipa Visitante: [41, 38, 16](out)[28, 3, 42](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
@@ -754,9 +754,9 @@ Lista de Jogadores Titulares Visitantes: [18, 3, 31, 39, 42, 8, 26, 43, 50, 33, 
 
 Equipa da casa: Bach F. C.
 Equipa visitante: Brahms F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {50=1, 4=30, 47=21}
-Substituições da Equipa Visitante: {33=34, 41=46, 29=1}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 1, 21](out)[4, 50, 47](in)
+Substituições da Equipa Visitante: [46, 1, 34](out)[41, 29, 33](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
@@ -767,9 +767,9 @@ Lista de Jogadores Titulares Visitantes: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Bartok F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {5=13, 43=8, 15=23}
-Substituições da Equipa Visitante: {40=15, 31=38, 15=45}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 8, 13](out)[15, 43, 5](in)
+Substituições da Equipa Visitante: [38, 15, 45](out)[31, 40, 15](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 0
@@ -780,9 +780,9 @@ Lista de Jogadores Titulares Visitantes: [8, 7, 1, 4, 40, 25, 31, 26, 13, 22, 43
 
 Equipa da casa: Sporting Club Schubert
 Equipa visitante: Sporting Club Chopin
-Data: 2021-06-11
-Substituições da Equipa da Casa: {48=38, 50=5, 36=34}
-Substituições da Equipa Visitante: {35=23, 20=47, 8=7}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [38, 5, 34](out)[48, 50, 36](in)
+Substituições da Equipa Visitante: [7, 23, 47](out)[8, 35, 20](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 0
 Golos da Equipa Visitante: 4
@@ -793,9 +793,9 @@ Lista de Jogadores Titulares Visitantes: [20, 42, 8, 44, 16, 25, 4, 26, 50, 35, 
 
 Equipa da casa: Bartok F. C.
 Equipa visitante: Mendelssohn F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {4=16, 22=14, 40=15}
-Substituições da Equipa Visitante: {1=43, 2=22, 14=45}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [15, 14, 16](out)[40, 22, 4](in)
+Substituições da Equipa Visitante: [22, 43, 45](out)[2, 1, 14](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 3
 Golos da Equipa Visitante: 3
@@ -806,9 +806,9 @@ Lista de Jogadores Titulares Visitantes: [2, 1, 40, 16, 25, 49, 41, 17, 14, 33, 
 
 Equipa da casa: Mendelssohn F. C.
 Equipa visitante: Sporting Club Schubert
-Data: 2021-06-11
-Substituições da Equipa da Casa: {49=45, 36=13, 45=31}
-Substituições da Equipa Visitante: {36=12, 11=5, 15=46}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [13, 45, 31](out)[36, 49, 45](in)
+Substituições da Equipa Visitante: [12, 5, 46](out)[36, 11, 15](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 2
@@ -819,9 +819,9 @@ Lista de Jogadores Titulares Visitantes: [36, 23, 1, 48, 16, 50, 15, 11, 17, 22,
 
 Equipa da casa: Mozart F. C.
 Equipa visitante: Mahler Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {35=29, 36=11, 5=48}
-Substituições da Equipa Visitante: {11=23, 29=30, 30=15}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [11, 29, 48](out)[36, 35, 5](in)
+Substituições da Equipa Visitante: [30, 15, 23](out)[29, 30, 11](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 5
@@ -832,9 +832,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39,
 
 Equipa da casa: Sporting Club Prokofiev
 Equipa visitante: Mahler Athletic
-Data: 2021-06-11
-Substituições da Equipa da Casa: {3=30, 38=13, 28=2}
-Substituições da Equipa Visitante: {48=27, 17=23, 39=22}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [30, 2, 13](out)[3, 28, 38](in)
+Substituições da Equipa Visitante: [27, 23, 22](out)[48, 17, 39](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 1
@@ -845,9 +845,9 @@ Lista de Jogadores Titulares Visitantes: [36, 29, 48, 8, 20, 17, 12, 11, 21, 39,
 
 Equipa da casa: Beethoven F. C.
 Equipa visitante: Brahms F. C.
-Data: 2021-06-11
-Substituições da Equipa da Casa: {50=48, 3=19, 44=20}
-Substituições da Equipa Visitante: {33=34, 43=7, 31=25}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [48, 20, 19](out)[50, 44, 3](in)
+Substituições da Equipa Visitante: [34, 7, 25](out)[33, 43, 31](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 1
 Golos da Equipa Visitante: 3
@@ -858,9 +858,9 @@ Lista de Jogadores Titulares Visitantes: [29, 38, 41, 43, 48, 47, 10, 31, 32, 33
 
 Equipa da casa: Stravinsky Athletic
 Equipa visitante: Sporting Club Prokofiev
-Data: 2021-06-11
-Substituições da Equipa da Casa: {1=24, 36=23, 23=10}
-Substituições da Equipa Visitante: {3=30, 38=1, 47=35}
+Data: 2021-06-12
+Substituições da Equipa da Casa: [23, 24, 10](out)[36, 1, 23](in)
+Substituições da Equipa Visitante: [1, 35, 30](out)[38, 47, 3](in)
 Estado do jogo: por_iniciar
 Golos da Equipa da Casa: 2
 Golos da Equipa Visitante: 2

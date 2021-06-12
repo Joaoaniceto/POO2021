@@ -23,14 +23,14 @@ import java.util.InputMismatchException;
 
 public class Menu {
     // variÃ¡veis de instÃ¢ncia
-    private List<String> opcoes;
+    private ArrayList<String> opcoes;
     private int op;
 
     /**
      * Constructor for objects of class Menu
      */
     public Menu(String[] opcoes) {
-        this.opcoes = Arrays.asList(opcoes);
+        this.opcoes = new ArrayList<>(Arrays.asList(opcoes));
         this.op = 0;
     }
 
@@ -40,7 +40,7 @@ public class Menu {
     }
 
     /**
-     * MÃ©todo para apresentar o menu e ler uma opÃ§Ã£o.
+     * Método para apresentar o menu e ler uma opÃ§Ã£o.
      *
      */
     public void executa() {
@@ -78,6 +78,10 @@ public class Menu {
             op = -1;
         }
         return op;
+    }
+
+    public void addOpcao(String s) {
+        this.opcoes.add(s);
     }
 
     /**

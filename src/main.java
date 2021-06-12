@@ -109,11 +109,11 @@ public class main {
 
         j.startJogo();
         */
-        Data d = Parser.parse();
-        d.guardaEstado();
-        d.deleteEstado();
-        Data f = Data.carregaEstado("save.tmp");
-        System.out.println(f.getJogos().toString());
+        //Data d = Parser.parse();
+        //d.guardaEstado("save.tmp");
+        //d.deleteEstado();
+        //Data f = Data.carregaEstado("save.tmp");
+        //System.out.println(f.getJogadores().toString());
 
 
     }
