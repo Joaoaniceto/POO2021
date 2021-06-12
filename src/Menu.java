@@ -85,7 +85,7 @@ public class Menu {
     }
 
     /**
-     * MÃ©todo para obter a Ãºltima opÃ§Ã£o lida
+     * Método para obter a Ãºltima opÃ§Ã£o lida
      */
     public int getOpcao() {
         return this.op;

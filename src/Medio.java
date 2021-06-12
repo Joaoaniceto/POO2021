@@ -59,7 +59,7 @@ public class Medio extends Jogador {
     }
 
     public static Medio parse(String input){
-        ArrayList<Equipa> hist = new ArrayList<Equipa>();
+        ArrayList<Equipa> hist = new ArrayList<>();
         String[] campos = input.split(",");
         String name = campos[0];
         return new Medio(Integer.parseInt(campos[1]),name,false,hist,

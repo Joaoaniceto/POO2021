@@ -29,11 +29,9 @@ public class GuardaRedes extends Jogador {
     public void setElast(int e){this.elasticidade = e; }
 
     public String toString(){
-        StringBuilder s = new StringBuilder();
-        s.append(super.toString()); 
-        s.append("Valor de Elasticidade: ").append(getElast());
-        s.append("\n");
-        return s.toString();
+        return super.toString() +
+                "Valor de Elasticidade: " + getElast() +
+                "\n";
     }
 
 
@@ -68,7 +66,7 @@ public class GuardaRedes extends Jogador {
     }
 
     public static GuardaRedes parse(String input){
-        ArrayList<Equipa> hist = new ArrayList<Equipa>();
+        ArrayList<Equipa> hist = new ArrayList<>();
         String[] campos = input.split(",");
         String name = campos[0];
         return new GuardaRedes(Integer.parseInt(campos[1]),name,false,hist,

@@ -58,7 +58,7 @@ public class Defesa extends Jogador {
     }
 
     public static Defesa parse(String input){
-        ArrayList<Equipa> hist = new ArrayList<Equipa>();
+        ArrayList<Equipa> hist = new ArrayList<>();
         String[] campos = input.split(",");
         String name = campos[0];
         return new Defesa(Integer.parseInt(campos[1]),name,false,hist,

@@ -48,33 +48,20 @@ public class Data implements Cloneable,Serializable {
 
     public Data clone() {return new Data(this);}
 
-    /*
-    public void saveToCSV(String fn) throws FileNotFoundException, IOException {
-
-        PrintWriter pw = new PrintWriter(new FileOutputStream(fn));
-        pw.println(this.nome);
-
-        for(Veiculo v : this.veiculos.values()) {
-            pw.println(v.toString());
-        }
-
-        pw.close();
-    }
-*/
     public void deleteEstado() {
         this.equipas = new HashMap<>();
         this.jogadores = new ArrayList<>() ;
         this.jogos = new ArrayList<>();
     }
 
-    public void guardaEstado(String fn) throws FileNotFoundException, IOException {
+    public void guardaEstado(String fn) throws IOException {
         FileOutputStream fos = new FileOutputStream(fn);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(this);
         oos.close();
     }
 
-    public static Data carregaEstado(String fn) throws FileNotFoundException, IOException, ClassNotFoundException {
+    public static Data carregaEstado(String fn) throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fn));
         Data d = (Data) ois.readObject();
         ois.close();

@@ -28,11 +28,9 @@ public class Lateral extends Jogador {
     public void setCruzamento(int c){ this.cruzamento = c; }
 
     public String toString(){
-        StringBuilder s = new StringBuilder();
-        s.append(super.toString());
-        s.append("Valor de Cruzamento: ").append(getCruzamento());
-        s.append("\n");
-        return s.toString();
+        return super.toString() +
+                "Valor de Cruzamento: " + getCruzamento() +
+                "\n";
     }
 
     @Override
@@ -70,7 +68,7 @@ public class Lateral extends Jogador {
     }
 
     public static Lateral parse(String input){
-        ArrayList<Equipa> hist = new ArrayList<Equipa>();
+        ArrayList<Equipa> hist = new ArrayList<>();
         String[] campos = input.split(",");
         String name = campos[0];
         return new Lateral(Integer.parseInt(campos[1]),name,false,hist,

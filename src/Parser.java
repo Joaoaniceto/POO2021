@@ -12,12 +12,12 @@ import java.util.List;
 
 public class Parser implements Cloneable {
 
-    public static Data parse() throws LinhaIncorretaException, FileNotFoundException, IOException {
+    public static Data parse() throws LinhaIncorretaException, IOException {
         int c = 0;
         Data data = new Data();
         List<String> linhas = lerFicheiro("input.txt");
         Equipa ultima = null;
-        Jogador j = null;
+        Jogador j;
         String[] linhaPartida;
         for (String linha : linhas) {
             linhaPartida = linha.split(":", 2);
@@ -26,7 +26,6 @@ public class Parser implements Cloneable {
                     Equipa e = Equipa.parse(linhaPartida[1]);
                     data.addEquipa(e);
                     ultima = e;
-
                     break;
                 case "Guarda-Redes":
                     j = GuardaRedes.parse(linhaPartida[1]);

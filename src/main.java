@@ -115,6 +115,11 @@ public class main {
         //Data f = Data.carregaEstado("save.tmp");
         //System.out.println(f.getJogadores().toString());
 
+        Data f = Data.carregaEstado("save.tmp");
+        int t = f.getJogos().size();
+        f.getJogos().remove(t-1);
+        f.guardaEstado("Benfica.tmp");
+
 
     }
 }

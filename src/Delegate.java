@@ -17,8 +17,6 @@ public class Delegate {
                 "Mozart F. C.", "Handel Athletic", "Mendelssohn F. C.", "Sporting Club Shostakovich", "Sporting Club Schubert",
                 "Sporting Club Chopin", "Mahler Athletic", "Bartok F. C.", "Beethoven F. C.", "Sporting Club Prokofiev", "Vivaldi F. C.",
                 "Sporting Club Dvorak", "Brahms F. C.", "Wagner Athletic"});
-        this.menuJogos = new Menu(new String[] {
-                "Sporting Club Shostakovich VS Mendelssohn F. C.", "Mozart F. C. VS Sporting Club Dvorak", "Debussy Athletic  VS Stravinsky Athletic" });
         this.scannerIn = new Scanner(System.in);
         this.menuCriacao = new Menu(new String[] {"Criar Jogador","Criar Equipa","Criar Jogo"});
     }
@@ -269,23 +267,6 @@ public class Delegate {
         jogos.get(n).startJogo();
     }
 
-
-
-    public void listarJogos_upgraded() {
-        List<Jogo> jogos = this.info.getJogos();
-        this.menuJogos.executa();
-        switch (this.menuJogos.getOpcao()){
-            case 1:
-                jogos.get(0).startJogo();
-                break;
-            case 2:
-                jogos.get(1).startJogo();
-                break;
-            case 3:
-                jogos.get(2).startJogo();
-                break;
-        }
-    }
 
     public Integer[] hibilitiesAUX() {
         Scanner hab = new Scanner(System.in);
@@ -551,6 +532,7 @@ public class Delegate {
 
         Jogo j = new Jogo(c,v,entraCasa,saiCasa,entraVisitante,saiVisitante,0,0, LocalDate.now(),titularesCasa,titularesVisitante);
         this.info.addJogo(j);
+
         //scan.close();
 
         }
