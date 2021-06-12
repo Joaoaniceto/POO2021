@@ -112,10 +112,9 @@ public class Equipa implements Comparable<Equipa>, Serializable {
                     a.addJogador(o);
                     break;
                 }
-                //falta uma exception
             }
         }catch (JogadorNExisteException e){
-            System.out.println("Jogador não existe na equipa" + a);
+            System.out.println("Jogador não existe na equipa " + a);
         }
 
 

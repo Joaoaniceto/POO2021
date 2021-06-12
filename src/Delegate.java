@@ -79,7 +79,7 @@ public class Delegate {
                     System.out.println("Salvaguarda de dados completa.\n");
                     break;
                 case 8:
-                    this.info = Data.carregaEstado("Benfica.tmp");
+                    this.info = Data.carregaEstado("save.tmp");
                     System.out.println("Carregamento de dados efetuado.\n");
                     break;
                 case 9:
