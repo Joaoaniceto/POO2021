@@ -85,8 +85,9 @@ public class Equipa implements Comparable<Equipa>, Serializable {
         o.atualizaHist(this);
     }
 
-    public void removeJogador(Jogador o)  {
 
+    public void removeJogador(Jogador o) throws JogadorNExisteException {
+        try {
             int i = 1;
             for (Jogador j : this.equipa.values()) {
                 if (o.getNum() == j.getNum()) {
@@ -94,14 +95,17 @@ public class Equipa implements Comparable<Equipa>, Serializable {
                     this.equipa.remove(o.getNum());
                     break;
                 }
-                //falta uma exception bonita
+                if (i== 1) throw new JogadorNExisteException();
             }
+        }catch (JogadorNExisteException e){
+            throw new JogadorNExisteException();
+        }
 
     }
 
     //equipaAtual.transferenciaJogador(equipaAserTransferido,jogador da equipa atual)
-    public void transferenciaJogador(Equipa a, Jogador o)  {
-
+    public void transferenciaJogador(Equipa a, Jogador o){
+        try {
             for (Jogador j : this.equipa.values()) {
                 if (o.getNum() == j.getNum()) {
                     removeJogador(o);
@@ -110,10 +114,12 @@ public class Equipa implements Comparable<Equipa>, Serializable {
                 }
                 //falta uma exception
             }
+        }catch (JogadorNExisteException e){
+            System.out.println("Jogador não existe na equipa" + a);
+        }
 
 
     }
-
     //jogador t e b trocam os seus valores de Titular
     //FALTA ATUALIZAÇÃO DINAMICA DA VARIAVEL SUBSCASA
     //E SUBSVISITANTE NA CLASSE JOGO

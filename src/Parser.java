@@ -32,7 +32,7 @@ public class Parser implements Cloneable {
                     c+=1;
                     data.addJogador(j.clone());
                     if (ultima == null) throw new LinhaIncorretaException(); //we need to insert the player into the team
-                    data.getEquipas().get(ultima.getNome()).addJogador(j.clone());
+                    //data.getEquipas().get(ultima.getNome()).addJogador(j.clone());
                     ultima.addJogador(j.clone()); //if no team was parsed previously, file is not well-formed
                     break;
                 case "Defesa":

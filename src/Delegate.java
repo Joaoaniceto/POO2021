@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.*;
 import Exceptions.*;
@@ -52,7 +53,7 @@ public class Delegate {
                     listarJogos();
                     break;
                 case 4:
-                    listarEquipas_upgraded();
+                    listarEquipas_upgraded2();
                     break;
                 case 5:
                     System.out.println("\nBEM-VINDO À SIMULAÇÃO DE JOGOS \nPor favor, escolha uma jogo:");
@@ -78,7 +79,7 @@ public class Delegate {
                     System.out.println("Salvaguarda de dados completa.\n");
                     break;
                 case 8:
-                    this.info = Data.carregaEstado("save.tmp");
+                    this.info = Data.carregaEstado("Benfica.tmp");
                     System.out.println("Carregamento de dados efetuado.\n");
                     break;
                 case 9:
@@ -129,143 +130,38 @@ public class Delegate {
         }
     }
 
-    public void listarEquipas_upgraded() throws JogadorNExisteException {
-        String equipaS = null;
-        String equipaE = null;
-        int n;
+    public void listarEquipas_upgraded2() {
+        int i;
+        System.out.println("Indique a equipa com o jogador de saída.");
 
-        System.out.println("\nIndique a Equipa com jogador de saida");
-        this.menuEquipas.executa();
-        while(equipaS == null){
-        switch (this.menuEquipas.getOpcao()) {
-            case 1:
-                equipaS = menuEquipas.getOpcoes().get(0);
-                break;
-            case 2:
-                equipaS = menuEquipas.getOpcoes().get(1);
-                break;
-            case 3:
-                equipaS = menuEquipas.getOpcoes().get(2);
-                break;
-            case 4:
-                equipaS = menuEquipas.getOpcoes().get(3);
-                break;
-            case 5:
-                equipaS = menuEquipas.getOpcoes().get(4);
-                break;
-            case 6:
-                equipaS = menuEquipas.getOpcoes().get(5);
-                break;
-            case 7:
-                equipaS = menuEquipas.getOpcoes().get(6);
-                break;
-            case 8:
-                equipaS = menuEquipas.getOpcoes().get(7);
-                break;
-            case 9:
-                equipaS = menuEquipas.getOpcoes().get(8);
-                break;
-            case 10:
-                equipaS = menuEquipas.getOpcoes().get(9);
-                break;
-            case 11:
-                equipaS = menuEquipas.getOpcoes().get(10);
-                break;
-            case 12:
-                equipaS = menuEquipas.getOpcoes().get(11);
-                break;
-            case 13:
-                equipaS = menuEquipas.getOpcoes().get(12);
-                break;
-            case 14:
-                equipaS = menuEquipas.getOpcoes().get(13);
-                break;
-            case 15:
-                equipaS = menuEquipas.getOpcoes().get(14);
-                break;
-            case 16:
-                equipaS = menuEquipas.getOpcoes().get(15);
-                break;
-            case 17:
-                equipaS = menuEquipas.getOpcoes().get(16);
-                break;
-            case 18:
-                equipaS = menuEquipas.getOpcoes().get(17);
-                break;
-            default:
-                System.out.println("Opção inválida!!!");
+        Set<String> eq = this.info.getEquipas().keySet();
+        List<String> equipas = new ArrayList<>(eq);
+        //String[] n_eq = new String[equipas.size()];
+        for(i=0;i<equipas.size();i++){
+            System.out.printf("%d - ",i);
+            System.out.println(equipas.get(i));
+            //n_eq[i] = equipas.get(i);
         }
-        }
+        System.out.println("Opção:");
+        Scanner scan = new Scanner(System.in);
+        int s = scan.nextInt();
 
-        System.out.println("\nIndique a Equipa com jogador de entrada");
-        this.menuEquipas.executa();
-        while(equipaE == null){
-        switch (this.menuEquipas.getOpcao()) {
-            case 1:
-                equipaE = menuEquipas.getOpcoes().get(0);
-                break;
-            case 2:
-                equipaE = menuEquipas.getOpcoes().get(1);
-                break;
-            case 3:
-                equipaE = menuEquipas.getOpcoes().get(2);
-                break;
-            case 4:
-                equipaE = menuEquipas.getOpcoes().get(3);
-                break;
-            case 5:
-                equipaE = menuEquipas.getOpcoes().get(4);
-                break;
-            case 6:
-                equipaE = menuEquipas.getOpcoes().get(5);
-                break;
-            case 7:
-                equipaE = menuEquipas.getOpcoes().get(6);
-                break;
-            case 8:
-                equipaE = menuEquipas.getOpcoes().get(7);
-                break;
-            case 9:
-                equipaE = menuEquipas.getOpcoes().get(8);
-                break;
-            case 10:
-                equipaE = menuEquipas.getOpcoes().get(9);
-                break;
-            case 11:
-                equipaE = menuEquipas.getOpcoes().get(10);
-                break;
-            case 12:
-                equipaE = menuEquipas.getOpcoes().get(11);
-                break;
-            case 13:
-                equipaE = menuEquipas.getOpcoes().get(12);
-                break;
-            case 14:
-                equipaE = menuEquipas.getOpcoes().get(13);
-                break;
-            case 15:
-                equipaE = menuEquipas.getOpcoes().get(14);
-                break;
-            case 16:
-                equipaE = menuEquipas.getOpcoes().get(15);
-                break;
-            case 17:
-                equipaE = menuEquipas.getOpcoes().get(16);
-                break;
-            case 18:
-                equipaE = menuEquipas.getOpcoes().get(17);
-                break;
-            default:
-                System.out.println("Opção inválida!!!");
-        }
-        }
 
-        Equipa a = info.getEquipas().get(equipaS);
-        Equipa b = info.getEquipas().get(equipaE);
+        System.out.println("Indique a equipa com o jogador de entrada.");
+
+        for(i=0;i<equipas.size();i++){
+            System.out.printf("%d - ",i);
+            System.out.println(equipas.get(i));
+        }
+        System.out.println("Opção:");
+        int e = scan.nextInt();
+
+        Equipa a = this.info.getEquipas().get(equipas.get(s));
+        Equipa b = this.info.getEquipas().get(equipas.get(e));
 
         Scanner tf = new Scanner(System.in);
         System.out.println("\nIndique o número do Jogador");
-        n = tf.nextInt();
+        int n = tf.nextInt();
 
         while(a.getJogador(n) == null){
             System.out.println( "Não existe o jogador com o número" + n + "\nIndique o número do Jogador");
@@ -275,7 +171,9 @@ public class Delegate {
 
         a.transferenciaJogador(b,a.getJogador(n));
 
+
     }
+
 
     public void listarJogos_upgraded2() {
         List<Jogo> jogos = this.info.getJogos();
@@ -289,7 +187,7 @@ public class Delegate {
             System.out.println( "Não existe o jogo que selecionou" + "\nIndique outro jogo:");
             n = scan.nextInt();
         }
-        scan.close();
+        //scan.close();
         jogos.get(n).startJogo();
     }
 
@@ -433,11 +331,13 @@ public class Delegate {
               eqpJogador(gr,scan);
               //scan.close();
               break;
+          case "Avancado":
           case "Avançado":
               System.out.println("Quais of valores de velocidade, resistência, destreza, impulsão, cabeceamento, remate, passe e drible por ordem?\n");
               converted = hibilitiesAUX(scan);
               Avançado a = new Avançado(n, nome, titular, historial, converted[0], converted[1], converted[2], converted[3], converted[4], converted[5], converted[6], converted[7]);
               this.info.addJogador(a);
+              System.out.println("Finalmente, qual é a sua equipa?\n");
               eqpJogador(a,scan);
 
               break;
@@ -523,7 +423,7 @@ public class Delegate {
         entraCasa.add(Integer.parseInt(ec_split[1]));
         entraCasa.add(Integer.parseInt(ec_split[2]));
 
-        System.out.println("Jogadores que entram: ");
+        System.out.println("Jogadores que saem: ");
         //Scanner sc_scan = new Scanner(System.in);
         String sc = scan.nextLine();
         String[] sc_split = sc.split(" ");
@@ -543,7 +443,7 @@ public class Delegate {
         entraVisitante.add(Integer.parseInt(ev_split[1]));
         entraVisitante.add(Integer.parseInt(ev_split[2]));
 
-        System.out.println("Jogadores que entram: ");
+        System.out.println("Jogadores que saem: ");
         String sv = scan.nextLine();
         String[] sv_split = sv.split(" ");
         ArrayList<Integer> saiVisitante = new ArrayList<>();
